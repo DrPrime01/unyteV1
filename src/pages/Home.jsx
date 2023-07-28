@@ -2,6 +2,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 
+import UnyteLogoBig from "../assets/icons/UnyteLogoBig.svg";
 import BigCubes from "../assets/icons/BigCubes.svg";
 import AxaMansardLogo from "../assets/icons/AxaMansardLogo.svg";
 import HeirsLifeLogo from "../assets/icons/HeirsLifeLogo.svg";
@@ -15,6 +16,9 @@ import Education from "../assets/icons/Education.svg";
 import Security from "../assets/icons/Security.svg";
 import Motor from "../assets/icons/Motor.svg";
 import Dice from "../assets/icons/Dice.svg";
+import DownloadIcon from "../assets/icons/DownloadIcon.svg";
+import GraduationIcon from "../assets/icons/GraduationIcon.svg";
+import CodeBlock from "../assets/icons/CodeBlock.svg";
 import OmbreBG from "../assets/images/OmbreBG.svg";
 import CTA from "../assets/images/CTA.svg";
 
@@ -85,7 +89,7 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section id="sponsors" className="py-10 max-w-screen-xl mx-auto px-4">
+			<section id="sponsors" className="py-20 max-w-screen-xl mx-auto px-4">
 				<div id="sponsors-text" className="text-center mb-10">
 					<h3 className="text-xl font-semibold text-[#101323] mb-8">
 						Businesses building and embedding with us
@@ -109,7 +113,7 @@ function Home() {
 			</section>
 			<section
 				id="unlocking possibilities"
-				className="py-10 max-w-screen-xl mx-auto px-4"
+				className="py-20 max-w-screen-xl mx-auto px-4"
 			>
 				<div className="mb-8">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
@@ -337,7 +341,7 @@ function Home() {
 					</button>
 				</div>
 			</section>
-			<section className="py-10 max-w-screen-xl mx-auto px-4">
+			<section className="py-20 max-w-screen-xl mx-auto px-4">
 				<div className="text-center mb-6">
 					<h2 className="md:text-3xl lg:text-4xl text-2xl font-medium text-[#101323] mb-2">
 						The Infrastructure Powering Embedded
@@ -356,7 +360,7 @@ function Home() {
 				</div>
 			</section>
 			<section
-				className="py-10 px-4 bg-cover bg-center bg-no-repeat"
+				className="py-20 px-4 bg-cover bg-center bg-no-repeat"
 				style={{ backgroundImage: `url(${OmbreBG})` }}
 			>
 				<div className="max-w-screen-xl mx-auto">
@@ -427,71 +431,80 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="py-10 max-w-screen-xl mx-auto px-4" id="developers">
-				<div className="flex flex-col md:flex-row items-center justify-between">
-					<div id="developers-text">
-						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
-							made for developers by developers
-						</h3>
-						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
-							Made for builders, <br />
-							founders, scholars, <br />
-							dabblers, and dreamers
-						</h2>
-						<p className="text-[#667085] leading-7 mb-4">
-							Implement any or all of Unyte’s products with just a few lines of
-							code <br />
-							in any language!
-						</p>
-						<div className="gap-x-2 flex items-center mb-2">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
-							</div>
-							<p className="text-base leading-7 text-[#667085]">
-								Expanded Reach
+			<section className="py-20 bg-[#101323] px-4" id="developers">
+				<div className="max-w-screen-xl mx-auto">
+					<div className="flex flex-col md:flex-row items-center justify-between">
+						<div id="developers-text">
+							<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
+								made for developers by developers
+							</h3>
+							<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#ffffff] mb-4">
+								Seamlessly integrated
+								<br />
+								with all your languages
+							</h2>
+							<p className="text-[#667085] leading-7">
+								Implement any or all of Unyte’s products with just a few lines
+								of code in <br />
+								any language!
 							</p>
-						</div>
-						<div className="gap-x-2 flex items-center mb-2">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
+							<div className="my-6">
+								<img src={CodeBlock} alt="code icon" className="mb-5" />
+								<p className="text-base leading-7 text-[#ffffff] mb-2">
+									Standardized JSON / CSV.
+								</p>
+								<p className="text-base leading-7 text-[#667085]">
+									You may easily incorporate our data into your application
+									because it is <br />
+									offered in CSV and JSON forms.
+								</p>
 							</div>
-							<p className="text-base leading-7 text-[#667085]">
-								Enhanced Offerings
-							</p>
-						</div>
-						<div className="gap-x-2 flex items-center mb-2">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
+							<div className="mb-6">
+								<img src={DownloadIcon} alt="download icon" className="mb-5" />
+								<p className="text-base leading-7 text-[#ffffff] mb-2">
+									Client Libraries.
+								</p>
+								<p className="text-base leading-7 text-[#667085]">
+									You can easily access and use our data thanks to our client
+									libraries, <br />
+									which frees up your time to focus on developing your
+									application rather <br />
+									than worrying about technical issues.
+								</p>
 							</div>
-							<p className="text-base leading-7 text-[#667085]">
-								Increased Revenue
-							</p>
-						</div>
-						<div className="gap-x-2 flex items-center mb-6">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
+							<div className="mb-8">
+								<img
+									src={GraduationIcon}
+									alt="graduation hat icon"
+									className="mb-5"
+								/>
+								<p className="text-base leading-7 text-[#ffffff] mb-2">
+									Client Libraries.
+								</p>
+								<p className="text-base leading-7 text-[#667085]">
+									We offer tutorials and examples to assist you get up and
+									running quickly <br />
+									because we are aware that learning a new API can be difficult.
+								</p>
 							</div>
-							<p className="text-base leading-7 text-[#667085]">
-								Trusted Collaboration
-							</p>
+							<div>
+								<button
+									type="button"
+									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+								>
+									<span>Read our docs</span> <BsArrowUpRight />
+								</button>
+							</div>
 						</div>
-						<div>
-							<button
-								type="button"
-								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-							>
-								<span>Read our docs</span> <BsArrowUpRight />
-							</button>
+						<div id="code tab">
+							<TabComponent />
 						</div>
-					</div>
-					<div id="code tab">
-						<TabComponent />
 					</div>
 				</div>
 			</section>
-			<section className="py-10 max-w-screen-xl mx-auto px-4" id="developers">
+			<section className="py-20 max-w-screen-xl mx-auto px-4" id="partnerships">
 				<div className="flex flex-col md:flex-row items-center justify-between">
-					<div id="developers-text">
+					<div id="partnerships-text">
 						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 							partnerships
 						</h3>
@@ -587,7 +600,7 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="py-10 max-w-screen-xl mx-auto px-4" id="developers">
+			<section className="py-20 max-w-screen-xl mx-auto px-4" id="developers">
 				<div className="flex flex-col lg:space-y-16 md:space-y-12 space-y-10">
 					<div id="developers-text">
 						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
@@ -605,7 +618,7 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="py-10 max-w-screen-xl mx-auto px-4" id="faq">
+			<section className="py-20 max-w-screen-xl mx-auto px-4" id="faq">
 				<div className="flex flex-col justify-center gap-y-16 items-center text-center">
 					<div id="developers-text">
 						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
@@ -625,11 +638,39 @@ function Home() {
 				</div>
 			</section>
 			<section
-				className="py-10 bg-cover bg-center bg-no-repeat px-4 h-screen my-10"
+				className="py-20 bg-cover bg-center bg-no-repeat px-4 h-screen my-10"
 				id="cta"
 				style={{ backgroundImage: `url(${CTA})` }}
 			>
-				<div className="max-w-screen-xl mx-auto"></div>
+				<div className="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
+					<img src={UnyteLogoBig} alt="large unyte logo" className="mb-12" />
+					<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
+						Built for the future.
+					</h2>
+					<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
+						Available today.
+					</h2>
+					<p className="text-base mb-8 leading-7 text-[#667085] text-center">
+						Access high-quality insurance API and start processing leads for
+						your <br />
+						businesses
+					</p>
+					<div className="flex items-center gap-x-2.5">
+						<button
+							type="button"
+							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0"
+						>
+							Get started for free
+						</button>
+						<a
+							href="#"
+							className="text-[#667085] text-[0.75rem] font-medium flex items-center gap-x-2 px-4 py-2"
+						>
+							<span>Contact sales</span>
+							<BsArrowUpRight />
+						</a>
+					</div>
+				</div>
 			</section>
 		</>
 	);
