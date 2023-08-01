@@ -19,7 +19,7 @@ function About() {
 					<h3 className="font-semibold md:font-bold text-2xl md:text-5xl text-[#033401] mb-6">
 						About Unyte Africa
 					</h3>
-					<p className="text-base md:text-xl text-[#667085] leading-8">
+					<p className="text-base md:text-xl text-[#667085] md:leading-8">
 						We’ve been told it is possible to revolutionize the insurance
 						industry. We have not reinvented the wheel, we decided to build upon
 						it - successfully.
@@ -36,7 +36,7 @@ function About() {
 						who we are
 					</h3>
 					<div className="flex flex-col md:flex-row justify-between py-2 space-y-6 md:space-y-0 space-x-0 md:space-x-20">
-						<p className="font-medium text-2xl md:text-[2rem] text-[#667085] leading-12">
+						<p className="font-medium text-2xl md:text-[2rem] text-[#667085] md:leading-12">
 							We are an insuretech company that provides{" "}
 							<span className="text-[#101323]">digital insurance</span> to{" "}
 							<span className="text-[#101323]">individuals</span> and{" "}
@@ -45,11 +45,11 @@ function About() {
 							<span className="text-[#101323]">embed insurance.</span>
 						</p>
 						<div className="text-[#667085] text-xl gap-y-5">
-							<p className="mb-5 md:leading-11 leading-8">
+							<p className="mb-5 md:leading-8">
 								Living is risky, and being unprotected in the event of accidents
 								could cost you a lot financially and mentally.{" "}
 							</p>
-							<p className="leading-8">
+							<p className="md:leading-8">
 								Unyte&apos;s vision is to make insurance accessible by providing
 								affordable insurance packages, simplifying the process of
 								getting insurance, prioritizing our users needs through amazing
@@ -313,7 +313,7 @@ function About() {
 			<section className="py-16 md:py-20">
 				<div className="flex flex-col md:flex-row">
 					<div
-						className="bg-center bg-cover bg-no-repeat md:w-1/2"
+						className="bg-center bg-cover bg-no-repeat md:w-1/2 h-96 md:h-auto"
 						style={{ backgroundImage: `url(${AboutBanner})` }}
 					></div>
 					<div className="px-5 py-20 flex flex-col justify-center md:px-24 bg-[#25D366] md:w-1/2">

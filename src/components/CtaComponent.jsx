@@ -6,7 +6,7 @@ import CTA from "../assets/images/CTA.svg";
 function CtaComponent() {
 	return (
 		<section
-			className="py-20 bg-cover bg-center bg-no-repeat px-5 max-h-screen my-10"
+			className="py-20 bg-cover bg-center bg-no-repeat md:px-12 xl:px-5 px-5 max-h-screen my-10"
 			id="cta"
 			style={{ backgroundImage: `url(${CTA})` }}
 		>
