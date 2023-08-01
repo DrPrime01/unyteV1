@@ -23,7 +23,7 @@ import OmbreBG from "../assets/images/OmbreBG.svg";
 import TabComponent from "../components/TabComponent";
 import TestimonialCard from "../components/TestimonialCard";
 import TestimonialSwiper from "../components/TestimonialSwiper";
-import Accordion from "../components/Accordion";
+import Accordion from "../components/AccordionComponent";
 
 function Home() {
 	const testimonials = [
@@ -38,7 +38,7 @@ function Home() {
 		<>
 			<section
 				id="hero"
-				className="flex flex-col md:space-y-8 space-y-4 mt-32 mb-6 p-4 max-w-screen-xl mx-auto"
+				className="flex flex-col md:space-y-8 space-y-4 mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto"
 			>
 				<div id="hero-texts" className="text-center">
 					<div className="gap-x-4 flex items-center justify-center mb-6">
@@ -87,7 +87,10 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section id="sponsors" className="py-20 max-w-screen-xl mx-auto px-4">
+			<section
+				id="sponsors"
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+			>
 				<div id="sponsors-text" className="text-center mb-10">
 					<h3 className="text-xl font-semibold text-[#101323] mb-8">
 						Businesses building and embedding with us
@@ -111,7 +114,7 @@ function Home() {
 			</section>
 			<section
 				id="unlocking possibilities"
-				className="py-20 max-w-screen-xl mx-auto px-4"
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 			>
 				<div className="mb-8">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
@@ -220,7 +223,10 @@ function Home() {
 					</button>
 				</div>
 			</section>
-			<section id="products" className="py-20 max-w-screen-xl mx-auto px-4">
+			<section
+				id="products"
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+			>
 				<div className="mb-8">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4">PRODUCTS</h3>
 					<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
@@ -339,7 +345,7 @@ function Home() {
 					</button>
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto px-4">
+			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5">
 				<div className="text-center mb-6">
 					<h2 className="md:text-3xl lg:text-4xl text-2xl font-medium text-[#101323] mb-2">
 						The Infrastructure Powering Embedded
@@ -358,7 +364,7 @@ function Home() {
 				</div>
 			</section>
 			<section
-				className="py-20 px-4 bg-cover bg-center bg-no-repeat"
+				className="py-20 md:px-12 xl:px-5 px-5 bg-cover bg-center bg-no-repeat"
 				style={{ backgroundImage: `url(${OmbreBG})` }}
 			>
 				<div className="max-w-screen-xl mx-auto">
@@ -429,7 +435,10 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="py-20 bg-[#101323] px-4" id="developers">
+			<section
+				className="py-20 bg-[#101323] md:px-12 xl:px-5 px-5"
+				id="developers"
+			>
 				<div className="max-w-screen-xl mx-auto">
 					<div className="flex flex-col md:flex-row items-center justify-between">
 						<div id="developers-text">
@@ -500,7 +509,10 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto px-4" id="partnerships">
+			<section
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+				id="partnerships"
+			>
 				<div className="flex flex-col md:flex-row items-center justify-between">
 					<div id="partnerships-text">
 						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
@@ -598,7 +610,10 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto px-4" id="developers">
+			<section
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+				id="developers"
+			>
 				<div className="flex flex-col lg:space-y-16 md:space-y-12 space-y-10">
 					<div id="developers-text">
 						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
@@ -616,7 +631,10 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto px-4" id="faq">
+			<section
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+				id="faq"
+			>
 				<div className="flex flex-col justify-center gap-y-16 items-center text-center">
 					<div id="developers-text">
 						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">

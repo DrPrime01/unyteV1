@@ -6,11 +6,11 @@ import CTA from "../assets/images/CTA.svg";
 function CtaComponent() {
 	return (
 		<section
-			className="py-20 bg-cover bg-center bg-no-repeat px-4 h-screen my-10"
+			className="py-20 bg-cover bg-center bg-no-repeat px-5 max-h-screen my-10"
 			id="cta"
 			style={{ backgroundImage: `url(${CTA})` }}
 		>
-			<div className="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
+			<div className="flex flex-col justify-center items-center">
 				<img src={UnyteLogoBig} alt="large unyte logo" className="mb-12" />
 				<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
 					Built for the future.
