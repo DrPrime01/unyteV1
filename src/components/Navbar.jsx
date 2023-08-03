@@ -21,12 +21,12 @@ function Navbar() {
 		<>
 			<nav className="bg-white border-gray-200">
 				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 md:px-12 xl:px-5 px-5">
-					<a href="#" className="flex items-center">
+					<NavLink to="/" className="flex items-center">
 						<img src={UnyteLogo} className="h-8 mr-3" alt="Unyte Logo" />
 						<span className="self-center text-2xl font-semibold whitespace-nowrap text-[#033401]">
 							unyte
 						</span>
-					</a>
+					</NavLink>
 					<div className="flex md:order-2">
 						<div className="flex gap-x-4 items-center justify-between">
 							<button
