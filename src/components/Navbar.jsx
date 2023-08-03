@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 import UnyteLogo from "../assets/icons/UnyteLogo.svg";
 
@@ -198,20 +199,20 @@ function Navbar() {
 								</div>
 							</li>
 							<li>
-								<a
-									href="#"
+								<NavLink
+									to="about"
 									className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
 								>
 									Why Unyte?
-								</a>
+								</NavLink>
 							</li>
 							<li>
-								<a
-									href="#"
+								<NavLink
+									to="contact"
 									className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
 								>
 									Contact
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 					</div>
