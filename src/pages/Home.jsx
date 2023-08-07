@@ -2,13 +2,11 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 
-import BigCubes from "../assets/icons/BigCubes.svg";
+import UnyteHero from "../assets/images/UnyteHero.png";
 import AxaMansardLogo from "../assets/icons/AxaMansardLogo.svg";
-import HeirsLifeLogo from "../assets/icons/HeirsLifeLogo.svg";
-import LeadwayAssuranceLogo from "../assets/icons/LeadwayAssuranceLogo.svg";
-import StacoLogo from "../assets/icons/StacoLogo.svg";
+import PolarisLogo from "../assets/icons/PolarisLogo.svg";
+import WemaLogo from "../assets/icons/WemaLogo.svg";
 import MintynLogo from "../assets/icons/MintynLogo.svg";
-import InterswitchLogo from "../assets/icons/InterswitchLogo.svg";
 import Ideas from "../assets/icons/Ideas.svg";
 import Health from "../assets/icons/Health.svg";
 import Education from "../assets/icons/Education.svg";
@@ -38,7 +36,7 @@ function Home() {
 		<>
 			<section
 				id="hero"
-				className="flex flex-col md:space-y-8 space-y-4 mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto"
+				className="flex flex-col md:space-y-24 space-y-20 mt-24 md:mt-40 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto"
 			>
 				<div id="hero-texts" className="text-center">
 					<div className="gap-x-4 flex items-center justify-center mb-6">
@@ -54,16 +52,17 @@ function Home() {
 						</a>
 					</div>
 					<h2 className="md:text-3xl lg:text-4xl text-2xl font-medium text-[#101323] mb-4">
-						Modernizing Insurance
+						Reliable Insurance Infrastructure
 					</h2>
 					<h2 className="md:text-3xl lg:text-4xl text-2xl font-medium text-[#667085] mb-4">
-						One Step at a Time With Seamless Integration
+						For Businesses in Africa
 					</h2>
 					<p className="text-[#667085] text-base leading-7">
-						At Unyte, we&apos;re on a mission to modernize the insurance
-						industry. We believe <br className="hidden lg:block" />
-						that the industry runs on old technology, and we&apos;re here to
-						change that.
+						Unyte enables businesses to seamlessly integrate insurance offerings
+						into their
+						<br className="hidden md:block" /> platforms enabling them to
+						acquire new users, drive sales, and enhance
+						<br className="hidden md:block" /> revenue.
 					</p>
 					<div className="flex items-center justify-center mt-6">
 						<button
@@ -74,17 +73,8 @@ function Home() {
 						</button>
 					</div>
 				</div>
-				<div className="relative">
-					<img src={BigCubes} alt="dice" className="absolute -top-20 -left-6" />
-					<div className="grid grid-cols-6 grid-rows-4 gap-4 md:h-96">
-						<div className="bg-[#C8FFC6] rounded-2xl row-span-full"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-1 row-end-3"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-1 row-end-3"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-span-full"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-3 row-end-5"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl col-start-3 col-end-5 row-start-2 row-end-5"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-3 row-end-5"></div>
-					</div>
+				<div className="" id="unyte-hero">
+					<img src={UnyteHero} alt="hero " />
 				</div>
 			</section>
 			<section
@@ -102,14 +92,17 @@ function Home() {
 				</div>
 				<div
 					id="sponsors-companies"
-					className="flex items-center justify-between"
+					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
 				>
-					<img src={AxaMansardLogo} alt="company logo" />
-					<img src={HeirsLifeLogo} alt="company logo" />
-					<img src={LeadwayAssuranceLogo} alt="company logo" />
-					<img src={StacoLogo} alt="company logo" />
-					<img src={MintynLogo} alt="company logo" />
-					<img src={InterswitchLogo} alt="company logo" />
+					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={PolarisLogo} alt="company logo" />
+					</div>
+					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={WemaLogo} alt="company logo" />
+					</div>
+					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={MintynLogo} alt="company logo" />
+					</div>
 				</div>
 			</section>
 			<section
@@ -440,71 +433,104 @@ function Home() {
 				id="developers"
 			>
 				<div className="max-w-screen-xl mx-auto">
-					<div className="flex flex-col md:flex-row items-center justify-between">
-						<div id="developers-text">
-							<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
-								made for developers by developers
-							</h3>
-							<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#ffffff] mb-4">
-								Seamlessly integrated
-								<br />
-								with all your languages
-							</h2>
-							<p className="text-[#667085] leading-7">
-								Implement any or all of Unyte’s products with just a few lines
-								of code in <br />
-								any language!
-							</p>
-							<div className="my-6">
-								<img src={CodeBlock} alt="code icon" className="mb-5" />
-								<p className="text-base leading-7 text-[#ffffff] mb-2">
-									Standardized JSON / CSV.
+					<div className="flex flex-col">
+						<div className="flex flex-col md:flex-row items-center justify-between">
+							<div id="developers-text">
+								<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
+									made for developers by developers
+								</h3>
+								<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#ffffff] mb-4">
+									Seamlessly integrated
+									<br />
+									with all your languages
+								</h2>
+								<p className="text-[#667085] leading-7">
+									Implement any or all of Unyte’s products with just a few lines
+									of code in <br />
+									any language!
 								</p>
-								<p className="text-base leading-7 text-[#667085]">
-									You may easily incorporate our data into your application
-									because it is <br />
-									offered in CSV and JSON forms.
-								</p>
+								<div className="my-6">
+									<img src={CodeBlock} alt="code icon" className="mb-5" />
+									<p className="text-base leading-7 text-[#ffffff] mb-2">
+										Standardized JSON / CSV.
+									</p>
+									<p className="text-base leading-7 text-[#667085]">
+										You may easily incorporate our data into your application
+										because it is <br />
+										offered in CSV and JSON forms.
+									</p>
+								</div>
+								<div className="mb-6">
+									<img
+										src={DownloadIcon}
+										alt="download icon"
+										className="mb-5"
+									/>
+									<p className="text-base leading-7 text-[#ffffff] mb-2">
+										Client Libraries.
+									</p>
+									<p className="text-base leading-7 text-[#667085]">
+										You can easily access and use our data thanks to our client
+										libraries, <br />
+										which frees up your time to focus on developing your
+										application rather <br />
+										than worrying about technical issues.
+									</p>
+								</div>
+								<div className="mb-8">
+									<img
+										src={GraduationIcon}
+										alt="graduation hat icon"
+										className="mb-5"
+									/>
+									<p className="text-base leading-7 text-[#ffffff] mb-2">
+										Client Libraries.
+									</p>
+									<p className="text-base leading-7 text-[#667085]">
+										We offer tutorials and examples to assist you get up and
+										running quickly <br />
+										because we are aware that learning a new API can be
+										difficult.
+									</p>
+								</div>
+								<div>
+									<button
+										type="button"
+										className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+									>
+										<span>Read our docs</span> <BsArrowUpRight />
+									</button>
+								</div>
 							</div>
-							<div className="mb-6">
-								<img src={DownloadIcon} alt="download icon" className="mb-5" />
-								<p className="text-base leading-7 text-[#ffffff] mb-2">
-									Client Libraries.
-								</p>
-								<p className="text-base leading-7 text-[#667085]">
-									You can easily access and use our data thanks to our client
-									libraries, <br />
-									which frees up your time to focus on developing your
-									application rather <br />
-									than worrying about technical issues.
-								</p>
-							</div>
-							<div className="mb-8">
-								<img
-									src={GraduationIcon}
-									alt="graduation hat icon"
-									className="mb-5"
-								/>
-								<p className="text-base leading-7 text-[#ffffff] mb-2">
-									Client Libraries.
-								</p>
-								<p className="text-base leading-7 text-[#667085]">
-									We offer tutorials and examples to assist you get up and
-									running quickly <br />
-									because we are aware that learning a new API can be difficult.
-								</p>
-							</div>
-							<div>
-								<button
-									type="button"
-									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-								>
-									<span>Read our docs</span> <BsArrowUpRight />
-								</button>
+							<div id="code tab">
+								<TabComponent />
 							</div>
 						</div>
-						<div id="code tab">
-							<TabComponent />
+						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
+							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
+									<p>Reliance</p>
+								</div>
+							</div>
+							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
+									<p>Uptime</p>
+								</div>
+							</div>
+							<div className="h-[9.8125rem] w-auto md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">65 Million</p>
+									<p>Messages/sec</p>
+								</div>
+							</div>
+							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">1 Billion +</p>
+									<p>Rows of Data</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

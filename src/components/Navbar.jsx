@@ -3,6 +3,13 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 
 import UnyteLogo from "../assets/icons/UnyteLogo.svg";
+import LaunchNav from "../assets/icons/LaunchNav.svg";
+import HealthNav from "../assets/icons/HealthNav.svg";
+import EducationNav from "../assets/icons/EducationNav.svg";
+import SecurityNav from "../assets/icons/SecurityNav.svg";
+import MotorNav from "../assets/icons/MotorNav.svg";
+import Credit from "../assets/icons/Credit.svg";
+import Travel from "../assets/icons/Travel.svg";
 
 function Navbar() {
 	const [dropdown1, setDropdown1] = useState(false);
@@ -19,8 +26,8 @@ function Navbar() {
 	};
 	return (
 		<>
-			<nav className="bg-white border-gray-200">
-				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 md:px-12 xl:px-5 px-5">
+			<nav className="bg-white border-gray-200 fixed w-screen top-0">
+				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-6 md:px-12 xl:px-5 px-5">
 					<NavLink to="/" className="flex items-center">
 						<img src={UnyteLogo} className="h-8 mr-3" alt="Unyte Logo" />
 						<span className="self-center text-2xl font-semibold whitespace-nowrap text-[#033401]">
@@ -105,36 +112,133 @@ function Navbar() {
 									id="dropdownNavbar"
 									className={`z-10 ${
 										dropdown1 ? "block" : "hidden"
-									} font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 md:absolute md:top-8 md:-left-10`}
+									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
 								>
+									<div className="mb-4">Products</div>
 									<ul
-										className="py-2 text-sm text-gray-700"
+										className="pt-8 text-sm text-gray-700 grid grid-cols-1 md:grid-cols-4 gap-5"
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
-												Developers
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={LaunchNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Launch
+													</p>
+													<p className="text-sm text-[#667085]">
+														Integrate insurance seamlessly and unlock new
+														revenue streams.
+													</p>
+												</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
-												Settings
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={HealthNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Health
+													</p>
+													<p className="text-sm text-[#667085]">
+														Embrace comprehensive health coverage for
+														individuals and families.
+													</p>
+												</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
-												Earnings
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={SecurityNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Device Protection
+													</p>
+													<p className="text-sm text-[#667085]">
+														Shield your electronic devices from unexpected
+														mishaps.
+													</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={Credit} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Credit Life
+													</p>
+													<p className="text-sm text-[#667085]">
+														Safeguard financial commitments with credit life
+														insurance.
+													</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={EducationNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Student Protection
+													</p>
+													<p className="text-sm text-[#667085]">
+														Prioritize the safety and well-being of educational
+														institutions and students.
+													</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={MotorNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Motor Reg/Insurance
+													</p>
+													<p className="text-sm text-[#667085]">
+														Simplify vehicle registration and secure the right
+														insurance.
+													</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={Travel} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Travel Cover
+													</p>
+													<p className="text-sm text-[#667085]">
+														Ensure worry-free travels with our comprehensive
+														insurance plans.
+													</p>
+												</div>
 											</a>
 										</li>
 									</ul>
-									<div className="py-1">
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-										>
-											Sign out
-										</a>
-									</div>
 								</div>
 							</li>
 							<li className="md:relative">
