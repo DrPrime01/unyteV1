@@ -1,0 +1,313 @@
+import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
+
+import PolarisLogo from "../assets/icons/PolarisLogo.svg";
+import WemaLogo from "../assets/icons/WemaLogo.svg";
+import MintynLogo from "../assets/icons/MintynLogo.svg";
+import DownloadIcon from "../assets/icons/DownloadIcon.svg";
+import GraduationIcon from "../assets/icons/GraduationIcon.svg";
+import CodeBlock from "../assets/icons/CodeBlock.svg";
+import CoverageHero from "../assets/images/CoverageHero.png";
+
+import TabComponent from "../components/TabComponent";
+import TestimonialCard from "../components/TestimonialCard";
+import TestimonialSwiper from "../components/TestimonialSwiper";
+import CoverageAccordion from "../components/CoverageAccordion";
+
+function Products() {
+	const testimonials = [
+		TestimonialCard,
+		TestimonialCard,
+		TestimonialCard,
+		TestimonialCard,
+		TestimonialCard,
+	];
+	return (
+		<>
+			<section
+				id="modernizing insurance"
+				className="mt-24 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
+			>
+				<div className="pb-16 md:pb-0 flex-1 md:mr-[4.375rem] mr-0">
+					<h4 className="text-base md:text-sm font-semibold mb-2 md:mb-4 text-[#0CD704] uppercase">
+						unyte health
+					</h4>
+					<h3 className="font-semibold md:font-bold text-2xl md:text-5xl text-[#033401] mb-6">
+						Institutional-grade{" "}
+						<span className="text-[#5CC758]">health insurance</span> for your
+						next big project
+					</h3>
+					<p className="text-base md:text-xl text-[#667085] md:leading-8 mb-12">
+						Discover Unyte Health, our comprehensive insurance solutions
+						tailored to protect and enhance your physical and financial
+						well-being.
+					</p>
+					<div className="flex items-center gap-x-2.5">
+						<button
+							type="button"
+							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+						>
+							Get started
+						</button>
+						<a
+							href="#"
+							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
+						>
+							<span>Contact sales</span>
+							<BsArrowRight />
+						</a>
+					</div>
+				</div>
+				<div className="flex-1"></div>
+			</section>
+			<section
+				id="sponsors"
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+			>
+				<div id="sponsors-text" className="text-center mb-10">
+					<h3 className="text-xl font-semibold text-[#101323] mb-8">
+						Businesses building and embedding with us
+					</h3>
+					<p className="text-[#667085] leading-7">
+						Be a part of the top businesses engaging and connecting with their
+						customers using Unyte.
+					</p>
+				</div>
+				<div
+					id="sponsors-companies"
+					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
+				>
+					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={PolarisLogo} alt="company logo" />
+					</div>
+					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={WemaLogo} alt="company logo" />
+					</div>
+					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={MintynLogo} alt="company logo" />
+					</div>
+				</div>
+			</section>
+			<section
+				className="py-20 bg-[#101323] md:px-12 xl:px-5 px-5"
+				id="developers"
+			>
+				<div className="max-w-screen-xl mx-auto">
+					<div className="flex flex-col">
+						<div className="flex flex-col md:flex-row items-center justify-between">
+							<div id="developers-text">
+								<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
+									made for developers by developers
+								</h3>
+								<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#ffffff] mb-4">
+									Seamlessly integrated
+									<br />
+									with all your languages
+								</h2>
+								<p className="text-[#667085] leading-7">
+									Implement any or all of Unyte’s products with just a few lines
+									of code in <br />
+									any language!
+								</p>
+								<div className="my-6">
+									<img src={CodeBlock} alt="code icon" className="mb-5" />
+									<p className="text-base leading-7 text-[#ffffff] mb-2">
+										Standardized JSON / CSV.
+									</p>
+									<p className="text-base leading-7 text-[#667085]">
+										You may easily incorporate our data into your application
+										because it is <br />
+										offered in CSV and JSON forms.
+									</p>
+								</div>
+								<div className="mb-6">
+									<img
+										src={DownloadIcon}
+										alt="download icon"
+										className="mb-5"
+									/>
+									<p className="text-base leading-7 text-[#ffffff] mb-2">
+										Client Libraries.
+									</p>
+									<p className="text-base leading-7 text-[#667085]">
+										You can easily access and use our data thanks to our client
+										libraries, <br />
+										which frees up your time to focus on developing your
+										application rather <br />
+										than worrying about technical issues.
+									</p>
+								</div>
+								<div className="mb-8">
+									<img
+										src={GraduationIcon}
+										alt="graduation hat icon"
+										className="mb-5"
+									/>
+									<p className="text-base leading-7 text-[#ffffff] mb-2">
+										Client Libraries.
+									</p>
+									<p className="text-base leading-7 text-[#667085]">
+										We offer tutorials and examples to assist you get up and
+										running quickly <br />
+										because we are aware that learning a new API can be
+										difficult.
+									</p>
+								</div>
+								<div>
+									<button
+										type="button"
+										className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+									>
+										<span>Read our docs</span> <BsArrowUpRight />
+									</button>
+								</div>
+							</div>
+							<div id="code tab">
+								<TabComponent />
+							</div>
+						</div>
+						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
+							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
+									<p>Reliance</p>
+								</div>
+							</div>
+							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
+									<p>Uptime</p>
+								</div>
+							</div>
+							<div className="h-[9.8125rem] w-auto md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">65 Million</p>
+									<p>Messages/sec</p>
+								</div>
+							</div>
+							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+								<div className="text-white text-center">
+									<p className="mb-4 font-bold text-[2.5rem]">1 Billion +</p>
+									<p>Rows of Data</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				className="py-16 md:py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col items-center"
+				id="benefits"
+			>
+				<div
+					id="benefits-texts"
+					className="text-center mb-12 w-auto md:w-[45.875rem]"
+				>
+					<p className="text-[#0CD704] font-medium text-base md:text-xl uppercase mb-4">
+						benefits
+					</p>
+					<h3 className="mb-6 font-medium text-[#101323] text-2xl md:text-[2.438rem] leading-12">
+						Streamline Integration with Robust API Solutions
+					</h3>
+					<p className="text-[#667085]">
+						With Unyte Launch, you can streamline the integration process
+						effortlessly. Our robust API solutions provide a seamless connection
+						between your platform and insurance offerings, eliminating
+						complexities and reducing implementation time.
+					</p>
+				</div>
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-12">
+					<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+						<div className="text-white text-center">
+							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
+								99.99%
+							</p>
+							<p className="text-[#667085]">Reliance</p>
+						</div>
+					</div>
+					<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+						<div className="text-white text-center">
+							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
+								99.99%
+							</p>
+							<p className="text-[#667085]">Uptime</p>
+						</div>
+					</div>
+					<div className="h-[9.8125rem] w-auto md:w-[19rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+						<div className="text-white text-center">
+							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
+								65 Million
+							</p>
+							<p className="text-[#667085]">Messages/sec</p>
+						</div>
+					</div>
+					<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+						<div className="text-white text-center">
+							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
+								1 Billion +
+							</p>
+							<p className="text-[#667085]">Rows of Data</p>
+						</div>
+					</div>
+				</div>
+				<div className="w-full md:w-auto">
+					<button
+						type="button"
+						className="text-white block w-full md:w-auto bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0"
+					>
+						Get started for free
+					</button>
+				</div>
+			</section>
+			<section
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row"
+				id="coverage"
+			>
+				<div className="flex-1 md:mr-[4.375rem] mr-0">
+					<p className="text-[#0CD704] font-medium text-base md:text-xl mb-4">
+						coverage
+					</p>
+					<p className="text-[#101323] text-2xl md:text-[2.438rem] mb-4 font-medium">
+						Extensive Coverage for Your
+					</p>
+					<p className="text-[#667085] text-2xl md:text-[2.438rem] mb-4 font-medium">
+						Health Needs.
+					</p>
+					<p className="text-[#667085] mb-6">
+						Unyte Health offers a wide range of coverage options to address your
+						medical requirements. Including:
+					</p>
+					<div id="coverage-accordion">
+						<CoverageAccordion />
+					</div>
+				</div>
+				<div className="flex-1">
+					<img src={CoverageHero} alt="coverage hero" />
+				</div>
+			</section>
+			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"></section>
+			<section
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+				id="testimonials"
+			>
+				<div className="flex flex-col lg:space-y-16 md:space-y-12 space-y-10">
+					<div id="developers-text">
+						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
+							testimonials
+						</h3>
+						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
+							Loved by business builders
+						</h2>
+						<h2 className="text-[#667085] md:text-3xl text-2xl lg:text-4xl font-medium mb-4">
+							See what others are saying
+						</h2>
+					</div>
+					<div id="testimonial-slide">
+						<TestimonialSwiper slides={testimonials} />
+					</div>
+				</div>
+			</section>
+		</>
+	);
+}
+
+export default Products;

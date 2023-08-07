@@ -21,7 +21,6 @@ import OmbreBG from "../assets/images/OmbreBG.svg";
 import TabComponent from "../components/TabComponent";
 import TestimonialCard from "../components/TestimonialCard";
 import TestimonialSwiper from "../components/TestimonialSwiper";
-import Accordion from "../components/AccordionComponent";
 
 function Home() {
 	const testimonials = [
@@ -365,12 +364,27 @@ function Home() {
 							<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#667085] mb-4">
 								Unyte Africa&apos;s insurance solutions
 							</h2>
-							<p className="text-[#667085] leading-7">
+							<p className="text-[#667085] leading-7 mb-[5.375rem]">
 								Our seamless integration process makes it easy for you to offer{" "}
 								<br />
 								comprehensive coverage to your customers. Here&apos;s how it
 								works:
 							</p>
+							<div className="flex items-center gap-x-2.5">
+								<button
+									type="button"
+									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+								>
+									Get started for free
+								</button>
+								<a
+									href="#"
+									className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
+								>
+									<span>Contact sales</span>
+									<BsArrowUpRight />
+								</a>
+							</div>
 						</div>
 						<div className="block space-y-6 h-[33rem] overflow-y-auto pr-5">
 							<div className="p-6 bg-white rounded-3xl lg:h-80">
@@ -631,7 +645,7 @@ function Home() {
 			</section>
 			<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
-				id="developers"
+				id="testimonials"
 			>
 				<div className="flex flex-col lg:space-y-16 md:space-y-12 space-y-10">
 					<div id="developers-text">
@@ -647,28 +661,6 @@ function Home() {
 					</div>
 					<div id="testimonial-slide">
 						<TestimonialSwiper slides={testimonials} />
-					</div>
-				</div>
-			</section>
-			<section
-				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
-				id="faq"
-			>
-				<div className="flex flex-col justify-center gap-y-16 items-center text-center">
-					<div id="developers-text">
-						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
-							Frequently Asked Questions.
-						</h2>
-						<p className="text-base mb-6 leading-7 text-[#667085]">
-							We are answering your most frequent questions. No worries if you
-							don’t <br />
-							find the exact one. You can find out more by directly contacting
-							our <br />
-							support.
-						</p>
-					</div>
-					<div id="accordion" className="w-[40rem]">
-						<Accordion />
 					</div>
 				</div>
 			</section>

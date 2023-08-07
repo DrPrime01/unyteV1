@@ -1,10 +1,5 @@
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 
-import AccordionComponent from "../components/AccordionComponent";
-
-import BigCubes from "../assets/icons/BigCubes.svg";
-import AboutBanner from "../assets/images/AboutBanner.png";
-
 function About() {
 	return (
 		<>
@@ -59,19 +54,7 @@ function About() {
 						</div>
 					</div>
 				</div>
-				<div className="relative">
-					<img src={BigCubes} alt="dice" className="absolute -top-20 -left-6" />
-					<div className="grid grid-cols-6 grid-rows-4 gap-4 md:h-96">
-						<div className="bg-[#C8FFC6] rounded-2xl row-span-full"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-1 row-end-3"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-1 row-end-3"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-span-full"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-3 row-end-5"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl col-start-3 col-end-5 row-start-2 row-end-5"></div>
-						<div className="bg-[#F9FAFB] rounded-2xl row-start-3 row-end-5"></div>
-					</div>
-				</div>
-				<div className="flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-5">
+				<div className="flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-5 mb-16 md:mb-20">
 					<div className="py-5 text-center rounded-2xl bg-[#F9FAFB] flex-1">
 						<p className="mb-4 text-[#101323] text-xl font-semibold">95%</p>
 						<p className="mb-2 text-[#101323] text-base font-semibold">
@@ -307,49 +290,6 @@ function About() {
 								<FaFacebookF />
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
-			<section className="py-16 md:py-20">
-				<div className="flex flex-col md:flex-row">
-					<div
-						className="bg-center bg-cover bg-no-repeat md:w-1/2 h-96 md:h-auto"
-						style={{ backgroundImage: `url(${AboutBanner})` }}
-					></div>
-					<div className="px-5 py-20 flex flex-col justify-center md:px-24 bg-[#25D366] md:w-1/2">
-						<h3 className="font-semibold md:font-bold text-xl md:text-[2.5rem] mb-4 text-white">
-							What we do
-						</h3>
-						<p className="text-white">
-							We supply customers with insurance packages from credible
-							merchants, and we make it easy for them to buy insurance, claim it
-							when the need arises and renew expired insurance plans. We know
-							that Insurance is not yet a mainstream commodity, so we aspire to
-							make it one by providing great products and services, and valuable
-							information about insurance.
-						</p>
-					</div>
-				</div>
-			</section>
-			<section
-				className="py-16 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
-				id="faq"
-			>
-				<div className="flex flex-col justify-center gap-y-16 items-center text-center">
-					<div id="developers-text">
-						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
-							Frequently Asked Questions.
-						</h2>
-						<p className="text-base mb-6 leading-7 text-[#667085]">
-							We are answering your most frequent questions. No worries if you
-							don’t <br />
-							find the exact one. You can find out more by directly contacting
-							our <br />
-							support.
-						</p>
-					</div>
-					<div id="accordion" className="md:w-[40rem] w-auto">
-						<AccordionComponent />
 					</div>
 				</div>
 			</section>

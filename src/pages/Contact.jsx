@@ -1,6 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 
-import AccordionComponent from "../components/AccordionComponent";
+import FaqComponent from "../components/FaqComponent";
 
 function Contact() {
 	return (
@@ -23,7 +23,7 @@ function Contact() {
 							type="button"
 							className="text-[#101323] bg-[#F9FAFB] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center space-x-2"
 						>
-							<span>Get started for free</span> <FaArrowRight />
+							<span>Explore integrations</span> <FaArrowRight />
 						</button>
 					</div>
 				</div>
@@ -138,28 +138,7 @@ function Contact() {
 					</div>
 				</div>
 			</section>
-			<section
-				className="py-16 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
-				id="faq"
-			>
-				<div className="flex flex-col justify-center gap-y-16 items-center text-center">
-					<div id="developers-text">
-						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
-							Frequently Asked Questions.
-						</h2>
-						<p className="text-base mb-6 leading-7 text-[#667085]">
-							We are answering your most frequent questions. No worries if you
-							don’t <br />
-							find the exact one. You can find out more by directly contacting
-							our <br />
-							support.
-						</p>
-					</div>
-					<div id="accordion" className="md:w-[40rem] w-auto">
-						<AccordionComponent />
-					</div>
-				</div>
-			</section>
+			<FaqComponent />
 		</>
 	);
 }

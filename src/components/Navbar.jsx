@@ -26,7 +26,7 @@ function Navbar() {
 	};
 	return (
 		<>
-			<nav className="bg-white border-gray-200 fixed w-screen top-0">
+			<nav className="bg-white border-gray-200 fixed w-screen top-0 z-50">
 				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-6 md:px-12 xl:px-5 px-5">
 					<NavLink to="/" className="flex items-center">
 						<img src={UnyteLogo} className="h-8 mr-3" alt="Unyte Logo" />
@@ -137,8 +137,8 @@ function Navbar() {
 											</a>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="products/health"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -151,7 +151,7 @@ function Navbar() {
 														individuals and families.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<a
