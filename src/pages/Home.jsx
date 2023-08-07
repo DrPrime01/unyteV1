@@ -228,13 +228,6 @@ function Home() {
 					<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#667085] mb-6">
 						digital Insurance
 					</h2>
-					<p className="text-[#667085] leading-7">
-						Lörem ipsum dekande deren ovins ponat, båsulig prepreska. Katosamma
-						otoktig <br className="hidden lg:block" />
-						solig även om tinehet. Epikism teralåv, oaktat gärar. Mobil klubb
-						vihosm <br className="hidden lg:block" />
-						heterorade fast plattfilm eukössa.
-					</p>
 				</div>
 				<div className="grid md:grid-cols-3 grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-12">
 					<div className="col-start-1 col-end-3 bg-[#FFF5E6] rounded-xl p-6">
