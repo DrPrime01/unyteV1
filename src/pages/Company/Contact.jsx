@@ -5,8 +5,8 @@ import FaqComponent from "../../components/FaqComponent";
 function Contact() {
 	return (
 		<>
-			<section className="mt-24 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center space-x-0 md:space-x-32">
-				<div className="pb-16 md:pb-0 flex-1">
+			<section className="mt-24 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between space-x-0 md:space-x-32">
+				<div className="pb-16 md:pb-0 mt-0 md:mt-[8rem] w-auto xl:w-[31.75rem]">
 					<h4 className="uppercase text-sm mb-2 md:mb-4 font-medium text-[#0CD704]">
 						Contact Us
 					</h4>
@@ -27,7 +27,7 @@ function Contact() {
 						</button>
 					</div>
 				</div>
-				<div className="flex-1">
+				<div className="w-auto xl:w-[37.625rem]">
 					<div className="shadow-xl p-6 rounded-3xl">
 						<form className="flex flex-col mb-12">
 							<div className="mb-6 flex flex-col md:flex-row justify-between space-x-0 md:space-x-6 items-center w-full">
