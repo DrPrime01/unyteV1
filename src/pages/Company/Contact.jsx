@@ -1,6 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 
-import FaqComponent from "../components/FaqComponent";
+import FaqComponent from "../../components/FaqComponent";
 
 function Contact() {
 	return (

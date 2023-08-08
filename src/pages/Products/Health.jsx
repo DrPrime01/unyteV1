@@ -1,22 +1,22 @@
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 
-import PolarisLogo from "../assets/icons/PolarisLogo.svg";
-import WemaLogo from "../assets/icons/WemaLogo.svg";
-import MintynLogo from "../assets/icons/MintynLogo.svg";
-import DownloadIcon from "../assets/icons/DownloadIcon.svg";
-import GraduationIcon from "../assets/icons/GraduationIcon.svg";
-import WavyArrow from "../assets/icons/WavyArrow.svg";
-import Dice from "../assets/icons/Dice.svg";
-import CodeBlock from "../assets/icons/CodeBlock.svg";
-import OmbreBG from "../assets/images/OmbreBG.svg";
-import CoverageHero from "../assets/images/CoverageHero.png";
+import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
+import WemaLogo from "../../assets/icons/WemaLogo.svg";
+import MintynLogo from "../../assets/icons/MintynLogo.svg";
+import DownloadIcon from "../../assets/icons/DownloadIcon.svg";
+import GraduationIcon from "../../assets/icons/GraduationIcon.svg";
+import WavyArrow from "../../assets/icons/WavyArrow.svg";
+import Dice from "../../assets/icons/Dice.svg";
+import CodeBlock from "../../assets/icons/CodeBlock.svg";
+import OmbreBG from "../../assets/images/OmbreBG.svg";
+import CoverageHero from "../../assets/images/CoverageHero.svg";
 
-import TabComponent from "../components/TabComponent";
-import TestimonialCard from "../components/TestimonialCard";
-import TestimonialSwiper from "../components/TestimonialSwiper";
-import CoverageAccordion from "../components/CoverageAccordion";
+import TabComponent from "../../components/TabComponent";
+import TestimonialCard from "../../components/TestimonialCard";
+import TestimonialSwiper from "../../components/TestimonialSwiper";
+import CoverageAccordion from "../../components/CoverageAccordion";
 
-function Products() {
+function Health() {
 	const testimonials = [
 		TestimonialCard,
 		TestimonialCard,
@@ -395,4 +395,4 @@ function Products() {
 	);
 }
 
-export default Products;
+export default Health;

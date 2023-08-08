@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import UnyteLogo from "../assets/icons/UnyteLogo.svg";
 import LaunchNav from "../assets/icons/LaunchNav.svg";
@@ -14,16 +14,44 @@ import Travel from "../assets/icons/Travel.svg";
 function Navbar() {
 	const [dropdown1, setDropdown1] = useState(false);
 	const [dropdown2, setDropdown2] = useState(false);
+	const [dropdown3, setDropdown3] = useState(false);
+	const [dropdown4, setDropdown4] = useState(false);
 	const [mobileDropdown, setMobileDropdown] = useState(false);
+
+	const location = useLocation();
 
 	const handleDropdown1 = () => {
 		setDropdown2(false);
+		setDropdown3(false);
+		setDropdown4(false);
 		setDropdown1(!dropdown1);
 	};
 	const handleDropdown2 = () => {
 		setDropdown1(false);
+		setDropdown3(false);
+		setDropdown4(false);
 		setDropdown2(!dropdown2);
 	};
+	const handleDropdown3 = () => {
+		setDropdown1(false);
+		setDropdown2(false);
+		setDropdown4(false);
+		setDropdown3(!dropdown3);
+	};
+	const handleDropdown4 = () => {
+		setDropdown1(false);
+		setDropdown2(false);
+		setDropdown3(false);
+		setDropdown4(!dropdown4);
+	};
+
+	useEffect(() => {
+		setDropdown1(false);
+		setDropdown2(false);
+		setDropdown3(false);
+		setDropdown4(false);
+		setMobileDropdown(false);
+	}, [location]);
 	return (
 		<>
 			<nav className="bg-white border-gray-200 fixed w-screen top-0 z-50">
@@ -270,53 +298,314 @@ function Navbar() {
 									id="dropdownNavbar"
 									className={`z-10 ${
 										dropdown2 ? "block" : "hidden"
-									} font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 md:absolute md:top-8 md:-left-8`}
+									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
 								>
+									<div className="mb-4">Developers</div>
 									<ul
-										className="py-2 text-sm text-gray-700"
+										className="pt-8 text-sm text-gray-700 grid grid-cols-1 md:grid-cols-4 gap-5"
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
-												Dashboard
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={LaunchNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Get Started
+													</p>
+													<p className="text-sm text-[#667085]">
+														Integrate insurance seamlessly and unlock new
+														revenue streams.
+													</p>
+												</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
-												Settings
+											<NavLink
+												to="products/health"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={HealthNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														API Reference
+													</p>
+													<p className="text-sm text-[#667085]">
+														Embrace comprehensive health coverage for
+														individuals and families.
+													</p>
+												</div>
+											</NavLink>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={SecurityNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														API Status
+													</p>
+													<p className="text-sm text-[#667085]">
+														Shield your electronic devices from unexpected
+														mishaps.
+													</p>
+												</div>
 											</a>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
-												Earnings
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={Credit} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Libraries
+													</p>
+													<p className="text-sm text-[#667085]">
+														Safeguard financial commitments with credit life
+														insurance.
+													</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={EducationNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Developer Docs
+													</p>
+													<p className="text-sm text-[#667085]">
+														Prioritize the safety and well-being of educational
+														institutions and students.
+													</p>
+												</div>
 											</a>
 										</li>
 									</ul>
-									<div className="py-1">
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-										>
-											Sign out
-										</a>
-									</div>
 								</div>
 							</li>
-							<li>
-								<NavLink
-									to="about"
-									className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+							<li className="md:relative">
+								<button
+									id="dropdownNavbarLink"
+									data-dropdown-toggle="dropdownNavbar"
+									onClick={handleDropdown3}
+									className="flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
 								>
-									Why Unyte?
-								</NavLink>
+									Industries
+									<svg
+										className="w-2.5 h-2.5 ml-2.5"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 10 6"
+									>
+										<path
+											stroke="currentColor"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="m1 1 4 4 4-4"
+										/>
+									</svg>
+								</button>
+
+								<div
+									id="dropdownNavbar"
+									className={`z-10 ${
+										dropdown3 ? "block" : "hidden"
+									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
+								>
+									<div className="mb-4">Industries</div>
+									<ul
+										className="pt-8 text-sm text-gray-700 grid grid-cols-1 md:grid-cols-4 gap-5"
+										aria-labelledby="dropdownLargeButton"
+									>
+										<li>
+											<NavLink
+												to="industries/fintech"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={LaunchNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Fintech
+													</p>
+													<p className="text-sm text-[#667085]">
+														Integrate insurance seamlessly and unlock new
+														revenue streams.
+													</p>
+												</div>
+											</NavLink>
+										</li>
+										<li>
+											<NavLink
+												to="industries/banks"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={HealthNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Banks
+													</p>
+													<p className="text-sm text-[#667085]">
+														Embrace comprehensive health coverage for
+														individuals and families.
+													</p>
+												</div>
+											</NavLink>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={SecurityNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Logistic Companies
+													</p>
+													<p className="text-sm text-[#667085]">
+														Shield your electronic devices from unexpected
+														mishaps.
+													</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={Credit} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Ecommerce
+													</p>
+													<p className="text-sm text-[#667085]">
+														Safeguard financial commitments with credit life
+														insurance.
+													</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={EducationNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Education
+													</p>
+													<p className="text-sm text-[#667085]">
+														Prioritize the safety and well-being of educational
+														institutions and students.
+													</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</li>
-							<li>
-								<NavLink
-									to="contact"
-									className="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+							<li className="md:relative">
+								<button
+									id="dropdownNavbarLink"
+									data-dropdown-toggle="dropdownNavbar"
+									onClick={handleDropdown4}
+									className="flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
 								>
-									Contact
-								</NavLink>
+									Company
+									<svg
+										className="w-2.5 h-2.5 ml-2.5"
+										aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 10 6"
+									>
+										<path
+											stroke="currentColor"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="m1 1 4 4 4-4"
+										/>
+									</svg>
+								</button>
+
+								<div
+									id="dropdownNavbar"
+									className={`z-10 ${
+										dropdown4 ? "block" : "hidden"
+									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
+								>
+									<div className="mb-4">Company</div>
+									<ul
+										className="pt-8 text-sm text-gray-700 grid grid-cols-1 md:grid-cols-4 gap-5"
+										aria-labelledby="dropdownLargeButton"
+									>
+										<li>
+											<NavLink
+												to="company/about"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={LaunchNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Why Unyte?
+													</p>
+													<p className="text-sm text-[#667085]">
+														Integrate insurance seamlessly and unlock new
+														revenue streams.
+													</p>
+												</div>
+											</NavLink>
+										</li>
+										<li>
+											<NavLink
+												to="company/contact"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={HealthNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Contact Us
+													</p>
+													<p className="text-sm text-[#667085]">
+														Embrace comprehensive health coverage for
+														individuals and families.
+													</p>
+												</div>
+											</NavLink>
+										</li>
+										<li>
+											<a
+												href="#"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={SecurityNav} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Learn
+													</p>
+													<p className="text-sm text-[#667085]">
+														Shield your electronic devices from unexpected
+														mishaps.
+													</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
