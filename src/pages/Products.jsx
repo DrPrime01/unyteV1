@@ -5,7 +5,10 @@ import WemaLogo from "../assets/icons/WemaLogo.svg";
 import MintynLogo from "../assets/icons/MintynLogo.svg";
 import DownloadIcon from "../assets/icons/DownloadIcon.svg";
 import GraduationIcon from "../assets/icons/GraduationIcon.svg";
+import WavyArrow from "../assets/icons/WavyArrow.svg";
+import Dice from "../assets/icons/Dice.svg";
 import CodeBlock from "../assets/icons/CodeBlock.svg";
+import OmbreBG from "../assets/images/OmbreBG.svg";
 import CoverageHero from "../assets/images/CoverageHero.png";
 
 import TabComponent from "../components/TabComponent";
@@ -284,7 +287,89 @@ function Products() {
 					<img src={CoverageHero} alt="coverage hero" />
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"></section>
+			<section
+				className="py-20 md:px-12 xl:px-5 px-5 bg-cover bg-center bg-no-repeat"
+				style={{ backgroundImage: `url(${OmbreBG})` }}
+			>
+				<div className="max-w-screen-xl mx-auto flex flex-col">
+					<div id="usecases" className="mb-[4.8125rem]">
+						<p className="mb-4 text-[#0CD704] font-medium text-base uppercase md:text-[#667085] md:text-xl md:font-normal">
+							use cases
+						</p>
+						<h3 className="mb-4 text-[#101323] font-medium text-2xl md:text-[2.4375rem]">
+							What can you build with
+						</h3>
+						<h3 className="font-medium text-2xl md:text-[2.4375rem] text-[#667085]">
+							Unyte Health?
+						</h3>
+					</div>
+					<div className="flex flex-col md:flex-row">
+						<div className="mr-0 md:mr-[1.75rem] mb-[2.975rem] md:mb-0 h-[34.0625rem] md:h-[48.625rem] w-auto xl:w-[30.125rem] bg-[#E6FFF3B2] rounded-[2rem] px-5 py-[4.1875rem] relative">
+							<img
+								src={WavyArrow}
+								alt="wavy arrow"
+								className="absolute top-96 left-0"
+							/>
+							<h4 className="mb-6 font-bold text-2xl md:text-[2.25rem] text-[#033401] leading-12">
+								Prioritize Your Well-being with{" "}
+								<span className="text-[#5CC758]">Unyte Health Insurance</span>
+							</h4>
+							<p className="mb-[8.3125rem] md:mb-[21.5rem] text-[#101323]">
+								Comprehensive health insurance solutions designed to protect and
+								enhance your physical and financial well-being.
+							</p>
+							<button
+								type="button"
+								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+							>
+								Get started for free
+							</button>
+						</div>
+						<div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 gap-4">
+							<div className="shadow rounded-3xl bg-white p-[1.875rem]">
+								<img src={Dice} alt="dice" />
+								<h4 className="mb-2 mt-[6.9375rem] text-[#033401] text-xl font-semibold">
+									Comprehensive Coverage
+								</h4>
+								<p className="text-[#667085] leading-7">
+									Protection for medical expenses, hospital stays, and
+									preventive care.
+								</p>
+							</div>
+							<div className="shadow rounded-3xl bg-white p-[1.875rem]">
+								<img src={Dice} alt="dice" />
+								<h4 className="mb-2 mt-[6.9375rem] text-[#033401] text-xl font-semibold">
+									Extensive Network
+								</h4>
+								<p className="text-[#667085] leading-7">
+									Access to a wide network of trusted healthcare providers for
+									quality care.
+								</p>
+							</div>
+							<div className="shadow rounded-3xl bg-white p-[1.875rem]">
+								<img src={Dice} alt="dice" />
+								<h4 className="mb-2 mt-[6.9375rem] text-[#033401] text-xl font-semibold">
+									Flexible Customization
+								</h4>
+								<p className="text-[#667085] leading-7">
+									Tailor your health insurance plan to match your unique needs
+									and budget.
+								</p>
+							</div>
+							<div className="shadow rounded-3xl bg-white p-[1.875rem]">
+								<img src={Dice} alt="dice" />
+								<h4 className="mb-2 mt-[6.9375rem] text-[#033401] text-xl font-semibold">
+									Telemedicine Consultations
+								</h4>
+								<p className="text-[#667085] leading-7">
+									Convenient virtual healthcare access for medical advice and
+									prescriptions.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="testimonials"
