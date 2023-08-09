@@ -261,12 +261,8 @@ function Fintech() {
 						</div>
 					</div>
 					<div id="stacked-card" className="flex-1">
-						<div className="h-[24rem] w-[33rem] bg-[#E6F6FF] rounded-2xl shadow p-10 pb-0">
-							<img
-								src={MintynLogo}
-								alt="axa mansard logo"
-								className="h-6 mb-4"
-							/>
+						<div className="h-[24rem] w-auto md:w-[33rem] bg-[#E6F6FF] rounded-2xl shadow p-10 pb-0">
+							<img src={MintynLogo} alt="mintyn logo" className="h-6 mb-4" />
 							<div className="bg-white p-5 text-center rounded-t-3xl pb-4">
 								<h4 className="text-xl font-semibold mb-6">
 									Some fancy headline praising Unyte x <br />
@@ -307,8 +303,11 @@ function Fintech() {
 							See what others are saying
 						</h2>
 					</div>
-					<div id="testimonial-slide">
-						<TestimonialSwiper slides={testimonials} />
+					<div id="testimonial" className="hidden md:block">
+						<TestimonialSwiper slides={testimonials} slidesPerView={3} />
+					</div>
+					<div id="testimonial" className="block md:hidden">
+						<TestimonialSwiper slides={testimonials} slidesPerView={1} />
 					</div>
 				</div>
 			</section>

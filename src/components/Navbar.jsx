@@ -18,6 +18,8 @@ function Navbar() {
 	const [dropdown4, setDropdown4] = useState(false);
 	const [mobileDropdown, setMobileDropdown] = useState(false);
 
+	const [scrollPosition, setScrollPosition] = useState(null);
+
 	const location = useLocation();
 
 	const handleDropdown1 = () => {
@@ -52,9 +54,21 @@ function Navbar() {
 		setDropdown4(false);
 		setMobileDropdown(false);
 	}, [location]);
+
+	const updateScroll = () => {
+		setScrollPosition(window.scrollY);
+	};
+
+	useEffect(() => {
+		window.addEventListener("scroll", updateScroll);
+	}, []);
 	return (
 		<>
-			<nav className="bg-white border-gray-200 fixed w-screen top-0 z-50">
+			<nav
+				className={`bg-white border-gray-200 fixed w-screen top-0 z-50 ${
+					scrollPosition > 50 ? "shadow-2xl" : "shadow-2xl md:shadow-none"
+				}`}
+			>
 				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-6 md:px-12 xl:px-5 px-5">
 					<NavLink to="/" className="flex items-center">
 						<img src={UnyteLogo} className="h-8 mr-3" alt="Unyte Logo" />
@@ -63,7 +77,7 @@ function Navbar() {
 						</span>
 					</NavLink>
 					<div className="flex md:order-2">
-						<div className="flex gap-x-4 items-center justify-between">
+						<div className="md:flex gap-x-4 items-center justify-between hidden">
 							<button
 								type="button"
 								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0"
@@ -107,16 +121,16 @@ function Navbar() {
 					<div
 						className={`items-center justify-between ${
 							mobileDropdown ? "block" : "hidden"
-						} w-full md:flex md:w-auto md:order-1`}
+						} w-full md:flex md:w-auto md:order-1 min-h-screen md:h-auto`}
 						id="navbar-sticky"
 					>
-						<ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white text-[#101323]">
+						<ul className="flex flex-col py-4 md:p-0 mt-4 font-medium bg-[#F9FAFB] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white text-[#101323]">
 							<li className="md:relative">
 								<button
 									id="dropdownNavbarLink"
 									data-dropdown-toggle="dropdownNavbar"
 									onClick={handleDropdown1}
-									className="flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+									className="flex items-center justify-between w-full py-4 md:py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
 								>
 									Products
 									<svg
@@ -135,11 +149,57 @@ function Navbar() {
 										/>
 									</svg>
 								</button>
-
+								<div
+									id="dropdownNavbarMobile"
+									className={`z-10 ${
+										dropdown1 ? "block md:hidden" : "hidden"
+									} font-normal bg-white w-full`}
+								>
+									<ul
+										className="py-2 text-sm text-[#667085] ml-2"
+										aria-labelledby="dropdownLargeButton"
+									>
+										<li>
+											<a href="#" className="block px-4 py-3">
+												Launch
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3">
+												Credit Life
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3">
+												Device Protection
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3">
+												Travel Cover
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3">
+												Health
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3">
+												Motor Registration / Insurance
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
+												Student Protection
+											</a>
+										</li>
+									</ul>
+								</div>
 								<div
 									id="dropdownNavbar"
 									className={`z-10 ${
-										dropdown1 ? "block" : "hidden"
+										dropdown1 ? "md:block hidden" : "hidden"
 									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
 								>
 									<div className="mb-4">Products</div>
@@ -274,7 +334,7 @@ function Navbar() {
 									id="dropdownNavbarLink"
 									data-dropdown-toggle="dropdownNavbar"
 									onClick={handleDropdown2}
-									className="flex items-center justify-between w-full py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+									className="flex items-center justify-between w-full py-4 md:py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
 								>
 									Developers
 									<svg
@@ -293,11 +353,49 @@ function Navbar() {
 										/>
 									</svg>
 								</button>
-
+								{/* Dropdown Nav for mobile */}
+								<div
+									id="dropdownNavbarMobile"
+									className={`z-10 ${
+										dropdown2 ? "block md:hidden" : "hidden"
+									} font-normal bg-white w-full`}
+								>
+									<ul
+										className="py-2 text-sm text-[#667085] ml-2"
+										aria-labelledby="dropdownLargeButton"
+									>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Get Started
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												API Reference
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												API Status
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Libraries
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Developer Docs
+											</a>
+										</li>
+									</ul>
+								</div>
+								{/* Dropdown Nav for tablet and desktops */}
 								<div
 									id="dropdownNavbar"
 									className={`z-10 ${
-										dropdown2 ? "block" : "hidden"
+										dropdown2 ? "hidden md:block" : "hidden"
 									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
 								>
 									<div className="mb-4">Developers</div>
@@ -398,7 +496,7 @@ function Navbar() {
 									id="dropdownNavbarLink"
 									data-dropdown-toggle="dropdownNavbar"
 									onClick={handleDropdown3}
-									className="flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+									className="flex items-center justify-between w-full py-4 md:py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
 								>
 									Industries
 									<svg
@@ -417,11 +515,47 @@ function Navbar() {
 										/>
 									</svg>
 								</button>
-
+								<div
+									id="dropdownNavbarMobile"
+									className={`z-10 ${
+										dropdown3 ? "block md:hidden" : "hidden"
+									} font-normal bg-white w-full`}
+								>
+									<ul
+										className="py-2 text-sm text-[#667085] ml-2"
+										aria-labelledby="dropdownLargeButton"
+									>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Fintech
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Banks
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Logistic Companies
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Ecommerce
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Education
+											</a>
+										</li>
+									</ul>
+								</div>
 								<div
 									id="dropdownNavbar"
 									className={`z-10 ${
-										dropdown3 ? "block" : "hidden"
+										dropdown3 ? "hidden md:block" : "hidden"
 									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
 								>
 									<div className="mb-4">Industries</div>
@@ -522,7 +656,7 @@ function Navbar() {
 									id="dropdownNavbarLink"
 									data-dropdown-toggle="dropdownNavbar"
 									onClick={handleDropdown4}
-									className="flex items-center justify-between w-full py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+									className="flex items-center justify-between w-full py-4 md:py-2  pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
 								>
 									Company
 									<svg
@@ -541,11 +675,37 @@ function Navbar() {
 										/>
 									</svg>
 								</button>
-
+								<div
+									id="dropdownNavbarMobile"
+									className={`z-10 ${
+										dropdown4 ? "block md:hidden" : "hidden"
+									} font-normal bg-white w-full`}
+								>
+									<ul
+										className="py-2 text-sm text-[#667085] ml-2"
+										aria-labelledby="dropdownLargeButton"
+									>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Why Unyte?
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Contact Us
+											</a>
+										</li>
+										<li>
+											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+												Learn
+											</a>
+										</li>
+									</ul>
+								</div>
 								<div
 									id="dropdownNavbar"
 									className={`z-10 ${
-										dropdown4 ? "block" : "hidden"
+										dropdown4 ? "hidden md:block" : "hidden"
 									} font-normal bg-white divide-y divide-gray-100 shadow-lg w-screen inset-x-0 md:fixed md:top-16 md:px-[6.25rem] md:py-10`}
 								>
 									<div className="mb-4">Company</div>

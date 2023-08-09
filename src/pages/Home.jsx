@@ -35,7 +35,7 @@ function Home() {
 		<>
 			<section
 				id="hero"
-				className="flex flex-col md:space-y-24 space-y-20 mt-24 md:mt-40 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto"
+				className="flex flex-col md:space-y-24 space-y-20 mt-48 md:mt-40 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto"
 			>
 				<div id="hero-texts" className="text-center">
 					<div className="gap-x-4 flex items-center justify-center mb-6">
@@ -66,7 +66,7 @@ function Home() {
 					<div className="flex items-center justify-center mt-6">
 						<button
 							type="button"
-							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0"
+							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0"
 						>
 							Get started for free
 						</button>
@@ -93,13 +93,13 @@ function Home() {
 					id="sponsors-companies"
 					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
 				>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={PolarisLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={WemaLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={MintynLogo} alt="company logo" />
 					</div>
 				</div>
@@ -209,7 +209,7 @@ function Home() {
 				<div>
 					<button
 						type="button"
-						className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+						className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 					>
 						<span>Learn more</span> <BsArrowUpRight />
 					</button>
@@ -228,8 +228,8 @@ function Home() {
 						digital Insurance
 					</h2>
 				</div>
-				<div className="grid md:grid-cols-3 grid-cols-2 gap-4 md:gap-6 lg:gap-8 mb-12">
-					<div className="col-start-1 col-end-3 bg-[#FFF5E6] rounded-xl p-6">
+				<div className="grid md:grid-cols-3 grid-cols-1 gap-4 md:gap-6 lg:gap-8 mb-12">
+					<div className="md:col-start-1 md:col-end-3 bg-[#FFF5E6] rounded-xl p-6">
 						<img src={Ideas} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Launch
@@ -248,7 +248,7 @@ function Home() {
 							<span>Learn more</span> <BsArrowRight />
 						</button>
 					</div>
-					<div className="col-start-3 col-end-4 bg-[#E6FFF3B2] rounded-xl p-6">
+					<div className="md:col-start-3 md:col-end-4 bg-[#E6FFF3B2] rounded-xl p-6">
 						<img src={Education} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Student Protection
@@ -265,7 +265,7 @@ function Home() {
 							<span>Learn more</span> <BsArrowRight />
 						</button>
 					</div>
-					<div className="col-start-1 col-end-2 bg-[#E6F6FF] rounded-xl p-6">
+					<div className="md:col-start-1 md:col-end-2 bg-[#E6F6FF] rounded-xl p-6">
 						<img src={Health} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Health
@@ -282,7 +282,7 @@ function Home() {
 							<span>Learn more</span> <BsArrowRight />
 						</button>
 					</div>
-					<div className="col-start-2 col-end-4 bg-[#FFF5E6] rounded-xl p-6">
+					<div className="md:col-start-2 md:col-end-4 bg-[#FFF5E6] rounded-xl p-6">
 						<img src={Motor} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Motor Reg/Insurance
@@ -301,7 +301,7 @@ function Home() {
 							<span>Learn more</span> <BsArrowRight />
 						</button>
 					</div>
-					<div className="col-span-3 bg-[#E6FFF3B2] bg-opacity-70 rounded-xl p-6">
+					<div className="md:col-span-3 bg-[#E6FFF3B2] bg-opacity-70 rounded-xl p-6">
 						<img src={Security} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Device Protection
@@ -339,10 +339,10 @@ function Home() {
 						Insurance Across Sectors in Africa
 					</h2>
 				</div>
-				<div className="flex items-center justify-center rounded-2xl h-[28rem] bg-[#F2F4F7]">
-					<p className="text-[#667085] opacity-60">
+				<div className="flex items-center justify-center rounded-2xl h-[36.1875rem] md:h-[28rem] bg-[#F2F4F7]">
+					<p className="text-[#667085] opacity-60 px-5 md:px-0 text-center">
 						Unyte serves as a middle man providing insurance products to a
-						variety of <br />
+						variety of <br className="hidden md:block" />
 						industries and sectors. An illustration that potrays this would be
 						great here.
 					</p>
@@ -353,7 +353,7 @@ function Home() {
 				style={{ backgroundImage: `url(${OmbreBG})` }}
 			>
 				<div className="max-w-screen-xl mx-auto">
-					<div className="flex flex-col md:flex-row justify-between items-center">
+					<div className="flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0">
 						<div>
 							<h3 className="text-xl font-medium text-[#0CD704] mb-2">
 								HOW IT WORKS
@@ -386,8 +386,8 @@ function Home() {
 								</a>
 							</div>
 						</div>
-						<div className="block space-y-6 h-[33rem] overflow-y-auto pr-5">
-							<div className="p-6 bg-white rounded-3xl lg:h-80">
+						<div className="block space-y-6 md:h-[33rem] overflow-y-auto pr-5">
+							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
 								<img src={Dice} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
@@ -398,7 +398,7 @@ function Home() {
 									range of comprehensive options.
 								</p>
 							</div>
-							<div className="p-6 bg-white rounded-3xl lg:h-80">
+							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
 								<img src={Dice} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
@@ -409,7 +409,7 @@ function Home() {
 									range of comprehensive options.
 								</p>
 							</div>
-							<div className="p-6 bg-white rounded-3xl lg:h-80">
+							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
 								<img src={Dice} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
@@ -420,7 +420,7 @@ function Home() {
 									range of comprehensive options.
 								</p>
 							</div>
-							<div className="p-6 bg-white rounded-3xl lg:h-80">
+							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
 								<img src={Dice} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
@@ -514,25 +514,25 @@ function Home() {
 							</div>
 						</div>
 						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
-							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
 									<p>Reliance</p>
 								</div>
 							</div>
-							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
 									<p>Uptime</p>
 								</div>
 							</div>
-							<div className="h-[9.8125rem] w-auto md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">65 Million</p>
 									<p>Messages/sec</p>
 								</div>
 							</div>
-							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">1 Billion +</p>
 									<p>Rows of Data</p>
@@ -546,7 +546,7 @@ function Home() {
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="partnerships"
 			>
-				<div className="flex flex-col md:flex-row items-center justify-between">
+				<div className="flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">
 					<div id="partnerships-text">
 						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 							partnerships
@@ -607,12 +607,12 @@ function Home() {
 					</div>
 					<div
 						id="stacked-card"
-						className="flex items-center justify-center w-1/2"
+						className="flex items-center justify-center md:w-1/2 w-auto"
 					>
 						<div className="relative flex items-center justify-center">
-							<div className="h-[16rem] w-[27rem] bg-[#F2F4F7] rounded-2xl z-10 -translate-y-24 absolute shadow"></div>
-							<div className="h-[19rem] w-[30rem] bg-[#F2F4F7] rounded-2xl z-20 absolute -translate-y-14 shadow"></div>
-							<div className="h-[24rem] w-[33rem] bg-[#E6FFF3B2] rounded-2xl z-30 absolute shadow p-10 pb-0">
+							<div className="h-[16rem] w-[17.55rem] md:w-[27rem] bg-[#F2F4F7] rounded-2xl z-10 -translate-y-24 absolute shadow"></div>
+							<div className="h-[19rem] w-[20.15rem] md:w-[30rem] bg-[#F2F4F7] rounded-2xl z-20 absolute -translate-y-14 shadow"></div>
+							<div className="h-[24rem] w-[21.875rem] md:w-[33rem] bg-[#E6FFF3B2] rounded-2xl z-30 absolute shadow p-10 pb-0">
 								<img
 									src={AxaMansardLogo}
 									alt="axa mansard logo"

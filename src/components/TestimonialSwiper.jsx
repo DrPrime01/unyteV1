@@ -12,12 +12,11 @@ import "../assets/styles.css";
 import { Pagination } from "swiper/modules";
 import PropTypes from "prop-types";
 
-function TestimonialSwiper({ slides }) {
+function TestimonialSwiper({ slides, slidesPerView }) {
 	const swiperRef = useRef(null);
 
 	const [disablePrev, setDisablePrev] = useState(true);
 	const [disableNext, setDisableNext] = useState(false);
-	const slidesPerView = 3;
 
 	const handlePrev = () => {
 		swiperRef.current?.slidePrev();
@@ -69,6 +68,7 @@ function TestimonialSwiper({ slides }) {
 
 TestimonialSwiper.propTypes = {
 	slides: PropTypes.array.isRequired,
+	slidesPerView: PropTypes.number.isRequired,
 };
 
 export default TestimonialSwiper;
