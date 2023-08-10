@@ -121,7 +121,7 @@ function Navbar() {
 					<div
 						className={`items-center justify-between ${
 							mobileDropdown ? "block" : "hidden"
-						} w-full md:flex md:w-auto md:order-1 min-h-screen md:h-auto`}
+						} w-full md:flex md:w-auto md:order-1 min-h-screen md:min-h-0 md:h-auto`}
 						id="navbar-sticky"
 					>
 						<ul className="flex flex-col py-4 md:p-0 mt-4 font-medium bg-[#F9FAFB] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white text-[#101323]">
@@ -180,9 +180,9 @@ function Navbar() {
 											</a>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3">
+											<NavLink to="products/health" className="block px-4 py-3">
 												Health
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<a href="#" className="block px-4 py-3">
@@ -526,9 +526,12 @@ function Navbar() {
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="industries/fintech"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Fintech
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
@@ -686,14 +689,20 @@ function Navbar() {
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="company/about"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Why Unyte?
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="company/contact"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Contact Us
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<a href="#" className="block px-4 py-3 hover:bg-gray-100">

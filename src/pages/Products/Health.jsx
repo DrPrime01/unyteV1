@@ -11,7 +11,6 @@ import CodeBlock from "../../assets/icons/CodeBlock.svg";
 import OmbreBG from "../../assets/images/OmbreBG.svg";
 import CoverageHero from "../../assets/images/CoverageHero.svg";
 
-import TabComponent from "../../components/TabComponent";
 import TestimonialCard from "../../components/TestimonialCard";
 import TestimonialSwiper from "../../components/TestimonialSwiper";
 import CoverageAccordion from "../../components/CoverageAccordion";
@@ -28,7 +27,7 @@ function Health() {
 		<>
 			<section
 				id="modernizing insurance"
-				className="mt-24 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
+				className="mt-48 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
 			>
 				<div className="pb-16 md:pb-0 flex-1 md:mr-[4.375rem] mr-0">
 					<h4 className="text-base md:text-sm font-semibold mb-2 md:mb-4 text-[#0CD704] uppercase">
@@ -47,7 +46,7 @@ function Health() {
 					<div className="flex items-center gap-x-2.5">
 						<button
 							type="button"
-							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 						>
 							Get started
 						</button>
@@ -79,13 +78,13 @@ function Health() {
 					id="sponsors-companies"
 					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
 				>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={PolarisLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={WemaLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={MintynLogo} alt="company logo" />
 					</div>
 				</div>
@@ -97,18 +96,21 @@ function Health() {
 				<div className="max-w-screen-xl mx-auto">
 					<div className="flex flex-col">
 						<div className="flex flex-col md:flex-row items-center justify-between">
-							<div id="developers-text">
+							<div
+								id="developers-text"
+								className="flex-1 md:mr-[4.375rem] mr-0"
+							>
 								<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 									made for developers by developers
 								</h3>
 								<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#ffffff] mb-4">
 									Seamlessly integrated
-									<br />
+									<br className="hidden md:block" />
 									with all your languages
 								</h2>
 								<p className="text-[#667085] leading-7">
 									Implement any or all of Unyte’s products with just a few lines
-									of code in <br />
+									of code in <br className="hidden md:block" />
 									any language!
 								</p>
 								<div className="my-6">
@@ -118,7 +120,7 @@ function Health() {
 									</p>
 									<p className="text-base leading-7 text-[#667085]">
 										You may easily incorporate our data into your application
-										because it is <br />
+										because it is <br className="hidden md:block" />
 										offered in CSV and JSON forms.
 									</p>
 								</div>
@@ -133,9 +135,9 @@ function Health() {
 									</p>
 									<p className="text-base leading-7 text-[#667085]">
 										You can easily access and use our data thanks to our client
-										libraries, <br />
+										libraries, <br className="hidden md:block" />
 										which frees up your time to focus on developing your
-										application rather <br />
+										application rather <br className="hidden md:block" />
 										than worrying about technical issues.
 									</p>
 								</div>
@@ -150,7 +152,7 @@ function Health() {
 									</p>
 									<p className="text-base leading-7 text-[#667085]">
 										We offer tutorials and examples to assist you get up and
-										running quickly <br />
+										running quickly <br className="hidden md:block" />
 										because we are aware that learning a new API can be
 										difficult.
 									</p>
@@ -164,30 +166,28 @@ function Health() {
 									</button>
 								</div>
 							</div>
-							<div id="code tab">
-								<TabComponent />
-							</div>
+							<div id="code tab" className="flex-1"></div>
 						</div>
 						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
-							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
 									<p>Reliance</p>
 								</div>
 							</div>
-							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
 									<p>Uptime</p>
 								</div>
 							</div>
-							<div className="h-[9.8125rem] w-auto md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">65 Million</p>
 									<p>Messages/sec</p>
 								</div>
 							</div>
-							<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
+							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">1 Billion +</p>
 									<p>Rows of Data</p>
@@ -255,14 +255,14 @@ function Health() {
 				<div className="w-full md:w-auto">
 					<button
 						type="button"
-						className="text-white block w-full md:w-auto bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0"
+						className="text-white block w-full md:w-auto bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0"
 					>
 						Get started for free
 					</button>
 				</div>
 			</section>
 			<section
-				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row"
+				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-y-12 md:space-y-0"
 				id="coverage"
 			>
 				<div className="flex-1 md:mr-[4.375rem] mr-0">
@@ -304,23 +304,25 @@ function Health() {
 						</h3>
 					</div>
 					<div className="flex flex-col md:flex-row">
-						<div className="mr-0 md:mr-[1.75rem] mb-[2.975rem] md:mb-0 h-[34.0625rem] md:h-[48.625rem] w-auto xl:w-[30.125rem] bg-[#E6FFF3B2] rounded-[2rem] px-5 py-[4.1875rem] relative">
+						<div className="mr-0 md:mr-[1.75rem] flex flex-col justify-between mb-[2.975rem] md:mb-0 h-[34.0625rem] md:h-[48.625rem] w-auto xl:w-[30.125rem] bg-[#E6FFF3B2] rounded-[2rem] px-5 py-[4.1875rem] relative">
 							<img
 								src={WavyArrow}
 								alt="wavy arrow"
-								className="absolute top-96 left-0"
+								className="absolute top-52 md:top-96 left-0"
 							/>
-							<h4 className="mb-6 font-bold text-2xl md:text-[2.25rem] text-[#033401] leading-12">
-								Prioritize Your Well-being with{" "}
-								<span className="text-[#5CC758]">Unyte Health Insurance</span>
-							</h4>
-							<p className="mb-[8.3125rem] md:mb-[21.5rem] text-[#101323]">
-								Comprehensive health insurance solutions designed to protect and
-								enhance your physical and financial well-being.
-							</p>
+							<div>
+								<h4 className="mb-6 font-bold text-2xl md:text-[2.25rem] text-[#033401] leading-12">
+									Prioritize Your Well-being with{" "}
+									<span className="text-[#5CC758]">Unyte Health Insurance</span>
+								</h4>
+								<p className="mb-[8.3125rem] md:mb-[21.5rem] text-[#101323]">
+									Comprehensive health insurance solutions designed to protect
+									and enhance your physical and financial well-being.
+								</p>
+							</div>
 							<button
 								type="button"
-								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 							>
 								Get started for free
 							</button>
@@ -386,8 +388,11 @@ function Health() {
 							See what others are saying
 						</h2>
 					</div>
-					<div id="testimonial-slide">
-						<TestimonialSwiper slides={testimonials} />
+					<div id="testimonial-desktop" className="hidden md:block">
+						<TestimonialSwiper slides={testimonials} slidesPerView={3} />
+					</div>
+					<div id="testimonial-mobile" className="block md:hidden">
+						<TestimonialSwiper slides={testimonials} slidesPerView={1} />
 					</div>
 				</div>
 			</section>

@@ -18,7 +18,6 @@ import GraduationIcon from "../assets/icons/GraduationIcon.svg";
 import CodeBlock from "../assets/icons/CodeBlock.svg";
 import OmbreBG from "../assets/images/OmbreBG.svg";
 
-import TabComponent from "../components/TabComponent";
 import TestimonialCard from "../components/TestimonialCard";
 import TestimonialSwiper from "../components/TestimonialSwiper";
 
@@ -366,7 +365,7 @@ function Home() {
 							</h2>
 							<p className="text-[#667085] leading-7 mb-[5.375rem]">
 								Our seamless integration process makes it easy for you to offer{" "}
-								<br />
+								<br className="hidden md:block" />
 								comprehensive coverage to your customers. Here&apos;s how it
 								works:
 							</p>
@@ -394,7 +393,7 @@ function Home() {
 								</h4>
 								<p className="text-[#667085] leading-7">
 									Select the insurance coverage that suits your needs from our{" "}
-									<br />
+									<br className="hidden md:block" />
 									range of comprehensive options.
 								</p>
 							</div>
@@ -405,7 +404,7 @@ function Home() {
 								</h4>
 								<p className="text-[#667085] leading-7">
 									Select the insurance coverage that suits your needs from our{" "}
-									<br />
+									<br className="hidden md:block" />
 									range of comprehensive options.
 								</p>
 							</div>
@@ -416,7 +415,7 @@ function Home() {
 								</h4>
 								<p className="text-[#667085] leading-7">
 									Select the insurance coverage that suits your needs from our{" "}
-									<br />
+									<br className="hidden md:block" />
 									range of comprehensive options.
 								</p>
 							</div>
@@ -427,7 +426,7 @@ function Home() {
 								</h4>
 								<p className="text-[#667085] leading-7">
 									Select the insurance coverage that suits your needs from our{" "}
-									<br />
+									<br className="hidden md:block" />
 									range of comprehensive options.
 								</p>
 							</div>
@@ -442,18 +441,21 @@ function Home() {
 				<div className="max-w-screen-xl mx-auto">
 					<div className="flex flex-col">
 						<div className="flex flex-col md:flex-row items-center justify-between">
-							<div id="developers-text">
+							<div
+								id="developers-text"
+								className="flex-1 md:mr-[4.375rem] mr-0"
+							>
 								<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 									made for developers by developers
 								</h3>
 								<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#ffffff] mb-4">
 									Seamlessly integrated
-									<br />
+									<br className="hidden md:block" />
 									with all your languages
 								</h2>
 								<p className="text-[#667085] leading-7">
 									Implement any or all of Unyte’s products with just a few lines
-									of code in <br />
+									of code in <br className="hidden md:block" />
 									any language!
 								</p>
 								<div className="my-6">
@@ -463,7 +465,7 @@ function Home() {
 									</p>
 									<p className="text-base leading-7 text-[#667085]">
 										You may easily incorporate our data into your application
-										because it is <br />
+										because it is <br className="hidden md:block" />
 										offered in CSV and JSON forms.
 									</p>
 								</div>
@@ -478,9 +480,9 @@ function Home() {
 									</p>
 									<p className="text-base leading-7 text-[#667085]">
 										You can easily access and use our data thanks to our client
-										libraries, <br />
+										libraries, <br className="hidden md:block" />
 										which frees up your time to focus on developing your
-										application rather <br />
+										application rather <br className="hidden md:block" />
 										than worrying about technical issues.
 									</p>
 								</div>
@@ -495,7 +497,7 @@ function Home() {
 									</p>
 									<p className="text-base leading-7 text-[#667085]">
 										We offer tutorials and examples to assist you get up and
-										running quickly <br />
+										running quickly <br className="hidden md:block" />
 										because we are aware that learning a new API can be
 										difficult.
 									</p>
@@ -509,9 +511,7 @@ function Home() {
 									</button>
 								</div>
 							</div>
-							<div id="code tab">
-								<TabComponent />
-							</div>
+							<div id="code tab" className="flex-1"></div>
 						</div>
 						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
 							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
@@ -546,8 +546,8 @@ function Home() {
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="partnerships"
 			>
-				<div className="flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">
-					<div id="partnerships-text">
+				<div className="flex flex-col md:flex-row items-center justify-between">
+					<div id="partnerships-text" className="mb-24">
 						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 							partnerships
 						</h3>
@@ -559,9 +559,9 @@ function Home() {
 						</h2>
 						<p className="text-[#667085] leading-7 mb-4">
 							Discover the benefits of partnering with Unyte. Together, we can
-							create new <br />
+							create new <br className="hidden md:block" />
 							opportunities, drive innovation, and deliver exceptional value to
-							our <br />
+							our <br className="hidden md:block" />
 							customers.
 						</p>
 						<div className="gap-x-2 flex items-center mb-2">
@@ -607,38 +607,43 @@ function Home() {
 					</div>
 					<div
 						id="stacked-card"
-						className="flex items-center justify-center md:w-1/2 w-auto"
+						className="flex items-center justify-center md:w-1/2 w-auto md:mt-0"
 					>
-						<div className="relative flex items-center justify-center">
-							<div className="h-[16rem] w-[17.55rem] md:w-[27rem] bg-[#F2F4F7] rounded-2xl z-10 -translate-y-24 absolute shadow"></div>
-							<div className="h-[19rem] w-[20.15rem] md:w-[30rem] bg-[#F2F4F7] rounded-2xl z-20 absolute -translate-y-14 shadow"></div>
-							<div className="h-[24rem] w-[21.875rem] md:w-[33rem] bg-[#E6FFF3B2] rounded-2xl z-30 absolute shadow p-10 pb-0">
+						<div className="relative flex items-center justify-center flex-col ">
+							<div className="h-[16rem] w-[17.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-60 z-10 shadow"></div>
+							<div className="h-[19rem] w-[20.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-6 md:-top-[13.5rem] z-20 shadow"></div>
+							<div className="h-[24rem] w-[23.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0">
 								<img
 									src={AxaMansardLogo}
 									alt="axa mansard logo"
 									className="h-6 mb-4"
 								/>
-								<div className="bg-white p-5 text-center rounded-t-3xl pb-[1.795rem]">
+								<div className="bg-white p-5 text-center rounded-t-3xl border">
 									<h4 className="text-xl font-semibold mb-6">
-										Some fancy headline praising Unyte x <br />
+										Some fancy headline praising Unyte x{" "}
+										<br className="hidden md:block" />
 										mansard’s partnership
 									</h4>
 									<p className="text-base mb-6 leading-7 text-[#667085]">
-										Lörem ipsum kovylogi nätpoker i bloggosfär tissa, <br />
-										kontragen jism. Kvaside din misat syn resan tesa. <br />
-										Revusm prehåd i ränade som vaning. Kaning <br />
+										Lörem ipsum kovylogi nätpoker i bloggosfär tissa,{" "}
+										<br className="hidden md:block" />
+										kontragen jism. Kvaside din misat syn resan tesa.{" "}
+										<br className="hidden md:block" />
+										Revusm prehåd i ränade som vaning. Kaning{" "}
+										<br className="hidden md:block" />
 										aläning vasm.
 									</p>
 									<div className="flex items-center justify-center">
 										<button
 											type="button"
-											className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+											className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 										>
 											<span>Learn more</span> <BsArrowUpRight />
 										</button>
 									</div>
 								</div>
 							</div>
+							<div className="h-[24rem] md:h-0"></div>
 						</div>
 					</div>
 				</div>
@@ -659,8 +664,11 @@ function Home() {
 							See what others are saying
 						</h2>
 					</div>
-					<div id="testimonial-slide">
-						<TestimonialSwiper slides={testimonials} />
+					<div id="testimonial-desktop" className="hidden md:block">
+						<TestimonialSwiper slides={testimonials} slidesPerView={3} />
+					</div>
+					<div id="testimonial-mobile" className="block md:hidden">
+						<TestimonialSwiper slides={testimonials} slidesPerView={1} />
 					</div>
 				</div>
 			</section>

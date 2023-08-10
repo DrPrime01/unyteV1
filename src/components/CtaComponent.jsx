@@ -26,13 +26,13 @@ function CtaComponent() {
 				<div className="flex items-center gap-x-2.5">
 					<button
 						type="button"
-						className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0"
+						className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0"
 					>
 						Get started for free
 					</button>
 					<a
 						href="#"
-						className="text-[#667085] text-[0.75rem] font-medium flex items-center gap-x-2 px-4 py-2"
+						className="text-[#667085] text-[0.75rem] font-medium flex items-center gap-x-2 px-6 py-3"
 					>
 						<span>Contact sales</span>
 						<BsArrowUpRight />

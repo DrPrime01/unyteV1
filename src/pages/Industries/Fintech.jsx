@@ -24,7 +24,7 @@ function Fintech() {
 		<>
 			<section
 				id="fintech"
-				className="mt-24 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
+				className="mt-48 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
 			>
 				<div className="pb-16 md:pb-0 flex-1 md:mr-[4.375rem] mr-0">
 					<h4 className="text-base md:text-sm font-semibold mb-2 md:mb-4 text-[#0CD704] uppercase">
@@ -42,13 +42,13 @@ function Fintech() {
 					<div className="flex items-center gap-x-2.5">
 						<button
 							type="button"
-							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 						>
 							Get started
 						</button>
 						<a
 							href="#"
-							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
+							className="text-[#101323] font-medium flex items-center gap-x-2 px-6 py-3"
 						>
 							<span>Contact sales</span>
 							<BsArrowRight />
@@ -74,18 +74,18 @@ function Fintech() {
 					id="sponsors-companies"
 					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
 				>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={PolarisLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={WemaLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-auto md:w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="bg-[#F9FAFB] w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={MintynLogo} alt="company logo" />
 					</div>
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row">
+			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-x-12 md:space-x-0">
 				<div className="mb-8 md:mb-0 w-auto xl:w-[31.5625rem]">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 						overview
@@ -105,13 +105,13 @@ function Fintech() {
 					<div className="flex items-center gap-x-2.5">
 						<button
 							type="button"
-							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 						>
 							Get started
 						</button>
 						<a
 							href="#"
-							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
+							className="text-[#101323] font-medium flex items-center gap-x-2 px-6 py-3"
 						>
 							<span>Contact sales</span>
 							<BsArrowRight />
@@ -142,7 +142,7 @@ function Fintech() {
 						<img
 							src={Database}
 							alt="database icon"
-							className="absolute -top-7 left-[10.5rem]"
+							className="absolute -top-7 left-[9.5rem]  md:left-[10.5rem]"
 						/>
 						<p className="text-[#101323] text-xl mb-4 font-semibold">
 							Cash add
@@ -157,7 +157,7 @@ function Fintech() {
 						<img
 							src={CodeblockIcon}
 							alt="database icon"
-							className="absolute -top-7 left-[10.5rem]"
+							className="absolute -top-7 left-[9.5rem] md:left-[10.5rem]"
 						/>
 						<p className="text-[#101323] text-xl mb-4 font-semibold">
 							Hassel free
@@ -172,7 +172,7 @@ function Fintech() {
 						<img
 							src={Database}
 							alt="database icon"
-							className="absolute -top-7 left-[10.5rem]"
+							className="absolute -top-7 left-[9.5rem] md:left-[10.5rem]"
 						/>
 						<p className="text-[#101323] text-xl mb-4 font-semibold">
 							Supercharge
@@ -261,11 +261,12 @@ function Fintech() {
 						</div>
 					</div>
 					<div id="stacked-card" className="flex-1">
-						<div className="h-[24rem] w-auto md:w-[33rem] bg-[#E6F6FF] rounded-2xl shadow p-10 pb-0">
+						<div className="h-[24rem] w-auto md:w-[33rem] bg-[#E6F6FF] rounded-2xl shadow p-5 md:p-10 pb-0">
 							<img src={MintynLogo} alt="mintyn logo" className="h-6 mb-4" />
 							<div className="bg-white p-5 text-center rounded-t-3xl pb-4">
 								<h4 className="text-xl font-semibold mb-6">
-									Some fancy headline praising Unyte x <br />
+									Some fancy headline praising Unyte x{" "}
+									<br className="hidden md:block" />
 									mansard’s partnership
 								</h4>
 								<p className="text-base mb-6 leading-7 text-[#667085]">
@@ -277,7 +278,7 @@ function Fintech() {
 								<div className="flex items-center justify-center">
 									<button
 										type="button"
-										className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+										className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 									>
 										<span>Learn more</span> <BsArrowUpRight />
 									</button>
@@ -303,10 +304,10 @@ function Fintech() {
 							See what others are saying
 						</h2>
 					</div>
-					<div id="testimonial" className="hidden md:block">
+					<div id="testimonial-desktop" className="hidden md:block">
 						<TestimonialSwiper slides={testimonials} slidesPerView={3} />
 					</div>
-					<div id="testimonial" className="block md:hidden">
+					<div id="testimonial-mobile" className="block md:hidden">
 						<TestimonialSwiper slides={testimonials} slidesPerView={1} />
 					</div>
 				</div>

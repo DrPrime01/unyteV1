@@ -13,9 +13,9 @@ function FaqComponent() {
 					</h2>
 					<p className="text-base mb-6 leading-7 text-[#667085]">
 						We are answering your most frequent questions. No worries if you
-						don’t <br />
+						don’t <br className="hidden md:block" />
 						find the exact one. You can find out more by directly contacting our{" "}
-						<br />
+						<br className="hidden md:block" />
 						support.
 					</p>
 				</div>
