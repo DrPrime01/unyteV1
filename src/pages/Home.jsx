@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
@@ -29,7 +30,69 @@ function Home() {
 		TestimonialCard,
 		TestimonialCard,
 	];
+	const cardContents = [
+		{
+			imgSrc: AxaMansardLogo,
+			headline: "Some fancy headline praising Unyte x Mansard's partnership",
+			description:
+				"Lörem ipsum kovylogi nätpoker i bloggosfär tissa, kontragen jism. Kvaside din misat syn resan tesa. Revusm prehåd i ränade som vaning. Kanin aläning vasm.",
+			buttonText: "Learn more",
+		},
+		{
+			imgSrc: PolarisLogo,
+			headline: "Some fancy headline praising Unyte x Polaris' partnership",
+			description:
+				"Lörem ipsum kovylogi nätpoker i bloggosfär tissa, kontragen jism. Kvaside din misat syn resan tesa. Revusm prehåd i ränade som vaning. Kanin aläning vasm.",
+			buttonText: "Learn more",
+		},
+		{
+			imgSrc: MintynLogo,
+			headline: "Some fancy headline praising Unyte x Mintyn's partnership",
+			description:
+				"Lörem ipsum kovylogi nätpoker i bloggosfär tissa, kontragen jism. Kvaside din misat syn resan tesa. Revusm prehåd i ränade som vaning. Kanin aläning vasm.",
+			buttonText: "Learn more",
+		},
+		// ... Add the data for cardTwo and cardThree similarly
+	];
 
+	const [currentLargestCardContent, setCurrentLargestCardContent] = useState(
+		cardContents[2]
+	);
+
+	const [cards, setCards] = useState([
+		{
+			id: 1,
+			classes:
+				"h-[16rem] w-[17.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-60 z-10 shadow",
+			content: cardContents[0],
+		},
+		{
+			id: 2,
+			classes:
+				"h-[19rem] w-[20.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-6 md:-top-[13.5rem] z-20 shadow",
+			content: cardContents[1],
+		},
+		{
+			id: 3,
+			classes:
+				"h-[24rem] w-[23.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0",
+			content: cardContents[2],
+		},
+	]);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCards((prevState) => {
+				setCurrentLargestCardContent(prevState[1].content); // Update the content for the largest div
+				return [
+					{ ...prevState[2], classes: prevState[0].classes },
+					{ ...prevState[0], classes: prevState[1].classes },
+					{ ...prevState[1], classes: prevState[2].classes },
+				];
+			});
+		}, 3000);
+		return () => clearInterval(interval);
+	}, []);
 	return (
 		<>
 			<section
@@ -609,40 +672,45 @@ function Home() {
 						id="stacked-card"
 						className="flex items-center justify-center md:w-1/2 w-auto md:mt-0"
 					>
-						<div className="relative flex items-center justify-center flex-col ">
-							<div className="h-[16rem] w-[17.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-60 z-10 shadow"></div>
-							<div className="h-[19rem] w-[20.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-6 md:-top-[13.5rem] z-20 shadow"></div>
-							<div className="h-[24rem] w-[23.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0">
-								<img
-									src={AxaMansardLogo}
-									alt="axa mansard logo"
-									className="h-6 mb-4"
-								/>
-								<div className="bg-white p-5 text-center rounded-t-3xl border">
-									<h4 className="text-xl font-semibold mb-6">
-										Some fancy headline praising Unyte x{" "}
-										<br className="hidden md:block" />
-										mansard’s partnership
-									</h4>
-									<p className="text-base mb-6 leading-7 text-[#667085]">
-										Lörem ipsum kovylogi nätpoker i bloggosfär tissa,{" "}
-										<br className="hidden md:block" />
-										kontragen jism. Kvaside din misat syn resan tesa.{" "}
-										<br className="hidden md:block" />
-										Revusm prehåd i ränade som vaning. Kaning{" "}
-										<br className="hidden md:block" />
-										aläning vasm.
-									</p>
-									<div className="flex items-center justify-center">
-										<button
-											type="button"
-											className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-										>
-											<span>Learn more</span> <BsArrowUpRight />
-										</button>
+						<div className="relative flex items-center justify-center flex-col">
+							{cards.map((card) => (
+								<div
+									key={card.id}
+									className={`${card.classes} transition-all duration-500`}
+								>
+									<div
+										className={
+											card.classes ===
+											"h-[24rem] w-[23.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0"
+												? "opacity-100 transition-opacity duration-500 delay-150"
+												: "opacity-0 transition-opacity duration-500 delay-150"
+										}
+									>
+										<img
+											src={currentLargestCardContent.imgSrc}
+											alt="Logo"
+											className="h-6 mb-4"
+										/>
+										<div className="bg-white p-5 text-center rounded-t-3xl border">
+											<h4 className="text-xl font-semibold mb-6">
+												{currentLargestCardContent.headline}
+											</h4>
+											<p className="text-base mb-6 leading-7 text-[#667085]">
+												{currentLargestCardContent.description}
+											</p>
+											<div className="flex items-center justify-center">
+												<button
+													type="button"
+													className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+												>
+													<span>{currentLargestCardContent.buttonText}</span>{" "}
+													<BsArrowUpRight />
+												</button>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
+							))}
 							<div className="h-[24rem] md:h-0"></div>
 						</div>
 					</div>

@@ -18,8 +18,6 @@ function Navbar() {
 	const [dropdown4, setDropdown4] = useState(false);
 	const [mobileDropdown, setMobileDropdown] = useState(false);
 
-	const [scrollPosition, setScrollPosition] = useState(null);
-
 	const location = useLocation();
 
 	const handleDropdown1 = () => {
@@ -55,20 +53,9 @@ function Navbar() {
 		setMobileDropdown(false);
 	}, [location]);
 
-	const updateScroll = () => {
-		setScrollPosition(window.scrollY);
-	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", updateScroll);
-	}, []);
 	return (
 		<>
-			<nav
-				className={`bg-white border-gray-200 fixed w-screen top-0 z-50 ${
-					scrollPosition > 50 ? "shadow-2xl" : "shadow-2xl md:shadow-none"
-				}`}
-			>
+			<nav className="bg-white border-gray-200 fixed w-screen top-0 z-50 shadow-md md:shadow-none">
 				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-6 md:px-12 xl:px-5 px-5">
 					<NavLink to="/" className="flex items-center">
 						<img src={UnyteLogo} className="h-8 mr-3" alt="Unyte Logo" />
