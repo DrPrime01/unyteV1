@@ -8,6 +8,10 @@ import AxaMansardLogo from "../assets/icons/AxaMansardLogo.svg";
 import PolarisLogo from "../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../assets/icons/WemaLogo.svg";
 import MintynLogo from "../assets/icons/MintynLogo.svg";
+import InterswitchLogo from "../assets/icons/InterswitchLogo.svg";
+import StacoLogo from "../assets/icons/StacoLogo.svg";
+import LeadwayAssuranceLogo from "../assets/icons/LeadwayAssuranceLogo.svg";
+import HeirsLifeLogo from "../assets/icons/HeirsLifeLogo.svg";
 import Ideas from "../assets/icons/Ideas.svg";
 import Health from "../assets/icons/Health.svg";
 import Education from "../assets/icons/Education.svg";
@@ -21,6 +25,7 @@ import OmbreBG from "../assets/images/OmbreBG.svg";
 
 import TestimonialCard from "../components/TestimonialCard";
 import TestimonialSwiper from "../components/TestimonialSwiper";
+import CodeSection from "../components/CodeSection";
 
 function Home() {
 	const testimonials = [
@@ -52,7 +57,6 @@ function Home() {
 				"Lörem ipsum kovylogi nätpoker i bloggosfär tissa, kontragen jism. Kvaside din misat syn resan tesa. Revusm prehåd i ränade som vaning. Kanin aläning vasm.",
 			buttonText: "Learn more",
 		},
-		// ... Add the data for cardTwo and cardThree similarly
 	];
 
 	const [currentLargestCardContent, setCurrentLargestCardContent] = useState(
@@ -93,6 +97,7 @@ function Home() {
 		}, 3000);
 		return () => clearInterval(interval);
 	}, []);
+
 	return (
 		<>
 			<section
@@ -574,7 +579,9 @@ function Home() {
 									</button>
 								</div>
 							</div>
-							<div id="code tab" className="flex-1"></div>
+							<div id="code tab" className="flex-1">
+								<CodeSection />
+							</div>
 						</div>
 						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
 							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
@@ -603,6 +610,19 @@ function Home() {
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section
+				className="pt-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 hidden sm:block"
+				id="companies"
+			>
+				<div className="flex items-center justify-between">
+					<img src={AxaMansardLogo} alt="axa mansard logo" />
+					<img src={HeirsLifeLogo} alt="heirslife logo" />
+					<img src={LeadwayAssuranceLogo} alt="leadway assurance logo" />
+					<img src={StacoLogo} alt="staco logo" />
+					<img src={MintynLogo} alt="Mintyn logo" />
+					<img src={InterswitchLogo} alt="interswitch logo" />
 				</div>
 			</section>
 			<section
