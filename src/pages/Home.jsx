@@ -511,7 +511,7 @@ function Home() {
 						<div className="flex flex-col md:flex-row items-center justify-between">
 							<div
 								id="developers-text"
-								className="flex-1 md:mr-[4.375rem] mr-0"
+								className="flex-1 md:mr-[4.375rem] mr-0 mb-12 mt-[9.625rem] md:mt-0 md:mb-0"
 							>
 								<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 									made for developers by developers

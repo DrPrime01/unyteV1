@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -53,9 +53,30 @@ function Navbar() {
 		setMobileDropdown(false);
 	}, [location]);
 
+	const navbarRef = useRef(null);
+
+	useEffect(() => {
+		const handleClickOutside = (e) => {
+			if (navbarRef.current && !navbarRef.current.contains(e.target)) {
+				setDropdown1(false);
+				setDropdown2(false);
+				setDropdown3(false);
+				setDropdown4(false);
+			}
+		};
+
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
+
 	return (
 		<>
-			<nav className="bg-white border-gray-200 fixed w-screen top-0 z-50 shadow-md md:shadow-none">
+			<nav
+				className="bg-white border-gray-200 fixed w-screen top-0 z-50 shadow-md md:shadow-none"
+				ref={navbarRef}
+			>
 				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-6 md:px-12 xl:px-5 px-5">
 					<NavLink to="/" className="flex items-center">
 						<img src={UnyteLogo} className="h-8 mr-3" alt="Unyte Logo" />
