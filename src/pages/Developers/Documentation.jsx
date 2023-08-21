@@ -1,4 +1,9 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import {
+	MdOutlineKeyboardDoubleArrowLeft,
+	MdOutlineKeyboardDoubleArrowRight,
+} from "react-icons/md";
 import Sidebar from "../../components/Sidebar";
 import DocumentationHero from "../../assets/images/DocumentationHero.png";
 import DocIcon from "../../assets/icons/DocIcon.svg";
@@ -148,7 +153,7 @@ d3.min[20, 3] // 3`}
 							heterorade fast plattfilm eukössa.{" "}
 						</p>
 					</div>
-					<div className="grid grid-cols-2 gap-x-6 gap-y-4">
+					<div className="grid grid-cols-2 gap-x-6 gap-y-4 mb-[9.8125rem]">
 						<div className="px-6 py-5 border rounded-lg">
 							<img src={DocIcon} alt="doc icon" className="mb-6" />
 							<p className="mb-4 font-semibold text-sm text-[#101323]">
@@ -185,6 +190,30 @@ d3.min[20, 3] // 3`}
 								Guldsot spere. Pokenad döda vineln-varnare. Relig backslick.
 							</p>
 						</div>
+					</div>
+					<div className="flex items-center justify-between">
+						<Link to="#">
+							<div className="border rounded-lg py-2 px-4">
+								<p className="text-sm text-[#667085] mb-2">Previous</p>
+								<div className="flex">
+									<MdOutlineKeyboardDoubleArrowLeft className="text-[#5CC758]" />{" "}
+									<p className="text-sm font-semibold text-[#5CC758] ml-2">
+										Unyte Student Protection
+									</p>
+								</div>
+							</div>
+						</Link>
+						<Link to="#">
+							<div className="border rounded-lg py-2 px-4 bg-[#D8FED6] bg-opacity-30">
+								<p className="text-sm text-[#667085] mb-2">Next</p>
+								<div className="flex">
+									<p className="text-sm font-semibold text-[#5CC758] mr-2">
+										Health
+									</p>
+									<MdOutlineKeyboardDoubleArrowRight className="text-[#5CC758]" />
+								</div>
+							</div>
+						</Link>
 					</div>
 				</div>
 				<Sidebar />
