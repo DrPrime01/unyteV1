@@ -48,7 +48,7 @@ function Fintech() {
 						</button>
 						<a
 							href="#"
-							className="text-[#101323] font-medium flex items-center gap-x-2 px-6 py-3"
+							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
 						>
 							<span>Contact sales</span>
 							<BsArrowRight />
@@ -111,7 +111,7 @@ function Fintech() {
 						</button>
 						<a
 							href="#"
-							className="text-[#101323] font-medium flex items-center gap-x-2 px-6 py-3"
+							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
 						>
 							<span>Contact sales</span>
 							<BsArrowRight />
