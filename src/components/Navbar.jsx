@@ -393,9 +393,12 @@ function Navbar() {
 											</a>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="developers/documentation"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Developer Docs
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>
@@ -480,8 +483,8 @@ function Navbar() {
 											</a>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="developers/documentation"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -494,7 +497,7 @@ function Navbar() {
 														institutions and students.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>

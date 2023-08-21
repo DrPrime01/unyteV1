@@ -6,6 +6,7 @@ import About from "./pages/Company/About";
 import Contact from "./pages/Company/Contact";
 import Health from "./pages/Products/Health";
 import Fintech from "./pages/Industries/Fintech";
+import Documentation from "./pages/Developers/Documentation";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Route path="company/about" element={<About />} />
 				<Route path="products/health" element={<Health />} />
 				<Route path="industries/fintech" element={<Fintech />} />
+				<Route path="developers/documentation" element={<Documentation />} />
 			</Route>
 		</Routes>
 	);
