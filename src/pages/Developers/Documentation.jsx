@@ -191,7 +191,7 @@ d3.min[20, 3] // 3`}
 							</p>
 						</div>
 					</div>
-					<div className="flex items-center justify-between">
+					<div className="flex items-center justify-between mb-[8rem]">
 						<Link to="#">
 							<div className="border rounded-lg py-2 px-4">
 								<p className="text-sm text-[#667085] mb-2">Previous</p>

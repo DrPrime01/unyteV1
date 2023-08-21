@@ -1,15 +1,17 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CtaComponent from "./components/CtaComponent";
 
 function SharedLayout() {
+	const location = useLocation();
+	const isDocumentationPage = location.pathname === "/developers/documentation";
 	return (
 		<div className="min-h-screen">
 			<Navbar />
 			<Outlet />
-			<CtaComponent />
-			<Footer />
+			{!isDocumentationPage && <CtaComponent />}
+			{!isDocumentationPage && <Footer />}
 		</div>
 	);
 }
