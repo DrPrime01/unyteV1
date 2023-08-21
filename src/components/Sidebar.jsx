@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 //import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import { RxDotFilled } from "react-icons/rx";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 function Sidebar() {
 	const [dropdown1, setDropdown1] = useState(false);
@@ -13,18 +13,18 @@ function Sidebar() {
 	//const location = useLocation();
 
 	const handleDropdown1 = () => {
-		setDropdown2(false);
-		setDropdown3(false);
+		// setDropdown2(false);
+		// setDropdown3(false);
 		setDropdown1(!dropdown1);
 	};
 	const handleDropdown2 = () => {
-		setDropdown1(false);
-		setDropdown3(false);
+		// setDropdown1(false);
+		// setDropdown3(false);
 		setDropdown2(!dropdown2);
 	};
 	const handleDropdown3 = () => {
-		setDropdown1(false);
-		setDropdown2(false);
+		// setDropdown1(false);
+		// setDropdown2(false);
 		setDropdown3(!dropdown3);
 	};
 
@@ -96,7 +96,7 @@ function Sidebar() {
 								<span className="flex-1 text-sm text-[#667085] ml-3 text-left whitespace-nowrap">
 									Introduction
 								</span>
-								<IoIosArrowDown />
+								{dropdown1 ? <IoIosArrowUp /> : <IoIosArrowDown />}
 							</button>
 							<ul
 								id="dropdown-example"
@@ -133,7 +133,7 @@ function Sidebar() {
 								<span className="flex-1 ml-3 text-left whitespace-nowrap">
 									Get started
 								</span>{" "}
-								<IoIosArrowDown />
+								{dropdown2 ? <IoIosArrowUp /> : <IoIosArrowDown />}
 							</button>
 							<ul
 								id="dropdown-example"
@@ -188,7 +188,7 @@ function Sidebar() {
 								<span className="flex-1 text-sm text-[#667085] ml-3 text-left whitespace-nowrap">
 									Products
 								</span>
-								<IoIosArrowDown />
+								{dropdown3 ? <IoIosArrowUp /> : <IoIosArrowDown />}
 							</button>
 							<ul
 								id="dropdown-example"
