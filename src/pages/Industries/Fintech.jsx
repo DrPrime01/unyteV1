@@ -7,7 +7,7 @@ import WemaLogo from "../../assets/icons/WemaLogo.svg";
 import MintynLogo from "../../assets/icons/MintynLogo.svg";
 import Database from "../../assets/icons/Database.svg";
 import CodeblockIcon from "../../assets/icons/CodeblockIcon.svg";
-import Laptop from "../../assets/images/Laptop.jpg";
+//import Laptop from "../../assets/images/Laptop.jpg";
 
 import TestimonialCard from "../../components/TestimonialCard";
 import TestimonialSwiper from "../../components/TestimonialSwiper";
@@ -85,7 +85,7 @@ function Fintech() {
 					</div>
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-x-12 md:space-x-0">
+			{/*<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-x-12 md:space-x-0">
 				<div className="mb-8 md:mb-0 w-auto xl:w-[31.5625rem]">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 						overview
@@ -121,7 +121,7 @@ function Fintech() {
 				<div className="">
 					<img src={Laptop} alt="laptop" />
 				</div>
-			</section>
+	</section> */}
 			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col">
 				<div className="mb-20 md:mb-16 text-center md:text-left">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
@@ -137,7 +137,7 @@ function Fintech() {
 						achieve financial success.
 					</p>
 				</div>
-				<div className="flex flex-col md:flex-row items-center justify-between space-x-0 md:space-x-6">
+				<div className="flex flex-col md:flex-row items-center justify-between space-y-[3.5rem] md:space-y-0 space-x-0 md:space-x-6">
 					<div className="text-center px-[2.125rem] md:px-[3.5625rem] pt-[4.125rem] pb-[2.125rem] md:pb-[5.25rem] rounded-2xl bg-[#F9FAFB] h-[18.75rem] w-auto md:w-[24.8125rem] md:h-[21.875rem] relative">
 						<img
 							src={Database}

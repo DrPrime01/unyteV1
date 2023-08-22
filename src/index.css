@@ -6,7 +6,7 @@
 	scroll-behavior: smooth;
 } */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar-x {
 	width: 3px;
 }
 

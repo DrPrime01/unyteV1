@@ -12,8 +12,9 @@ import OmbreBG from "../../assets/images/OmbreBG.svg";
 import CoverageHero from "../../assets/images/CoverageHero.svg";
 
 import TestimonialCard from "../../components/TestimonialCard";
-import TestimonialSwiper from "../../components/TestimonialSwiper";
 import CoverageAccordion from "../../components/CoverageAccordion";
+import TestimonialSwiper from "../../components/TestimonialSwiper";
+import CodeSection from "../../components/CodeSection";
 
 function Health() {
 	const testimonials = [
@@ -98,7 +99,7 @@ function Health() {
 						<div className="flex flex-col md:flex-row items-center justify-between">
 							<div
 								id="developers-text"
-								className="flex-1 md:mr-[4.375rem] mr-0"
+								className="flex-1 md:mr-[4.375rem] mr-0 mb-[9.5rem] mt-[9.625rem] md:mt-0 md:mb-0"
 							>
 								<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 									made for developers by developers
@@ -166,7 +167,9 @@ function Health() {
 									</button>
 								</div>
 							</div>
-							<div id="code tab" className="flex-1"></div>
+							<div id="code tab" className="flex-1">
+								<CodeSection />
+							</div>
 						</div>
 						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
 							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
@@ -218,35 +221,35 @@ function Health() {
 						complexities and reducing implementation time.
 					</p>
 				</div>
-				<div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-12">
-					<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+					<div className="h-[9.8125rem] w-[10.6rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
-							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
+							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								99.99%
 							</p>
 							<p className="text-[#667085]">Reliance</p>
 						</div>
 					</div>
-					<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+					<div className="h-[9.8125rem] w-[10.6rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
-							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
+							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								99.99%
 							</p>
 							<p className="text-[#667085]">Uptime</p>
 						</div>
 					</div>
-					<div className="h-[9.8125rem] w-auto md:w-[19rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+					<div className="h-[9.8125rem] w-[10.6rem] md:w-[19rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
-							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
-								65 Million
+							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
+								65 M<span className="hidden md:block">illion</span>
 							</p>
 							<p className="text-[#667085]">Messages/sec</p>
 						</div>
 					</div>
-					<div className="h-[9.8125rem] w-auto md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+					<div className="h-[9.8125rem] w-[10.6rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
-							<p className="mb-4 font-bold text-[2.5rem] text-[#101323]">
-								1 Billion +
+							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
+								1 Billion <span className="hidden md:block">+</span>
 							</p>
 							<p className="text-[#667085]">Rows of Data</p>
 						</div>
@@ -311,7 +314,7 @@ function Health() {
 								className="absolute top-52 md:top-96 left-0"
 							/>
 							<div>
-								<h4 className="mb-6 font-bold text-2xl md:text-[2.25rem] text-[#033401] leading-12">
+								<h4 className="mb-6 font-bold text-2xl md:text-[2.25rem] text-[#033401] md:leading-12">
 									Prioritize Your Well-being with{" "}
 									<span className="text-[#5CC758]">Unyte Health Insurance</span>
 								</h4>

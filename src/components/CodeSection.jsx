@@ -12,8 +12,14 @@ function Counter() {
         <div>
             <h1>React Counter</h1>
             <p>Count: {count}</p>
-            <button onClick={() => setCount(count + 1)}>Increment</button>
-            <button onClick={() => setCount(count - 1)}>Decrement</button>
+            <button onClick={() => {
+				setCount(count + 1)}}>
+				Increment
+			</button>
+            <button onClick={() => {
+				setCount(count - 1)}}>
+			Decrement
+			</button>
         </div>
     );
 }
@@ -27,11 +33,15 @@ function fetchRandomUser() {
         .then(response => response.json())
         .then(data => {
             const user = data.results[0];
-            console.log("Name: " + user.name.first + " " + user.name.last);
-            console.log("Location: " + user.location.city + ", " + user.location.country);
+            console.log("Name: " + user.name.first
+			 + " " + user.name.last);
+            console.log("Location: " + user.location.city
+			 + ", " + user.location.country);
             console.log("Email: " + " " + user.email);
         })
-        .catch(error => console.error('Error fetching user:', error));
+        .catch(error => {
+			console.error('Error fetching user:', error)
+		});
 }
 
 fetchRandomUser();
@@ -41,9 +51,10 @@ provider "aws" {
 	region = "us-west-1"
   }
   
-  resource "aws_security_group" "instance_sg" {
+  resource "aws_security_group" "instance_sg" 
+  {
 	name        = "instance_sg"
-	description = "Security Group for EC2 instance"
+	description = "Security Group for EC2"
   
 	ingress {
 	  from_port   = 22
@@ -64,10 +75,11 @@ provider "aws" {
 	}
   }
   
-  resource "aws_instance" "example" {
+  resource "aws_instance" "example" 
+  {
 	ami           = "ami-0c55b159cbfafe1f0"
 	instance_type = "t2.micro"
-	security_groups = [aws_security_group.instance_sg.name]
+	security_groups = [aws_security_group]
   
 	tags = {
 	  Name = "ExampleInstance"
@@ -119,7 +131,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
+        let label = UILabel(frame: 
+			CGRect(x: 0, y: 0, width: 200, height: 21))
         label.center = CGPoint(x: 160, y: 285)
         label.textAlignment = .center
         label.text = "Hello from iOS!"
@@ -193,19 +206,19 @@ function CodeSection() {
 		activeLanguage = "javascript";
 	} else if (isReactActive) {
 		activeCode = codeReact;
-		activeLanguage = "javascript";
+		activeLanguage = "js";
 	} else if (isVueActive) {
 		activeCode = codeVue;
-		activeLanguage = "vue";
+		activeLanguage = "js";
 	} else if (isTerraActive) {
 		activeCode = codeTerra;
-		activeLanguage = "terraform";
+		activeLanguage = "js";
 	} else if (isAndroidActive) {
 		activeCode = codeAndroid;
-		activeLanguage = "kotlin";
+		activeLanguage = "js";
 	} else if (isIosActive) {
 		activeCode = codeIos;
-		activeLanguage = "swift";
+		activeLanguage = "js";
 	}
 
 	useEffect(() => {
@@ -215,7 +228,7 @@ function CodeSection() {
 	}, [activeCode, activeLanguage]);
 
 	return (
-		<div className="h-[32.75rem] w-[21.875rem] md:w-[34.35rem]">
+		<div className="w-[21.875rem] md:w-[34.35rem] flex flex-col">
 			<ul className="flex justify-between flex-wrap text-sm font-medium text-center text-gray-500 mb-8">
 				<li className="mr-2">
 					<a
@@ -279,8 +292,8 @@ function CodeSection() {
 				</li>
 			</ul>
 
-			<div className="Code flex flex-col h-full">
-				<pre className="flex-1 overflow-auto rounded-3xl">
+			<div className="Code">
+				<pre className="overflow-auto rounded-3xl h-[32.75rem] ">
 					<code ref={codeRef} className={`language-${activeLanguage}`}>
 						{activeCode}
 					</code>

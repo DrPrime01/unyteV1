@@ -453,7 +453,7 @@ function Home() {
 								</a>
 							</div>
 						</div>
-						<div className="block space-y-6 md:h-[33rem] overflow-y-auto pr-5">
+						<div className="block space-y-6 md:h-[33rem] overflow-y-auto md:pr-5">
 							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
 								<img src={Dice} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
@@ -511,7 +511,7 @@ function Home() {
 						<div className="flex flex-col md:flex-row items-center justify-between">
 							<div
 								id="developers-text"
-								className="flex-1 md:mr-[4.375rem] mr-0 mb-12 mt-[9.625rem] md:mt-0 md:mb-0"
+								className="flex-1 md:mr-[4.375rem] mr-0 mb-[9.5rem] mt-[9.625rem] md:mt-0 md:mb-0"
 							>
 								<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 									made for developers by developers
