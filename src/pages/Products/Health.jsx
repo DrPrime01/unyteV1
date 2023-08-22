@@ -240,16 +240,22 @@ function Health() {
 					</div>
 					<div className="h-[9.8125rem] w-[10.6rem] md:w-[19rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
-							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
+							<p className="md:hidden mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								65 M<span className="hidden md:block">illion</span>
+							</p>
+							<p className="hidden md:block mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
+								65 Million
 							</p>
 							<p className="text-[#667085]">Messages/sec</p>
 						</div>
 					</div>
 					<div className="h-[9.8125rem] w-[10.6rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
-							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
+							<p className="md:hidden mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								1 Billion <span className="hidden md:block">+</span>
+							</p>
+							<p className="hidden md:block mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
+								1 Billion +
 							</p>
 							<p className="text-[#667085]">Rows of Data</p>
 						</div>
