@@ -2,8 +2,8 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import FortunateAnozie from "../../assets/images/FounderProfile/FortunateAnozie.jpg";
 import Funsho from "../../assets/images/FounderProfile/Funsho.jpg";
-import Nelson from "../../assets/images/FounderProfile/Nelson.JPG";
-import Oyegunle from "../../assets/images/FounderProfile/Oyegunle.JPG";
+import Nelson from "../../assets/images/FounderProfile/Nelson.jpg";
+import Oyegunle from "../../assets/images/FounderProfile/Oyegunle.jpg";
 import FemiLaniyan from "../../assets/images/FounderProfile/FemiLaniyan.jpg";
 
 function About() {
