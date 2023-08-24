@@ -6,6 +6,9 @@
 	scroll-behavior: smooth;
 } */
 
+::-webkit-scrollbar {
+	width: 3px;
+}
 ::-webkit-scrollbar-x {
 	width: 3px;
 }

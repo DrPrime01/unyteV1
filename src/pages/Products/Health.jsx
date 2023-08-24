@@ -222,7 +222,7 @@ function Health() {
 					</p>
 				</div>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-					<div className="h-[9.8125rem] w-[10.6rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+					<div className="h-[9.8125rem] w-[9.8125rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
 							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								99.99%
@@ -230,7 +230,7 @@ function Health() {
 							<p className="text-[#667085]">Reliance</p>
 						</div>
 					</div>
-					<div className="h-[9.8125rem] w-[10.6rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+					<div className="h-[9.8125rem] w-[9.8125rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
 							<p className="mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								99.99%
@@ -238,7 +238,7 @@ function Health() {
 							<p className="text-[#667085]">Uptime</p>
 						</div>
 					</div>
-					<div className="h-[9.8125rem] w-[10.6rem] md:w-[19rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+					<div className="h-[9.8125rem] w-[9.8125rem] md:w-[19rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
 							<p className="md:hidden mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								65 M<span className="hidden md:block">illion</span>
@@ -249,7 +249,7 @@ function Health() {
 							<p className="text-[#667085]">Messages/sec</p>
 						</div>
 					</div>
-					<div className="h-[9.8125rem] w-[10.6rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
+					<div className="h-[9.8125rem] w-[9.8125rem] md:w-[18rem] flex items-center justify-center bg-[#F9FAFB] rounded-2xl">
 						<div className="text-white text-center">
 							<p className="md:hidden mb-4 font-bold text-[2rem] md:text-[2.5rem] text-[#101323]">
 								1 Billion <span className="hidden md:block">+</span>

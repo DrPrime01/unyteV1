@@ -48,7 +48,7 @@ function Fintech() {
 						</button>
 						<a
 							href="#"
-							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
+							className="text-[#101323] font-medium flex items-center gap-x-2 px-6 py-3"
 						>
 							<span>Contact sales</span>
 							<BsArrowRight />
@@ -190,7 +190,7 @@ function Fintech() {
 						case studies
 					</h3>
 					<div className="flex flex-col md:flex-row justify-between">
-						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] flex-1 mr-0 md:mr-[6.5625rem]">
+						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] flex-1 mb-4 md:mb-0 mr-0 md:mr-[6.5625rem]">
 							Mint-Finex MFB sees a 3x increase in conversion rate for launch
 							customers
 						</h2>
@@ -264,12 +264,12 @@ function Fintech() {
 						<div className="h-[24rem] w-auto md:w-[33rem] bg-[#E6F6FF] rounded-2xl shadow p-5 md:p-10 pb-0">
 							<img src={MintynLogo} alt="mintyn logo" className="h-6 mb-4" />
 							<div className="bg-white p-5 text-center rounded-t-3xl pb-4">
-								<h4 className="text-xl font-semibold mb-6">
+								<h4 className="md:text-xl text-lg font-semibold mb-6">
 									Some fancy headline praising Unyte x{" "}
 									<br className="hidden md:block" />
 									mansard’s partnership
 								</h4>
-								<p className="text-base mb-6 leading-7 text-[#667085]">
+								<p className="text-sm md:text-base mb-6 leading-7 text-[#667085]">
 									Through our collaboration with Unyte, we have revolutionized
 									the lending experience, providing our customers with a
 									comprehensive financial solution that combines lending

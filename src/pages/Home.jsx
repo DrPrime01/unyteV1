@@ -67,19 +67,19 @@ function Home() {
 		{
 			id: 1,
 			classes:
-				"h-[16rem] w-[17.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-60 z-10 shadow",
+				"h-[16rem] w-[15.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-60 z-10 shadow",
 			content: cardContents[0],
 		},
 		{
 			id: 2,
 			classes:
-				"h-[19rem] w-[20.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-6 md:-top-[13.5rem] z-20 shadow",
+				"h-[19rem] w-[18.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-6 md:-top-[13.5rem] z-20 shadow",
 			content: cardContents[1],
 		},
 		{
 			id: 3,
 			classes:
-				"h-[24rem] w-[23.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0",
+				"h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0",
 			content: cardContents[2],
 		},
 	]);
@@ -437,7 +437,7 @@ function Home() {
 								comprehensive coverage to your customers. Here&apos;s how it
 								works:
 							</p>
-							<div className="flex items-center gap-x-2.5">
+							<div className="md:flex items-center gap-x-2.5 hidden">
 								<button
 									type="button"
 									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
@@ -453,7 +453,7 @@ function Home() {
 								</a>
 							</div>
 						</div>
-						<div className="block space-y-6 md:h-[33rem] overflow-y-auto md:pr-5">
+						<div className="block space-y-6 md:h-[33rem] overflow-y-auto md:pr-5 py-8">
 							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
 								<img src={Dice} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
@@ -497,6 +497,23 @@ function Home() {
 									<br className="hidden md:block" />
 									range of comprehensive options.
 								</p>
+							</div>
+						</div>
+						<div className="space-y-2.5 md:hidden w-full">
+							<button
+								type="button"
+								className="text-white w-full bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
+							>
+								Get started for free
+							</button>
+							<div className="text-center">
+								<a
+									href="#"
+									className="text-[#101323] font-medium flex items-center justify-center gap-x-2 px-6 py-3 w-full"
+								>
+									<span>Contact sales</span>
+									<BsArrowUpRight />
+								</a>
 							</div>
 						</div>
 					</div>
@@ -701,7 +718,7 @@ function Home() {
 									<div
 										className={
 											card.classes ===
-											"h-[24rem] w-[23.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0"
+											"h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0"
 												? "opacity-100 transition-opacity duration-500 delay-150"
 												: "opacity-0 transition-opacity duration-500 delay-150"
 										}
@@ -711,14 +728,14 @@ function Home() {
 											alt="Logo"
 											className="h-6 mb-4"
 										/>
-										<div className="bg-white p-5 text-center rounded-t-3xl border">
+										<div className="bg-white p-5 text-center rounded-t-3xl border pb-0">
 											<h4 className="text-xl font-semibold mb-6">
 												{currentLargestCardContent.headline}
 											</h4>
-											<p className="text-base mb-6 leading-7 text-[#667085]">
+											<p className="text-base mb-4 md:leading-7 text-[#667085]">
 												{currentLargestCardContent.description}
 											</p>
-											<div className="flex items-center justify-center">
+											<div className="flex items-center justify-center pb-3">
 												<button
 													type="button"
 													className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"

@@ -1,4 +1,10 @@
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import FortunateAnozie from "../../assets/images/FounderProfile/FortunateAnozie.jpg";
+import Funsho from "../../assets/images/FounderProfile/Funsho.jpg";
+import Nelson from "../../assets/images/FounderProfile/Nelson.jpg";
+import Oyegunle from "../../assets/images/FounderProfile/Oyegunle.jpg";
+import FemiLaniyan from "../../assets/images/FounderProfile/FemiLaniyan.jpg";
 
 function About() {
 	return (
@@ -86,9 +92,9 @@ function About() {
 			</section>
 			<section
 				id="founders"
-				className="md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto py-16 md:py-20 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+				className="md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto py-16 md:py-20 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 space-x-0 md:space-x-16"
 			>
-				<div>
+				<div className="w-auto md:w-[20.5rem]">
 					<h3 className="uppercase text-base md:text-xl mb-2 md:mb-4 font-medium md:font-normal text-[#0CD704]">
 						core
 					</h3>
@@ -108,186 +114,220 @@ function About() {
 					<div className="flex flex-col">
 						<div
 							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[303px] mb-6"
-						></div>
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						>
+							<img
+								src={FortunateAnozie}
+								alt="Fortunate Anozie"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
 								Fortunate Anozie
 							</p>
 							<p className="text-[#667085]">CEO/ Co-founder</p>
 						</div>
-						<div id="bio" className="text-[#667085] mb-6">
-							<p className="mb-2 ">
-								Business analyst/solutions architect with a track record of
-								utilising range of technologies to solve complex business
-								problems.
-							</p>
-							<p>
-								MBA, Data science for business (HBS). MBA, Business
-								Administration and Management, General (IBMI Germany)
-							</p>
-						</div>
+
 						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaLinkedinIn />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="https://www.linkedin.com/in/anozie32/" target="blank">
+									<FaLinkedinIn />
+								</a>
 							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaFacebookF />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<MdEmail />
+								</a>
 							</div>
 						</div>
 					</div>
 					<div className="flex flex-col">
 						<div
 							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[303px] mb-6"
-						></div>
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						>
+							<img
+								src={Nelson}
+								alt="Fortunate Anozie"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
-								Fortunate Anozie
+								Nelson Okpalachukwu
 							</p>
 							<p className="text-[#667085]">CEO/ Co-founder</p>
 						</div>
-						<div id="bio" className="text-[#667085] mb-6">
-							<p className="mb-2 ">
-								Business analyst/solutions architect with a track record of
-								utilising range of technologies to solve complex business
-								problems.
-							</p>
-							<p>
-								MBA, Data science for business (HBS). MBA, Business
-								Administration and Management, General (IBMI Germany)
-							</p>
-						</div>
+
 						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaLinkedinIn />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a
+									href="https://www.linkedin.com/in/nelsonokpalachukwu/"
+									target="blank"
+								>
+									<FaLinkedinIn />
+								</a>
 							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaFacebookF />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<MdEmail />
+								</a>
 							</div>
 						</div>
 					</div>
 					<div className="flex flex-col">
 						<div
 							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[303px] mb-6"
-						></div>
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						>
+							<img
+								src={Oyegunle}
+								alt="Fortunate Anozie"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
-								Fortunate Anozie
+								Oyegunle Muftau
 							</p>
 							<p className="text-[#667085]">CEO/ Co-founder</p>
 						</div>
-						<div id="bio" className="text-[#667085] mb-6">
-							<p className="mb-2 ">
-								Business analyst/solutions architect with a track record of
-								utilising range of technologies to solve complex business
-								problems.
-							</p>
-							<p>
-								MBA, Data science for business (HBS). MBA, Business
-								Administration and Management, General (IBMI Germany)
-							</p>
-						</div>
+
 						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaLinkedinIn />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a
+									href="https://www.linkedin.com/in/muftau-oyegunle-354641124/"
+									target="blank"
+								>
+									<FaLinkedinIn />
+								</a>
 							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaFacebookF />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<MdEmail />
+								</a>
 							</div>
 						</div>
 					</div>
 					<div className="flex flex-col">
 						<div
 							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[303px] mb-6"
-						></div>
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						>
+							<img
+								src={Funsho}
+								alt="Fortunate Anozie"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
-								Fortunate Anozie
+								Funsho Omojuyigbe
 							</p>
 							<p className="text-[#667085]">CEO/ Co-founder</p>
 						</div>
-						<div id="bio" className="text-[#667085] mb-6">
-							<p className="mb-2 ">
-								Business analyst/solutions architect with a track record of
-								utilising range of technologies to solve complex business
-								problems.
-							</p>
-							<p>
-								MBA, Data science for business (HBS). MBA, Business
-								Administration and Management, General (IBMI Germany)
-							</p>
-						</div>
+
 						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaLinkedinIn />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a
+									href="https://www.linkedin.com/in/funsho-omojuyigbe-sphri%E2%84%A2-03707241/"
+									target="blank"
+								>
+									<FaLinkedinIn />
+								</a>
 							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaFacebookF />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<MdEmail />
+								</a>
 							</div>
 						</div>
 					</div>
 					<div className="flex flex-col">
 						<div
 							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[303px] mb-6"
-						></div>
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						>
+							<img
+								src={FemiLaniyan}
+								alt="Fortunate Anozie"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
-								Fortunate Anozie
+								Femi Laniyan
 							</p>
 							<p className="text-[#667085]">CEO/ Co-founder</p>
 						</div>
-						<div id="bio" className="text-[#667085] mb-6">
-							<p className="mb-2 ">
-								Business analyst/solutions architect with a track record of
-								utilising range of technologies to solve complex business
-								problems.
-							</p>
-							<p>
-								MBA, Data science for business (HBS). MBA, Business
-								Administration and Management, General (IBMI Germany)
-							</p>
-						</div>
+
 						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaLinkedinIn />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<FaLinkedinIn />
+								</a>
 							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaFacebookF />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<MdEmail />
+								</a>
 							</div>
 						</div>
 					</div>
 					<div className="flex flex-col">
 						<div
 							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[303px] mb-6"
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
 						></div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
-								Fortunate Anozie
+								Wahab Disu
 							</p>
 							<p className="text-[#667085]">CEO/ Co-founder</p>
 						</div>
-						<div id="bio" className="text-[#667085] mb-6">
-							<p className="mb-2 ">
-								Business analyst/solutions architect with a track record of
-								utilising range of technologies to solve complex business
-								problems.
-							</p>
-							<p>
-								MBA, Data science for business (HBS). MBA, Business
-								Administration and Management, General (IBMI Germany)
-							</p>
-						</div>
+
 						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaLinkedinIn />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a
+									href="https://www.linkedin.com/in/wahab-disu-876345193/"
+									target="blank"
+								>
+									<FaLinkedinIn />
+								</a>
 							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB]">
-								<FaFacebookF />
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<MdEmail />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col">
+						<div
+							id="image"
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						></div>
+						<div id="name" className="mb-6">
+							<p className="text-xl font-semibold text-[#101323] mb-2">
+								Morayo Okurinboye
+							</p>
+							<p className="text-[#667085]">CEO/ Co-founder</p>
+						</div>
+
+						<div id="socials" className="flex gap-x-3">
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a
+									href="http://linkedin.com/in/morayo-okunrinboye-acii-crm-mirm-a16b4660"
+									target="blank"
+								>
+									<FaLinkedinIn />
+								</a>
+							</div>
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<MdEmail />
+								</a>
 							</div>
 						</div>
 					</div>
