@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import FortunateAnozie from "../../assets/images/FounderProfile/FortunateAnozie.jpg";
 import Funsho from "../../assets/images/FounderProfile/Funsho.jpg";
 import Nelson from "../../assets/images/FounderProfile/Nelson.JPG";
+import WahabDisu from "../../assets/images/FounderProfile/WahabDisu.png";
 import Oyegunle from "../../assets/images/FounderProfile/Oyegunle.JPG";
 import FemiLaniyan from "../../assets/images/FounderProfile/FemiLaniyan.jpg";
 
@@ -136,7 +137,7 @@ function About() {
 								</a>
 							</div>
 							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="" target="blank">
+								<a href="mailto:anozie@unyte.africa" target="blank">
 									<MdEmail />
 								</a>
 							</div>
@@ -170,7 +171,7 @@ function About() {
 								</a>
 							</div>
 							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="" target="blank">
+								<a href="mailto:nelson@unyte.africa" target="blank">
 									<MdEmail />
 								</a>
 							</div>
@@ -238,7 +239,7 @@ function About() {
 								</a>
 							</div>
 							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="" target="blank">
+								<a href="mailto:hr@unyte.africa" target="blank">
 									<MdEmail />
 								</a>
 							</div>
@@ -269,7 +270,7 @@ function About() {
 								</a>
 							</div>
 							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="" target="blank">
+								<a href="mailto:femi@unyte.africa" target="blank">
 									<MdEmail />
 								</a>
 							</div>
@@ -279,7 +280,13 @@ function About() {
 						<div
 							id="image"
 							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
-						></div>
+						>
+							<img
+								src={WahabDisu}
+								alt="Fortunate Anozie"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
 								Wahab Disu
@@ -297,7 +304,7 @@ function About() {
 								</a>
 							</div>
 							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="" target="blank">
+								<a href="mailto:wahab@unyte.africa" target="blank">
 									<MdEmail />
 								</a>
 							</div>
