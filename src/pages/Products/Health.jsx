@@ -9,12 +9,12 @@ import WavyArrow from "../../assets/icons/WavyArrow.svg";
 import Dice from "../../assets/icons/Dice.svg";
 import CodeBlock from "../../assets/icons/CodeBlock.svg";
 import OmbreBG from "../../assets/images/OmbreBG.svg";
-import CoverageHero from "../../assets/images/CoverageHero.svg";
 
 import TestimonialCard from "../../components/TestimonialCard";
 import CoverageAccordion from "../../components/CoverageAccordion";
 import TestimonialSwiper from "../../components/TestimonialSwiper";
 import CodeSection from "../../components/CodeSection";
+import Coverage from "./components/Coverage.jsx";
 
 function Health() {
 	const testimonials = [
@@ -293,7 +293,7 @@ function Health() {
 					</div>
 				</div>
 				<div className="flex-1">
-					<img src={CoverageHero} alt="coverage hero" />
+					<Coverage />
 				</div>
 			</section>
 			<section

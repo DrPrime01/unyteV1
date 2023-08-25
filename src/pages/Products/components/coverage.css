@@ -1,0 +1,22 @@
+/* Add this to your CSS file or a <style> tag */
+
+@keyframes march {
+	0%,
+	100% {
+		border-color: #5cc758 transparent transparent transparent;
+	}
+	25% {
+		border-color: #5cc758 #5cc758 transparent transparent;
+	}
+	50% {
+		border-color: #5cc758 #5cc758 #5cc758 transparent;
+	}
+	75% {
+		border-color: #5cc758 #5cc758 #5cc758 #5cc758;
+	}
+}
+.marching {
+	border-style: solid;
+	border-width: 2px;
+	animation: march 4s linear;
+}
