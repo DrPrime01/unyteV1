@@ -18,6 +18,8 @@ import Education from "../assets/icons/Education.svg";
 import Security from "../assets/icons/Security.svg";
 import Motor from "../assets/icons/Motor.svg";
 import Dice from "../assets/icons/Dice.svg";
+import IntegrateIcon from "../assets/icons/IntegrateIcon.svg";
+import UmbrellaIcon from "../assets/icons/UmbrellaIcon.svg";
 import DownloadIcon from "../assets/icons/DownloadIcon.svg";
 import GraduationIcon from "../assets/icons/GraduationIcon.svg";
 import CodeBlock from "../assets/icons/CodeBlock.svg";
@@ -455,7 +457,7 @@ function Home() {
 						</div>
 						<div className="block space-y-6 md:h-[33rem] overflow-y-auto md:pr-5 py-8">
 							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
-								<img src={Dice} alt="dice" />
+								<img src={UmbrellaIcon} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
 								</h4>
@@ -466,7 +468,7 @@ function Home() {
 								</p>
 							</div>
 							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
-								<img src={Dice} alt="dice" />
+								<img src={IntegrateIcon} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
 								</h4>

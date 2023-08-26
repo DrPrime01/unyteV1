@@ -10,6 +10,13 @@ import SecurityNav from "../assets/icons/SecurityNav.svg";
 import MotorNav from "../assets/icons/MotorNav.svg";
 import Credit from "../assets/icons/Credit.svg";
 import Travel from "../assets/icons/Travel.svg";
+import BanksIcon from "../assets/icons/BanksIcon.svg";
+import ContactUsIcon from "../assets/icons/ContactUsIcon.svg";
+import EcommerceIcon from "../assets/icons/EcommerceIcon.svg";
+import EducationIcon from "../assets/icons/EducationIcon.svg";
+import FintechIcon from "../assets/icons/FintechIcon.svg";
+import WhyUnyteIcon from "../assets/icons/WhyUnyteIcon.svg";
+import LogisticsIcon from "../assets/icons/LogisticsIcon.svg";
 
 function Navbar() {
 	const [dropdown1, setDropdown1] = useState(false);
@@ -583,7 +590,7 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={LaunchNav} alt="icon" className="mb-4" />
+													<img src={FintechIcon} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Fintech
 													</p>
@@ -600,7 +607,7 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={HealthNav} alt="icon" className="mb-4" />
+													<img src={BanksIcon} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Banks
 													</p>
@@ -617,7 +624,11 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={SecurityNav} alt="icon" className="mb-4" />
+													<img
+														src={LogisticsIcon}
+														alt="icon"
+														className="mb-4"
+													/>
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Logistic Companies
 													</p>
@@ -634,7 +645,11 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={Credit} alt="icon" className="mb-4" />
+													<img
+														src={EcommerceIcon}
+														alt="icon"
+														className="mb-4"
+													/>
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Ecommerce
 													</p>
@@ -651,7 +666,11 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={EducationNav} alt="icon" className="mb-4" />
+													<img
+														src={EducationIcon}
+														alt="icon"
+														className="mb-4"
+													/>
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Education
 													</p>
@@ -739,7 +758,7 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={LaunchNav} alt="icon" className="mb-4" />
+													<img src={WhyUnyteIcon} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Why Unyte?
 													</p>
@@ -756,7 +775,11 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={HealthNav} alt="icon" className="mb-4" />
+													<img
+														src={ContactUsIcon}
+														alt="icon"
+														className="mb-4"
+													/>
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Contact Us
 													</p>
