@@ -84,7 +84,7 @@ function Coverage() {
 				<div
 					className={`rounded-[10px] ${
 						activeDiv === 3 ? "marching" : "shadow-lg"
-					}py-10 flex flex-col items-center justify-center md:w-[calc(50%-1rem)] w-[calc(50%-0.5rem)] h-1/2 border transition-all duration-300 delay-150`}
+					} z-10 bg-white py-10 flex flex-col items-center justify-center md:w-[calc(50%-1rem)] w-[calc(50%-0.5rem)] h-1/2 border transition-all duration-300 delay-150`}
 				>
 					<img
 						src={PiechartIcon}

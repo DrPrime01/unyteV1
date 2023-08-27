@@ -1,22 +1,44 @@
 /* Add this to your CSS file or a <style> tag */
 
-@keyframes march {
-	0%,
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
 	100% {
-		border-color: #5cc758 transparent transparent transparent;
-	}
-	25% {
-		border-color: #5cc758 #5cc758 transparent transparent;
-	}
-	50% {
-		border-color: #5cc758 #5cc758 #5cc758 transparent;
-	}
-	75% {
-		border-color: #5cc758 #5cc758 #5cc758 #5cc758;
+		transform: rotate(360deg);
 	}
 }
 .marching {
-	border-style: solid;
-	border-width: 2px;
-	animation: march 4s linear;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.marching::before {
+	content: "";
+	background-image: conic-gradient(#5cc758 20deg, transparent 120deg);
+	width: 150%;
+	height: 150%;
+	position: absolute;
+	animation: rotate 2s linear infinite;
+}
+
+.marching::after {
+	content: "";
+	width: 97.5%;
+	height: 97.5%;
+	background: white;
+	position: absolute;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+}
+
+.marching > * {
+	z-index: 1;
 }
