@@ -38,7 +38,7 @@ function Coverage() {
 			<div className="flex flex-wrap h-[25rem] w-auto md:w-[31rem] md:h-[31rem] md:gap-4 gap-1.5">
 				<div
 					className={`rounded-[10px] ${
-						activeDiv === 0 ? "marching" : "shadow-lg"
+						activeDiv === 0 ? "border border-[#5cc758]" : "shadow-lg"
 					} z-10 bg-white py-10 flex flex-col items-center justify-center md:w-[calc(50%-1rem)] w-[calc(50%-0.5rem)] h-1/2 border transition-all duration-300 delay-150`}
 				>
 					<img src={BankIcon} alt="bank icon" className="mb-4 md:mb-6" />
@@ -53,7 +53,7 @@ function Coverage() {
 				</div>
 				<div
 					className={`rounded-[10px] ${
-						activeDiv === 1 ? "marching" : "shadow-lg"
+						activeDiv === 1 ? "border border-[#5cc758]" : "shadow-lg"
 					} z-10 bg-white py-10 flex flex-col items-center justify-center md:w-[calc(50%-1rem)] w-[calc(50%-0.5rem)] h-1/2 border transition-all duration-300 delay-150`}
 				>
 					<img src={WalletIcon} alt="wallet icon" className="mb-4 md:mb-6" />
@@ -68,7 +68,7 @@ function Coverage() {
 				</div>
 				<div
 					className={`rounded-[10px] ${
-						activeDiv === 2 ? "marching" : "shadow-lg"
+						activeDiv === 2 ? "border border-[#5cc758]" : "shadow-lg"
 					} z-10 bg-white py-10 flex flex-col items-center justify-center md:w-[calc(50%-1rem)] w-[calc(50%-0.5rem)] h-1/2 border transition-all duration-300 delay-150`}
 				>
 					<img src={CardIcon} alt="card icon" className="mb-4 md:mb-6" />
@@ -83,7 +83,7 @@ function Coverage() {
 				</div>
 				<div
 					className={`rounded-[10px] ${
-						activeDiv === 3 ? "marching" : "shadow-lg"
+						activeDiv === 3 ? "border border-[#5cc758]" : "shadow-lg"
 					} z-10 bg-white py-10 flex flex-col items-center justify-center md:w-[calc(50%-1rem)] w-[calc(50%-0.5rem)] h-1/2 border transition-all duration-300 delay-150`}
 				>
 					<img
