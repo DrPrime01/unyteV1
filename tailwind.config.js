@@ -8,6 +8,9 @@ export default {
 				11: "2.5rem",
 				12: "3rem",
 			},
+			scale: {
+				150: "1.5",
+			},
 		},
 	},
 	plugins: [],

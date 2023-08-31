@@ -32,10 +32,10 @@ function CtaComponent() {
 					</button>
 					<a
 						href="#"
-						className="text-[#667085] text-[0.75rem] text-base md:text-sm w-full md:w-auto font-medium flex items-center md:justify-start justify-center gap-x-2 px-4 py-3"
+						className="text-[#667085] group text-[0.75rem] text-base md:text-sm w-full md:w-auto font-medium flex items-center md:justify-start justify-center gap-x-2 px-4 py-3"
 					>
 						<span>Contact sales</span>
-						<BsArrowUpRight />
+						<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 					</a>
 				</div>
 			</div>

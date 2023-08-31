@@ -101,10 +101,10 @@ function Navbar() {
 							</button>
 							<a
 								href="#"
-								className="text-[#101323] font-medium flex items-center gap-x-2"
+								className="text-[#101323] font-medium flex items-center group gap-x-2"
 							>
 								<span>Login</span>
-								<AiOutlineArrowRight />
+								<AiOutlineArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-150" />
 							</a>
 						</div>
 						<button
@@ -723,7 +723,7 @@ function Navbar() {
 												to="company/about"
 												className="block px-4 py-3 hover:bg-gray-100"
 											>
-												Why Unyte?
+												About Unyte
 											</NavLink>
 										</li>
 										<li>

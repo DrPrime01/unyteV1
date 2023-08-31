@@ -110,7 +110,7 @@ function About() {
 				</div>
 				<div
 					id="founders-bio"
-					className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 md:gap-y-10 gap-8 md:h-[80rem] md:overflow-y-auto md:pr-10"
+					className="grid grid-cols-1 md:grid-cols-2 md:gap-x-5 md:gap-y-10 gap-8"
 				>
 					<div className="flex flex-col">
 						<div
@@ -150,7 +150,7 @@ function About() {
 						>
 							<img
 								src={Nelson}
-								alt="Fortunate Anozie"
+								alt="Nelson Okpalachukwu"
 								className="w-full h-full rounded-2xl object-center object-cover"
 							/>
 						</div>
@@ -183,8 +183,73 @@ function About() {
 							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
 						>
 							<img
+								src={FemiLaniyan}
+								alt="Femi Laniyan"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
+						<div id="name" className="mb-6">
+							<p className="text-xl font-semibold text-[#101323] mb-2">
+								Femi Laniyan
+							</p>
+							<p className="text-[#667085]">CEO/ Co-founder</p>
+						</div>
+
+						<div id="socials" className="flex gap-x-3">
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="" target="blank">
+									<FaLinkedinIn />
+								</a>
+							</div>
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="mailto:femi@unyte.africa" target="blank">
+									<MdEmail />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col">
+						<div
+							id="image"
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						>
+							<img
+								src={WahabDisu}
+								alt="Wahab Disu"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
+						<div id="name" className="mb-6">
+							<p className="text-xl font-semibold text-[#101323] mb-2">
+								Wahab Disu
+							</p>
+							<p className="text-[#667085]">CEO/ Co-founder</p>
+						</div>
+
+						<div id="socials" className="flex gap-x-3">
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a
+									href="https://www.linkedin.com/in/wahab-disu-876345193/"
+									target="blank"
+								>
+									<FaLinkedinIn />
+								</a>
+							</div>
+							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
+								<a href="mailto:wahab@unyte.africa" target="blank">
+									<MdEmail />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col">
+						<div
+							id="image"
+							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
+						>
+							<img
 								src={Oyegunle}
-								alt="Fortunate Anozie"
+								alt="Oyegunle"
 								className="w-full h-full rounded-2xl object-center object-cover"
 							/>
 						</div>
@@ -218,7 +283,7 @@ function About() {
 						>
 							<img
 								src={Funsho}
-								alt="Fortunate Anozie"
+								alt="Funsho"
 								className="w-full h-full rounded-2xl object-center object-cover"
 							/>
 						</div>
@@ -240,71 +305,6 @@ function About() {
 							</div>
 							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
 								<a href="mailto:hr@unyte.africa" target="blank">
-									<MdEmail />
-								</a>
-							</div>
-						</div>
-					</div>
-					<div className="flex flex-col">
-						<div
-							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
-						>
-							<img
-								src={FemiLaniyan}
-								alt="Fortunate Anozie"
-								className="w-full h-full rounded-2xl object-center object-cover"
-							/>
-						</div>
-						<div id="name" className="mb-6">
-							<p className="text-xl font-semibold text-[#101323] mb-2">
-								Femi Laniyan
-							</p>
-							<p className="text-[#667085]">CEO/ Co-founder</p>
-						</div>
-
-						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="" target="blank">
-									<FaLinkedinIn />
-								</a>
-							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="mailto:femi@unyte.africa" target="blank">
-									<MdEmail />
-								</a>
-							</div>
-						</div>
-					</div>
-					<div className="flex flex-col">
-						<div
-							id="image"
-							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
-						>
-							<img
-								src={WahabDisu}
-								alt="Fortunate Anozie"
-								className="w-full h-full rounded-2xl object-center object-cover"
-							/>
-						</div>
-						<div id="name" className="mb-6">
-							<p className="text-xl font-semibold text-[#101323] mb-2">
-								Wahab Disu
-							</p>
-							<p className="text-[#667085]">CEO/ Co-founder</p>
-						</div>
-
-						<div id="socials" className="flex gap-x-3">
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a
-									href="https://www.linkedin.com/in/wahab-disu-876345193/"
-									target="blank"
-								>
-									<FaLinkedinIn />
-								</a>
-							</div>
-							<div className="rounded-full p-1 text-[#667085] bg-[#F9FAFB] hover:text-[#0CD704]">
-								<a href="mailto:wahab@unyte.africa" target="blank">
 									<MdEmail />
 								</a>
 							</div>

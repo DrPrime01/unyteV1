@@ -48,10 +48,10 @@ function Fintech() {
 						</button>
 						<a
 							href="#"
-							className="text-[#101323] font-medium flex items-center gap-x-2 px-6 py-3"
+							className="text-[#101323] group font-medium flex items-center gap-x-2 px-6 py-3"
 						>
 							<span>Contact sales</span>
-							<BsArrowRight />
+							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-150" />
 						</a>
 					</div>
 				</div>
@@ -278,9 +278,10 @@ function Fintech() {
 								<div className="flex items-center justify-center">
 									<button
 										type="button"
-										className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+										className="text-[#101323] group bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 									>
-										<span>Learn more</span> <BsArrowUpRight />
+										<span>Learn more</span>{" "}
+										<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 									</button>
 								</div>
 							</div>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
@@ -24,10 +24,14 @@ import DownloadIcon from "../assets/icons/DownloadIcon.svg";
 import GraduationIcon from "../assets/icons/GraduationIcon.svg";
 import CodeBlock from "../assets/icons/CodeBlock.svg";
 import OmbreBG from "../assets/images/OmbreBG.svg";
+import DashboardIllustration from "../assets/images/DashboardIllustration.png";
 
 import TestimonialCard from "../components/TestimonialCard";
 import TestimonialSwiper from "../components/TestimonialSwiper";
 import CodeSection from "../components/CodeSection";
+import StackedCards from "../components/StackedCards";
+
+//import "./home.css";
 
 function Home() {
 	const testimonials = [
@@ -37,68 +41,6 @@ function Home() {
 		TestimonialCard,
 		TestimonialCard,
 	];
-	const cardContents = [
-		{
-			imgSrc: AxaMansardLogo,
-			headline: "Some fancy headline praising Unyte x Mansard's partnership",
-			description:
-				"Lörem ipsum kovylogi nätpoker i bloggosfär tissa, kontragen jism. Kvaside din misat syn resan tesa. Revusm prehåd i ränade som vaning. Kanin aläning vasm.",
-			buttonText: "Learn more",
-		},
-		{
-			imgSrc: PolarisLogo,
-			headline: "Some fancy headline praising Unyte x Polaris' partnership",
-			description:
-				"Lörem ipsum kovylogi nätpoker i bloggosfär tissa, kontragen jism. Kvaside din misat syn resan tesa. Revusm prehåd i ränade som vaning. Kanin aläning vasm.",
-			buttonText: "Learn more",
-		},
-		{
-			imgSrc: MintynLogo,
-			headline: "Some fancy headline praising Unyte x Mintyn's partnership",
-			description:
-				"Lörem ipsum kovylogi nätpoker i bloggosfär tissa, kontragen jism. Kvaside din misat syn resan tesa. Revusm prehåd i ränade som vaning. Kanin aläning vasm.",
-			buttonText: "Learn more",
-		},
-	];
-
-	const [currentLargestCardContent, setCurrentLargestCardContent] = useState(
-		cardContents[2]
-	);
-
-	const [cards, setCards] = useState([
-		{
-			id: 1,
-			classes:
-				"h-[16rem] w-[15.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-60 z-10 shadow",
-			content: cardContents[0],
-		},
-		{
-			id: 2,
-			classes:
-				"h-[19rem] w-[18.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-6 md:-top-[13.5rem] z-20 shadow",
-			content: cardContents[1],
-		},
-		{
-			id: 3,
-			classes:
-				"h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0",
-			content: cardContents[2],
-		},
-	]);
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCards((prevState) => {
-				setCurrentLargestCardContent(prevState[1].content); // Update the content for the largest div
-				return [
-					{ ...prevState[2], classes: prevState[0].classes },
-					{ ...prevState[0], classes: prevState[1].classes },
-					{ ...prevState[1], classes: prevState[2].classes },
-				];
-			});
-		}, 3000);
-		return () => clearInterval(interval);
-	}, []);
 
 	return (
 		<>
@@ -113,10 +55,10 @@ function Home() {
 						</span>
 						<a
 							href="#"
-							className="text-[#667085] text-[0.75rem] font-medium flex items-center gap-x-2"
+							className="text-[#667085] text-[0.75rem] font-medium flex items-center gap-x-2 group"
 						>
 							<span>July release notes</span>
-							<AiOutlineArrowRight />
+							<AiOutlineArrowRight className="transform transition-transform origin-bottom  group-hover:scale-x-125" />
 						</a>
 					</div>
 					<h2 className="md:text-3xl lg:text-4xl text-2xl font-medium text-[#101323] mb-4">
@@ -278,9 +220,10 @@ function Home() {
 				<div>
 					<button
 						type="button"
-						className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+						className="text-white group bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 					>
-						<span>Learn more</span> <BsArrowUpRight />
+						<span>Learn more</span>{" "}
+						<BsArrowUpRight className="transform transition-transform origin-bottom  group-hover:scale-125" />
 					</button>
 				</div>
 			</section>
@@ -312,9 +255,10 @@ function Home() {
 						</p>
 						<button
 							type="button"
-							className="text-[#101323] bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							className="text-[#101323] bg-white group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 						>
-							<span>Learn more</span> <BsArrowRight />
+							<span>Learn more</span>{" "}
+							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</button>
 					</div>
 					<div className="md:col-start-3 md:col-end-4 bg-[#E6FFF3B2] rounded-xl p-6">
@@ -329,9 +273,10 @@ function Home() {
 						</p>
 						<button
 							type="button"
-							className="text-[#101323] bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 						>
-							<span>Learn more</span> <BsArrowRight />
+							<span>Learn more</span>{" "}
+							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</button>
 					</div>
 					<div className="md:col-start-1 md:col-end-2 bg-[#E6F6FF] rounded-xl p-6">
@@ -346,9 +291,10 @@ function Home() {
 						</p>
 						<button
 							type="button"
-							className="text-[#101323] bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 						>
-							<span>Learn more</span> <BsArrowRight />
+							<span>Learn more</span>{" "}
+							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</button>
 					</div>
 					<div className="md:col-start-2 md:col-end-4 bg-[#FFF5E6] rounded-xl p-6">
@@ -365,9 +311,10 @@ function Home() {
 						</p>
 						<button
 							type="button"
-							className="text-[#101323] bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 						>
-							<span>Learn more</span> <BsArrowRight />
+							<span>Learn more</span>{" "}
+							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</button>
 					</div>
 					<div className="md:col-span-3 bg-[#E6FFF3B2] bg-opacity-70 rounded-xl p-6">
@@ -384,23 +331,25 @@ function Home() {
 						</p>
 						<button
 							type="button"
-							className="text-[#101323] bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							className="text-[#101323] bg-white group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 						>
-							<span>Learn more</span> <BsArrowRight />
+							<span>Learn more</span>{" "}
+							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</button>
 					</div>
 				</div>
 				<div className="flex items-center justify-center">
 					<button
 						type="button"
-						className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+						className="text-[#101323] bg-transparent border group border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 					>
-						<span>View all products</span> <BsArrowUpRight />
+						<span>View all products</span>{" "}
+						<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 					</button>
 				</div>
 			</section>
 			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5">
-				<div className="text-center mb-6">
+				<div className="text-center mb-6 md:mb-16">
 					<h2 className="md:text-3xl lg:text-4xl text-2xl font-medium text-[#101323] mb-2">
 						The Infrastructure Powering Embedded
 					</h2>
@@ -408,7 +357,10 @@ function Home() {
 						Insurance Across Sectors in Africa
 					</h2>
 				</div>
-				<div className="flex items-center justify-center rounded-2xl h-[36.1875rem] md:h-[28rem] bg-[#F2F4F7]">
+				<div className="md:flex items-center justify-center hidden">
+					<img src={DashboardIllustration} alt="dashboard" />
+				</div>
+				<div className="flex md:hidden items-center justify-center rounded-2xl h-[36.1875rem] md:h-[28rem] bg-[#F2F4F7]">
 					<p className="text-[#667085] opacity-60 px-5 md:px-0 text-center">
 						Unyte serves as a middle man providing insurance products to a
 						variety of <br className="hidden md:block" />
@@ -448,10 +400,10 @@ function Home() {
 								</button>
 								<a
 									href="#"
-									className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
+									className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2 group"
 								>
 									<span>Contact sales</span>
-									<BsArrowUpRight />
+									<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 								</a>
 							</div>
 						</div>
@@ -511,10 +463,10 @@ function Home() {
 							<div className="text-center">
 								<a
 									href="#"
-									className="text-[#101323] font-medium flex items-center justify-center gap-x-2 px-6 py-3 w-full"
+									className="text-[#101323] group font-medium flex items-center justify-center gap-x-2 px-6 py-3 w-full"
 								>
 									<span>Contact sales</span>
-									<BsArrowUpRight />
+									<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 								</a>
 							</div>
 						</div>
@@ -592,9 +544,10 @@ function Home() {
 								<div>
 									<button
 										type="button"
-										className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+										className="text-white bg-[#5CC758] group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 									>
-										<span>Read our docs</span> <BsArrowUpRight />
+										<span>Read our docs</span>{" "}
+										<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 									</button>
 								</div>
 							</div>
@@ -602,7 +555,7 @@ function Home() {
 								<CodeSection />
 							</div>
 						</div>
-						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
+						{/*<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
 							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
 								<div className="text-white text-center">
 									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
@@ -627,7 +580,7 @@ function Home() {
 									<p>Rows of Data</p>
 								</div>
 							</div>
-						</div>
+	</div>*/}
 					</div>
 				</div>
 			</section>
@@ -701,9 +654,10 @@ function Home() {
 						<div>
 							<button
 								type="button"
-								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+								className="text-white bg-[#5CC758] focus:ring-4 group focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 							>
-								<span>Build with us</span> <BsArrowUpRight />
+								<span>Build with us</span>{" "}
+								<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 							</button>
 						</div>
 					</div>
@@ -711,47 +665,7 @@ function Home() {
 						id="stacked-card"
 						className="flex items-center justify-center md:w-1/2 w-auto md:mt-0"
 					>
-						<div className="relative flex items-center justify-center flex-col">
-							{cards.map((card) => (
-								<div
-									key={card.id}
-									className={`${card.classes} transition-all duration-500`}
-								>
-									<div
-										className={
-											card.classes ===
-											"h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0"
-												? "opacity-100 transition-opacity duration-500 delay-150"
-												: "opacity-0 transition-opacity duration-500 delay-150"
-										}
-									>
-										<img
-											src={currentLargestCardContent.imgSrc}
-											alt="Logo"
-											className="h-6 mb-4"
-										/>
-										<div className="bg-white p-5 text-center rounded-t-3xl border pb-0">
-											<h4 className="text-xl font-semibold mb-6">
-												{currentLargestCardContent.headline}
-											</h4>
-											<p className="text-base mb-4 md:leading-7 text-[#667085]">
-												{currentLargestCardContent.description}
-											</p>
-											<div className="flex items-center justify-center pb-3">
-												<button
-													type="button"
-													className="text-[#101323] bg-transparent border border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-												>
-													<span>{currentLargestCardContent.buttonText}</span>{" "}
-													<BsArrowUpRight />
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							))}
-							<div className="h-[24rem] md:h-0"></div>
-						</div>
+						<StackedCards />
 					</div>
 				</div>
 			</section>
@@ -784,3 +698,18 @@ function Home() {
 }
 
 export default Home;
+
+// let stack = document.querySelector(".stack");
+// [...stack.children].reverse().forEach((i) => stack.append(i));
+
+// stack.addEventListener("click", swap);
+
+// function swap() {
+// 	let card = document.querySelector(".card:last-child");
+// 	card.style.animation = "swap 700ms forwards";
+
+// 	setTimeout(() => {
+// 		card.style.animation = "";
+// 		stack.prepend(card);
+// 	}, 700);
+// }

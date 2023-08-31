@@ -10,20 +10,20 @@ import Dice from "../../assets/icons/Dice.svg";
 import CodeBlock from "../../assets/icons/CodeBlock.svg";
 import OmbreBG from "../../assets/images/OmbreBG.svg";
 
-import TestimonialCard from "../../components/TestimonialCard";
+//import TestimonialCard from "../../components/TestimonialCard";
 import CoverageAccordion from "../../components/CoverageAccordion";
-import TestimonialSwiper from "../../components/TestimonialSwiper";
+//import TestimonialSwiper from "../../components/TestimonialSwiper";
 import CodeSection from "../../components/CodeSection";
 import Coverage from "./components/Coverage.jsx";
 
 function Health() {
-	const testimonials = [
-		TestimonialCard,
-		TestimonialCard,
-		TestimonialCard,
-		TestimonialCard,
-		TestimonialCard,
-	];
+	// const testimonials = [
+	// 	TestimonialCard,
+	// 	TestimonialCard,
+	// 	TestimonialCard,
+	// 	TestimonialCard,
+	// 	TestimonialCard,
+	// ];
 	return (
 		<>
 			<section
@@ -53,10 +53,10 @@ function Health() {
 						</button>
 						<a
 							href="#"
-							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2"
+							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2 group"
 						>
 							<span>Contact sales</span>
-							<BsArrowRight />
+							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</a>
 					</div>
 				</div>
@@ -161,40 +161,15 @@ function Health() {
 								<div>
 									<button
 										type="button"
-										className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+										className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl group text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 									>
-										<span>Read our docs</span> <BsArrowUpRight />
+										<span>Read our docs</span>{" "}
+										<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 									</button>
 								</div>
 							</div>
 							<div id="code tab" className="flex-1">
 								<CodeSection />
-							</div>
-						</div>
-						<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
-							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
-									<p>Reliance</p>
-								</div>
-							</div>
-							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
-									<p>Uptime</p>
-								</div>
-							</div>
-							<div className="h-[9.8125rem] w-full md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">65 Million</p>
-									<p>Messages/sec</p>
-								</div>
-							</div>
-							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">1 Billion +</p>
-									<p>Rows of Data</p>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -279,10 +254,10 @@ function Health() {
 						coverage
 					</p>
 					<p className="text-[#101323] text-2xl md:text-[2.438rem] mb-4 font-medium">
-						Extensive Coverage for Your
+						Extensive Health Coverage
 					</p>
 					<p className="text-[#667085] text-2xl md:text-[2.438rem] mb-4 font-medium">
-						Health Needs.
+						for Your Users.
 					</p>
 					<p className="text-[#667085] mb-6">
 						Unyte Health offers a wide range of coverage options to address your
@@ -306,7 +281,7 @@ function Health() {
 							use cases
 						</p>
 						<h3 className="mb-4 text-[#101323] font-medium text-2xl md:text-[2.4375rem]">
-							What can you build with
+							What can you gain with
 						</h3>
 						<h3 className="font-medium text-2xl md:text-[2.4375rem] text-[#667085]">
 							Unyte Health?
@@ -321,7 +296,7 @@ function Health() {
 							/>
 							<div>
 								<h4 className="mb-6 font-bold text-2xl md:text-[2.25rem] text-[#033401] md:leading-12">
-									Prioritize Your Well-being with{" "}
+									Prioritize Your Users Well-being with{" "}
 									<span className="text-[#5CC758]">Unyte Health Insurance</span>
 								</h4>
 								<p className="mb-[8.3125rem] md:mb-[21.5rem] text-[#101323]">
@@ -381,6 +356,7 @@ function Health() {
 					</div>
 				</div>
 			</section>
+			{/*
 			<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="testimonials"
@@ -405,6 +381,7 @@ function Health() {
 					</div>
 				</div>
 			</section>
+	*/}
 		</>
 	);
 }

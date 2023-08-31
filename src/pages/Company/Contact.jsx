@@ -21,9 +21,10 @@ function Contact() {
 					<div className="hidden md:block mt-8">
 						<button
 							type="button"
-							className="text-[#101323] bg-[#F9FAFB] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center space-x-2"
+							className="text-[#101323] bg-[#F9FAFB] focus:ring-4 group focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center space-x-2"
 						>
-							<span>Explore integrations</span> <FaArrowRight />
+							<span>Explore integrations</span>{" "}
+							<FaArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</button>
 					</div>
 				</div>
