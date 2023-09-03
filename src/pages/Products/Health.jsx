@@ -17,18 +17,11 @@ import CodeSection from "../../components/CodeSection";
 import Coverage from "./components/Coverage.jsx";
 
 function Health() {
-	// const testimonials = [
-	// 	TestimonialCard,
-	// 	TestimonialCard,
-	// 	TestimonialCard,
-	// 	TestimonialCard,
-	// 	TestimonialCard,
-	// ];
 	return (
 		<>
 			<section
 				id="modernizing insurance"
-				className="mt-48 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
+				className="mt-64 md:mt-48 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
 			>
 				<div className="pb-16 md:pb-0 flex-1 md:mr-[4.375rem] mr-0">
 					<h4 className="text-base md:text-sm font-semibold mb-2 md:mb-4 text-[#0CD704] uppercase">

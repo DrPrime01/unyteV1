@@ -760,7 +760,7 @@ function Navbar() {
 												<div className="">
 													<img src={WhyUnyteIcon} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
-														Why Unyte?
+														About Unyte
 													</p>
 													<p className="text-sm text-[#667085]">
 														Integrate insurance seamlessly and unlock new
