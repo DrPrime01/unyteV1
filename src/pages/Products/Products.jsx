@@ -1,4 +1,5 @@
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
+import { useParams } from "react-router-dom";
 
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../../assets/icons/WemaLogo.svg";
@@ -16,7 +17,12 @@ import CoverageAccordion from "../../components/CoverageAccordion";
 import CodeSection from "../../components/CodeSection";
 import Coverage from "./components/Coverage.jsx";
 
-function Health() {
+import { products } from "../../Data/products";
+
+function Products() {
+	const { productType } = useParams();
+	const product = products[productType];
+	console.log(product);
 	return (
 		<>
 			<section
@@ -25,17 +31,13 @@ function Health() {
 			>
 				<div className="pb-16 md:pb-0 flex-1 md:mr-[4.375rem] mr-0">
 					<h4 className="text-base md:text-sm font-semibold mb-2 md:mb-4 text-[#0CD704] uppercase">
-						unyte health
+						unyte {product.name}
 					</h4>
 					<h3 className="font-semibold md:font-bold text-2xl md:text-5xl text-[#033401] mb-6">
-						Institutional-grade{" "}
-						<span className="text-[#5CC758]">health insurance</span> for your
-						next big project
+						{product.header}
 					</h3>
 					<p className="text-base md:text-xl text-[#667085] md:leading-8 mb-12">
-						Discover Unyte Health, our comprehensive insurance solutions
-						tailored to protect and enhance your physical and financial
-						well-being.
+						{product.desc}
 					</p>
 					<div className="flex items-center gap-x-2.5">
 						<button
@@ -289,7 +291,7 @@ function Health() {
 							/>
 							<div>
 								<h4 className="mb-6 font-bold text-2xl md:text-[2.25rem] text-[#033401] md:leading-12">
-									Prioritize Your Users Well-being with{" "}
+									Prioritize the Well-being of your business and users with{" "}
 									<span className="text-[#5CC758]">Unyte Health Insurance</span>
 								</h4>
 								<p className="mb-[8.3125rem] md:mb-[21.5rem] text-[#101323]">
@@ -379,4 +381,4 @@ function Health() {
 	);
 }
 
-export default Health;
+export default Products;

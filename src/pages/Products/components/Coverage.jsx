@@ -59,10 +59,10 @@ function Coverage() {
 					<img src={WalletIcon} alt="wallet icon" className="mb-4 md:mb-6" />
 					<div className="text-center px-[1.375rem]">
 						<p className="mb-[5.6px] md:mb-2 font-bold text-[#101323] text-xl md:text-[26px]">
-							$1 Million
+							Hospital cash
 						</p>
 						<p className="md:leading-7 md:text-[15px] md:font-medium text-sm text-[#98A2B3]">
-							Coverage for major medical expenses
+							Cash to ease medical expenses
 						</p>
 					</div>
 				</div>

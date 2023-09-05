@@ -81,7 +81,7 @@ function Navbar() {
 	return (
 		<>
 			<nav
-				className="bg-white border-gray-200 fixed w-screen top-0 z-50 shadow-md md:shadow-none"
+				className="bg-white fixed w-screen top-0 z-50 shadow-md md:shadow-none"
 				ref={navbarRef}
 			>
 				<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-6 md:px-12 xl:px-5 px-5">
@@ -100,7 +100,7 @@ function Navbar() {
 								Get started
 							</button>
 							<a
-								href="#"
+								to="#"
 								className="text-[#101323] font-medium flex items-center group gap-x-2"
 							>
 								<span>Login</span>
@@ -175,24 +175,33 @@ function Navbar() {
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a href="#" className="block px-4 py-3">
+											<NavLink to="products/launch" className="block px-4 py-3">
 												Launch
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3">
+											<NavLink
+												to="products/creditLife"
+												className="block px-4 py-3"
+											>
 												Credit Life
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3">
+											<NavLink
+												to="products/deviceProtection"
+												className="block px-4 py-3"
+											>
 												Device Protection
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3">
+											<NavLink
+												to="products/travelCover"
+												className="block px-4 py-3"
+											>
 												Travel Cover
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<NavLink to="products/health" className="block px-4 py-3">
@@ -200,14 +209,20 @@ function Navbar() {
 											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3">
+											<NavLink
+												to="products/motorRegInsurance"
+												className="block px-4 py-3"
+											>
 												Motor Registration / Insurance
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-2 hover:bg-gray-100">
+											<NavLink
+												to="products/studentProtection"
+												className="block px-4 py-2 hover:bg-gray-100"
+											>
 												Student Protection
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>
@@ -223,8 +238,8 @@ function Navbar() {
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="products/launch"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -237,7 +252,7 @@ function Navbar() {
 														revenue streams.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<NavLink
@@ -257,8 +272,8 @@ function Navbar() {
 											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="products/deviceProtection"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -271,11 +286,11 @@ function Navbar() {
 														mishaps.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="products/creditLife"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -288,11 +303,11 @@ function Navbar() {
 														insurance.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="products/studentProtection"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -305,11 +320,11 @@ function Navbar() {
 														institutions and students.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="products/motorRegInsurance"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -322,11 +337,11 @@ function Navbar() {
 														insurance.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="products/travelCover"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -339,7 +354,7 @@ function Navbar() {
 														insurance plans.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>
@@ -380,24 +395,36 @@ function Navbar() {
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Get Started
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												API Reference
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												API Status
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Libraries
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<NavLink
@@ -422,8 +449,8 @@ function Navbar() {
 										aria-labelledby="dropdownLargeButton"
 									>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -436,11 +463,11 @@ function Navbar() {
 														revenue streams.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<NavLink
-												to="products/health"
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -456,8 +483,8 @@ function Navbar() {
 											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -470,11 +497,11 @@ function Navbar() {
 														mishaps.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -487,7 +514,7 @@ function Navbar() {
 														insurance.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
 											<NavLink
@@ -552,24 +579,36 @@ function Navbar() {
 											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Banks
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Logistic Companies
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Ecommerce
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Education
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>
@@ -619,8 +658,8 @@ function Navbar() {
 											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -637,11 +676,11 @@ function Navbar() {
 														mishaps.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -658,11 +697,11 @@ function Navbar() {
 														insurance.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -679,7 +718,7 @@ function Navbar() {
 														institutions and students.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>
@@ -735,9 +774,12 @@ function Navbar() {
 											</NavLink>
 										</li>
 										<li>
-											<a href="#" className="block px-4 py-3 hover:bg-gray-100">
+											<NavLink
+												to="#"
+												className="block px-4 py-3 hover:bg-gray-100"
+											>
 												Learn
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>
@@ -791,8 +833,8 @@ function Navbar() {
 											</NavLink>
 										</li>
 										<li>
-											<a
-												href="#"
+											<NavLink
+												to="#"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -805,7 +847,7 @@ function Navbar() {
 														mishaps.
 													</p>
 												</div>
-											</a>
+											</NavLink>
 										</li>
 									</ul>
 								</div>

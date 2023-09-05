@@ -61,7 +61,7 @@ function About() {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-5 mb-16 md:mb-20">
+				{/*<div className="flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-5 mb-16 md:mb-20">
 					<div className="py-5 text-center rounded-2xl bg-[#F9FAFB] flex-1">
 						<p className="mb-4 text-[#101323] text-xl font-semibold">95%</p>
 						<p className="mb-2 text-[#101323] text-base font-semibold">
@@ -89,7 +89,7 @@ function About() {
 							Our partners have reported an avg of 500% ROI.
 						</p>
 					</div>
-				</div>
+	</div>*/}
 			</section>
 			<section
 				id="founders"

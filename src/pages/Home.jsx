@@ -104,19 +104,19 @@ function Home() {
 		{
 			id: 1,
 			classes:
-				"h-[16rem] w-[15.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-60 z-10 shadow",
+				"h-[24rem] md:h-[16rem] w-[15.55rem] md:w-[27rem] bg-[#F2F4F7] absolute rounded-2xl -top-16 md:-top-60 z-10 shadow",
 			content: cardContents[0],
 		},
 		{
 			id: 2,
 			classes:
-				"h-[19rem] w-[18.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-6 md:-top-[13.5rem] z-20 shadow",
+				"h-[26rem] md:h-[19rem] w-[18.15rem] md:w-[30rem] bg-[#F2F4F7] absolute rounded-2xl -top-12 md:-top-[13.5rem] z-20 shadow",
 			content: cardContents[1],
 		},
 		{
 			id: 3,
 			classes:
-				"h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0",
+				"h-[28rem] md:h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0",
 			content: cardContents[2],
 		},
 	]);
@@ -172,7 +172,7 @@ function Home() {
 							type="button"
 							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0"
 						>
-							Get started for free
+							Get started
 						</button>
 					</div>
 				</div>
@@ -489,7 +489,7 @@ function Home() {
 									type="button"
 									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
 								>
-									Get started for free
+									Get started
 								</button>
 								<a
 									href="#"
@@ -551,7 +551,7 @@ function Home() {
 								type="button"
 								className="text-white w-full bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 							>
-								Get started for free
+								Get started
 							</button>
 							<div className="text-center">
 								<a
@@ -767,7 +767,7 @@ function Home() {
 									<div
 										className={
 											card.classes ===
-											"h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0"
+											"h-[28rem] md:h-[24rem] w-[21.75rem] md:w-[33rem] bg-[#E6FFF3B2] absolute rounded-2xl z-30 shadow p-5 md:p-10 pb-0"
 												? "opacity-100 transition-opacity duration-500 delay-150"
 												: "opacity-0 transition-opacity duration-500 delay-150"
 										}
@@ -777,7 +777,7 @@ function Home() {
 											alt="Logo"
 											className="h-6 mb-4"
 										/>
-										<div className="bg-white p-5 text-center rounded-t-3xl border pb-0">
+										<div className="bg-white p-5 text-center rounded-t-3xl border pb-0 h-[24.3rem] md:h-[19rem]">
 											<h4 className="text-xl font-semibold mb-6">
 												{currentLargestCardContent.headline}
 											</h4>

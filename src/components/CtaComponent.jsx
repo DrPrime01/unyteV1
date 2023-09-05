@@ -28,7 +28,7 @@ function CtaComponent() {
 						type="button"
 						className="text-white bg-[#5CC758] text-base focus:ring-4 w-full md:w-auto focus:outline-none font-medium rounded-3xl md:text-sm px-4 py-3 text-center mr-3 md:mr-0"
 					>
-						Get started for free
+						Get started
 					</button>
 					<a
 						href="#"
