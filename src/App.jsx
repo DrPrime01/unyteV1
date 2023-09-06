@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import SharedLayout from "./SharedLayout";
 import Home from "./pages/Home";
 import About from "./pages/Company/About";
+import Learn from "./pages/Company/Learn";
 import Contact from "./pages/Company/Contact";
 import Products from "./pages/Products/Products";
 import Fintech from "./pages/Industries/Fintech";
@@ -15,6 +16,7 @@ function App() {
 				<Route path="" element={<Home />} />
 				<Route path="company/contact" element={<Contact />} />
 				<Route path="company/about" element={<About />} />
+				<Route path="company/learn" element={<Learn />} />
 				<Route path="products/:productType" element={<Products />} />
 				<Route path="products/:productType" element={<Products />} />
 				<Route path="products/:productType" element={<Products />} />

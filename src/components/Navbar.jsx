@@ -775,7 +775,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="company/learn"
 												className="block px-4 py-3 hover:bg-gray-100"
 											>
 												Learn
@@ -834,7 +834,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="company/learn"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">

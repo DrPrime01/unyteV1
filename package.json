@@ -16,6 +16,7 @@
     "@mui/material": "^5.14.1",
     "babel-plugin-prismjs": "^2.1.0",
     "gsap": "^3.12.2",
+    "moment": "^2.29.4",
     "prism-themes": "^1.9.0",
     "prismjs": "^1.29.0",
     "prop-types": "^15.8.1",
