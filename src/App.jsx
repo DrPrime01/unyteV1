@@ -4,6 +4,7 @@ import SharedLayout from "./SharedLayout";
 import Home from "./pages/Home";
 import About from "./pages/Company/About";
 import Learn from "./pages/Company/Learn";
+import Blog from "./pages/Company/Blog";
 import Contact from "./pages/Company/Contact";
 import Products from "./pages/Products/Products";
 import Fintech from "./pages/Industries/Fintech";
@@ -17,6 +18,7 @@ function App() {
 				<Route path="company/contact" element={<Contact />} />
 				<Route path="company/about" element={<About />} />
 				<Route path="company/learn" element={<Learn />} />
+				<Route path="company/learn/blog" element={<Blog />} />
 				<Route path="products/:productType" element={<Products />} />
 				<Route path="products/:productType" element={<Products />} />
 				<Route path="products/:productType" element={<Products />} />

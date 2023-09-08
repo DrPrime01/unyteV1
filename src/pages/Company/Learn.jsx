@@ -1,5 +1,6 @@
 import { RiSearchLine } from "react-icons/ri";
 import moment from "moment";
+import { Link } from "react-router-dom";
 
 import Video from "../../components/Video";
 import BlogPreview from "../../components/BlogPreview";
@@ -85,15 +86,16 @@ function Learn() {
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-5">
 					{previewBlog.map((preview) => {
 						return (
-							<BlogPreview
-								key={preview.authorName}
-								BlogPreviewBg={preview.blogPreviewBg}
-								blogPreviewHeader={preview.blogPreviewHeader}
-								blogPreviewDesc={preview.blogPreviewDesc}
-								AvatarImg={preview.avatarImg}
-								authorName={preview.authorName}
-								dateCreated={moment(preview.dateCreated).fromNow()}
-							/>
+							<Link to="blog" key={preview.authorName}>
+								<BlogPreview
+									BlogPreviewBg={preview.blogPreviewBg}
+									blogPreviewHeader={preview.blogPreviewHeader}
+									blogPreviewDesc={preview.blogPreviewDesc}
+									AvatarImg={preview.avatarImg}
+									authorName={preview.authorName}
+									dateCreated={moment(preview.dateCreated).fromNow()}
+								/>
+							</Link>
 						);
 					})}
 				</div>
