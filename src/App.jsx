@@ -9,6 +9,7 @@ import Contact from "./pages/Company/Contact";
 import Products from "./pages/Products/Products";
 import Fintech from "./pages/Industries/Fintech";
 import Documentation from "./pages/Developers/Documentation";
+import PrivacyPolicy from "./pages/Policies/PrivacyPolicy";
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 				<Route path="products/:productType" element={<Products />} />
 				<Route path="industries/fintech" element={<Fintech />} />
 				<Route path="developers/documentation" element={<Documentation />} />
+				<Route path="policies/privacypolicy" element={<PrivacyPolicy />} />
 			</Route>
 		</Routes>
 	);
