@@ -1,65 +1,139 @@
 import UnyteLogo from "../assets/icons/UnyteLogo.svg";
 import { GrInstagram, GrTwitter } from "react-icons/gr";
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
 	const productsList = [
-		"Launch",
-		"Health",
-		"Student Protection",
-		"Logistics/GIT",
-		"Credit Life",
-		"Motor Reg/ Insurance",
-		"Device Protection",
-		"Travel Cover",
+		{
+			page: "Launch",
+			link: "products/launch",
+		},
+		{
+			page: "Health",
+			link: "products/health",
+		},
+		{
+			page: "Student Protection",
+			link: "products/studentProtection",
+		},
+		{
+			page: "Logistics/GIT",
+			link: "#",
+		},
+		{
+			page: "Credit Life",
+			link: "products/creditLife",
+		},
+		{
+			page: "Motor Reg/ Insurance",
+			link: "products/motorRegInsurance",
+		},
+		{
+			page: "Device Protection",
+			link: "products/deviceProtection",
+		},
+		{
+			page: "Travel Cover",
+			link: "products/travelCover",
+		},
 	];
+
 	const IndustriesList = [
-		"Fintech",
-		"Banks",
-		"Logistics Companies",
-		"Ecommerce",
-		"Education",
+		{
+			page: "Fintech",
+			link: "industries/fintech",
+		},
+		{
+			page: "Banks",
+			link: "industries/banks",
+		},
+		{
+			page: "Logistics Companies",
+			link: "industries/logistics",
+		},
+		{
+			page: "Ecommerce",
+			link: "industries/ecommerce",
+		},
+		{
+			page: "Education",
+			link: "industries/education",
+		},
 	];
 	const legalList = [
-		"Developer policy",
-		"Privacy policy",
-		"Cookie policy",
-		"End user agreement",
-		"End user privacy policy",
+		{
+			page: "Developer policy",
+			link: "#",
+		},
+		{
+			page: "Privacy policy",
+			link: "policies/privacypolicy",
+		},
+		{
+			page: "Cookie policy",
+			link: "#",
+		},
+		{
+			page: "End user agreement",
+			link: "#",
+		},
+		{
+			page: "End user privacy policy",
+			link: "#",
+		},
 	];
 	const developersList = [
-		"Get started",
-		"API Status",
-		"API Reference",
-		"Developer docs",
-		"Libraries",
-		"Developer community",
+		{
+			page: "Get started",
+			link: "#",
+		},
+		{
+			page: "API Status",
+			link: "#",
+		},
+		{
+			page: "API Reference",
+			link: "#",
+		},
+		{
+			page: "Developer docs",
+			link: "developers/documentation",
+		},
+		{
+			page: "Libraries",
+			link: "#",
+		},
+		{
+			page: "Developer community",
+			link: "#",
+		},
 	];
 	const products = productsList.map((product) => {
 		return (
-			<li key={product} className="mb-4">
-				<a href="#">{product}</a>
+			<li key={product.page} className="mb-4">
+				<NavLink to={product.link}>{product.page}</NavLink>
 			</li>
 		);
 	});
 	const industries = IndustriesList.map((industry) => {
 		return (
-			<li key={industry} className="mb-4">
-				<a href="#">{industry}</a>
+			<li key={industry.page} className="mb-4">
+				<NavLink to={industry.link}>{industry.page}</NavLink>
 			</li>
 		);
 	});
 	const legals = legalList.map((legal) => {
 		return (
-			<li key={legal} className="mb-4">
-				<a href="#">{legal}</a>
+			<li key={legal.page} className="mb-4">
+				<NavLink to={legal.link}>{legal.page}</NavLink>
 			</li>
 		);
 	});
 	const developers = developersList.map((developer) => {
 		return (
-			<li key={developer} className="mb-4">
-				<a href="#">{developer}</a>
+			<li key={developer.page} className="mb-4">
+				<NavLink to={developer.link}>{developer.page}</NavLink>
 			</li>
 		);
 	});

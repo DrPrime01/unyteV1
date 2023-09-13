@@ -7,7 +7,7 @@ import Learn from "./pages/Company/Learn";
 import Blog from "./pages/Company/Blog";
 import Contact from "./pages/Company/Contact";
 import Products from "./pages/Products/Products";
-import Fintech from "./pages/Industries/Fintech";
+import Industries from "./pages/Industries/Industries";
 import Documentation from "./pages/Developers/Documentation";
 import PrivacyPolicy from "./pages/Policies/PrivacyPolicy";
 
@@ -21,14 +21,7 @@ function App() {
 				<Route path="company/learn" element={<Learn />} />
 				<Route path="company/learn/blog" element={<Blog />} />
 				<Route path="products/:productType" element={<Products />} />
-				<Route path="products/:productType" element={<Products />} />
-				<Route path="products/:productType" element={<Products />} />
-				<Route path="products/:productType" element={<Products />} />
-				<Route path="products/:productType" element={<Products />} />
-				<Route path="products/:productType" element={<Products />} />
-				<Route path="products/:productType" element={<Products />} />
-				<Route path="products/:productType" element={<Products />} />
-				<Route path="industries/fintech" element={<Fintech />} />
+				<Route path="industries/:industryType" element={<Industries />} />
 				<Route path="developers/documentation" element={<Documentation />} />
 				<Route path="policies/privacypolicy" element={<PrivacyPolicy />} />
 			</Route>

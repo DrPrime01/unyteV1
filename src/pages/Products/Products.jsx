@@ -22,7 +22,6 @@ import { products } from "../../Data/products";
 function Products() {
 	const { productType } = useParams();
 	const product = products[productType];
-	console.log(product);
 	return (
 		<>
 			<section

@@ -1,43 +1,72 @@
 import { BsArrowRight, BsArrowUpRight } from "react-icons/bs";
 import { RxDividerVertical } from "react-icons/rx";
 import { GiCheckMark } from "react-icons/gi";
+import { useParams } from "react-router-dom";
+
+import { industries } from "../../Data/industries";
 
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../../assets/icons/WemaLogo.svg";
 import MintynLogo from "../../assets/icons/MintynLogo.svg";
-import Database from "../../assets/icons/Database.svg";
-import CodeblockIcon from "../../assets/icons/CodeblockIcon.svg";
 //import Laptop from "../../assets/images/Laptop.jpg";
 
 import TestimonialCard from "../../components/TestimonialCard";
 import TestimonialSwiper from "../../components/TestimonialSwiper";
 
-function Fintech() {
-	const testimonials = [
-		TestimonialCard,
-		TestimonialCard,
-		TestimonialCard,
-		TestimonialCard,
-		TestimonialCard,
+function Industries() {
+	const testimonialContents = [
+		{
+			id: "1",
+			text: "Unyte revolutionized our approach to insurance, enabling us to seamlessly offer a diverse range of coverage options. Our customer satisfaction and revenue have skyrocketed.",
+			name: "Mike Kalu",
+			position: "Head Insuretech Heirs",
+		},
+		{
+			id: "2",
+			text: "Unyte's solutions simplified complex insurance integration, enabling us to provide efficient and comprehensive coverage to our clients. A game-changer in the industry.",
+			name: "CP Tunji Disu",
+			position: "PSO NPF",
+		},
+		{
+			id: "3",
+			text: "Partnering with Unyte was a turning point for us. Their innovative technology empowered our insurance services, leading to a significant increase in customer trust and loyalty.",
+			name: "Alfred Egbai",
+			position: "Group Head Emerging Partnerships AXA",
+		},
+		{
+			id: "4",
+			text: "Unyte's collaboration empowered us to diversify our insurance offerings, enhancing our value proposition and attracting a wider audience. A true success story.",
+			name: "Isaac Osuntade (ZICO)",
+			position: "Director protocol and logistics Babcock University",
+		},
 	];
+	const testimonials = testimonialContents.map((testimonial) => {
+		return (
+			<TestimonialCard
+				key={testimonial.id}
+				testimonialText={testimonial.text}
+				testimonialName={testimonial.name}
+				testimonialPosition={testimonial.position}
+			/>
+		);
+	});
+	const { industryType } = useParams();
+	const industry = industries[industryType];
 	return (
 		<>
 			<section
 				id="fintech"
 				className="mt-48 md:mt-32 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
 			>
-				<div className="pb-16 md:pb-0 flex-1 md:mr-[4.375rem] mr-0">
+				<div className="pb-16 md:pb-0 flex-1 mr-0">
 					<h4 className="text-base md:text-sm font-semibold mb-2 md:mb-4 text-[#0CD704] uppercase">
-						fintech
+						{industry.name}
 					</h4>
 					<h3 className="font-semibold md:font-bold text-2xl md:text-5xl text-[#033401] mb-6">
-						Empowering <span className="text-[#5CC758]">Fintech</span>{" "}
-						Innovators with Strategic Solutions
+						{industry.header}
 					</h3>
 					<p className="text-base md:text-xl text-[#667085] md:leading-8 mb-12">
-						Unlock new opportunities and drive digital transformation in the
-						fintech landscape with Unyte&apos;s tailored solutions and industry
-						expertise.
+						{industry.desc}
 					</p>
 					<div className="flex items-center gap-x-2.5">
 						<button
@@ -138,50 +167,23 @@ function Fintech() {
 					</p>
 				</div>
 				<div className="flex flex-col md:flex-row items-center justify-between space-y-[3.5rem] md:space-y-0 space-x-0 md:space-x-6">
-					<div className="text-center px-[2.125rem] md:px-[3.5625rem] pt-[4.125rem] pb-[2.125rem] md:pb-[5.25rem] rounded-2xl bg-[#F9FAFB] h-[18.75rem] w-auto md:w-[24.8125rem] md:h-[21.875rem] relative">
-						<img
-							src={Database}
-							alt="database icon"
-							className="absolute -top-7 left-[9.5rem]  md:left-[10.5rem]"
-						/>
-						<p className="text-[#101323] text-xl mb-4 font-semibold">
-							Cash add
-						</p>
-						<p className="text-[#667085]">
-							we let you focus on your core business while seamlessly receiving
-							substantial commissions from products sold on your platform. An
-							easy way to commercialize your user base
-						</p>
-					</div>
-					<div className="text-center px-[2.125rem] md:px-[3.5625rem] pt-[4.125rem] pb-[2.125rem] md:pb-[5.25rem] rounded-2xl bg-[#F9FAFB] h-[18.75rem] w-auto md:w-[24.8125rem] md:h-[21.875rem] relative">
-						<img
-							src={CodeblockIcon}
-							alt="database icon"
-							className="absolute -top-7 left-[9.5rem] md:left-[10.5rem]"
-						/>
-						<p className="text-[#101323] text-xl mb-4 font-semibold">
-							Hassel free
-						</p>
-						<p className="text-[#667085]">
-							simplified operations monitoring captured on a detailed merchant
-							dashboard containing policy submissions, renewals, claim requests,
-							revenue report and so on
-						</p>
-					</div>
-					<div className="text-center px-[2.125rem] md:px-[3.5625rem] pt-[4.125rem] pb-[2.125rem] md:pb-[5.25rem] rounded-2xl bg-[#F9FAFB] h-[18.75rem] w-auto md:w-[24.8125rem] md:h-[21.875rem] relative">
-						<img
-							src={Database}
-							alt="database icon"
-							className="absolute -top-7 left-[9.5rem] md:left-[10.5rem]"
-						/>
-						<p className="text-[#101323] text-xl mb-4 font-semibold">
-							Supercharge
-						</p>
-						<p className="text-[#667085]">
-							we enable you supercharge your proposition by mitigating risks in
-							existing products (i.e., loans) through embedded insurance.
-						</p>
-					</div>
+					{industry.benefits.map((benefit) => {
+						return (
+							<>
+								<div className="text-center px-[2.125rem] md:px-[3.5625rem] pt-[4.125rem] pb-[2.125rem] md:pb-[5.25rem] rounded-2xl bg-[#F9FAFB] h-[18.75rem] w-auto md:w-[24.8125rem] md:h-[21.875rem] relative">
+									<img
+										src={benefit.icon}
+										alt="database icon"
+										className="absolute -top-7 left-[9.5rem]  md:left-[10.5rem]"
+									/>
+									<p className="text-[#101323] text-xl mb-4 font-semibold">
+										{benefit.header}
+									</p>
+									<p className="text-[#667085]">{benefit.benefit}</p>
+								</div>
+							</>
+						);
+					})}
 				</div>
 			</section>
 			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col">
@@ -317,4 +319,4 @@ function Fintech() {
 	);
 }
 
-export default Fintech;
+export default Industries;

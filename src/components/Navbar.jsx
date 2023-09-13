@@ -580,7 +580,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="industries/banks"
 												className="block px-4 py-3 hover:bg-gray-100"
 											>
 												Banks
@@ -588,7 +588,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="industries/logistics"
 												className="block px-4 py-3 hover:bg-gray-100"
 											>
 												Logistic Companies
@@ -596,7 +596,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="industries/ecommerce"
 												className="block px-4 py-3 hover:bg-gray-100"
 											>
 												Ecommerce
@@ -604,7 +604,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="industries/education"
 												className="block px-4 py-3 hover:bg-gray-100"
 											>
 												Education
