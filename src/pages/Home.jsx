@@ -6,6 +6,8 @@ import { GiCheckMark } from "react-icons/gi";
 import UnyteHero from "../assets/images/UnyteHero.png";
 import AxaMansardLogo from "../assets/icons/AxaMansardLogo.svg";
 import PolarisLogo from "../assets/icons/PolarisLogo.svg";
+import Sterling from "../assets/icons/Sterling.svg";
+import NPF from "../assets/icons/NPF.svg";
 import WemaLogo from "../assets/icons/WemaLogo.svg";
 import MintynLogo from "../assets/icons/MintynLogo.svg";
 import InterswitchLogo from "../assets/icons/InterswitchLogo.svg";
@@ -197,13 +199,19 @@ function Home() {
 					id="sponsors-companies"
 					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
 				>
-					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={Sterling} alt="company logo" />
+					</div>
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={PolarisLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={WemaLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={NPF} alt="company logo" />
+					</div>
+					<div className="h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={MintynLogo} alt="company logo" />
 					</div>
 				</div>
