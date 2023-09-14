@@ -102,9 +102,38 @@ export const industries = {
 			},
 		],
 	},
+	fintech: {
+		name: "fintech",
+		header: "Empowering Fintech Innovators with Strategic Solutions",
+		desc: "Unlock new opportunities and drive digital transformation in the fintech landscape with Unyte's tailored solutions and industry expertise.",
+		benefits: [
+			{
+				icon: Database,
+				header: "Cash add",
+				benefit:
+					"We let you focus on your core business while seamlessly receiving substantial commissions from products sold on your platform. An easy way to commercialize your user base.",
+			},
+			{
+				icon: CodeblockIcon,
+				header: "Hassle free",
+				benefit:
+					"Simplified operations monitoring captured on a detailed merchant dashboard containing policy submissions, renewals, claim requests, revenue report and so on.",
+			},
+			{
+				icon: Database,
+				header: "Supercharge",
+				benefit:
+					"we enable you supercharge your proposition by mitigating risks in existing products (i.e., loans) through embedded insurance.",
+			},
+		],
+	},
 };
 
 export const industryLinks = [
+	{
+		path: "/industries/fintech",
+		label: "Fintech",
+	},
 	{
 		path: "/industries/banks",
 		label: "Banks",

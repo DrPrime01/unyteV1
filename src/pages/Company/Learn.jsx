@@ -4,21 +4,9 @@ import { Link } from "react-router-dom";
 
 import Video from "../../components/Video";
 import BlogPreview from "../../components/BlogPreview";
-import BlogPreviewBg from "../../assets/images/BlogPreviewBg.jpg";
-import AvatarImg from "../../assets/images/AvatarImg.png";
+import { previewBlog } from "../../Data/blogs";
 
 function Learn() {
-	const defaultBlogData = {
-		blogPreviewBg: BlogPreviewBg,
-		blogPreviewHeader: "Insurance has never been Simpler",
-		blogPreviewDesc:
-			"Insurance is very simple. It is something we pay for to make sure that we don’t end up in...",
-		avatarImg: AvatarImg,
-		authorName: "Treasure Okure",
-		dateCreated: new Date(),
-	};
-	const previewBlog = new Array(6).fill(defaultBlogData);
-	console.log(previewBlog);
 	return (
 		<>
 			<section

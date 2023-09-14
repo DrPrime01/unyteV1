@@ -27,10 +27,12 @@ function BlogPreview({
 				</div>
 			</div>
 			<div className="pt-4 p-6 mt-6">
-				<p className="text-xl text-[#101323] font-semibold">
+				<p className="text-xl text-[#101323] font-semibold truncate">
 					{blogPreviewHeader}
 				</p>
-				<p className="text-[#667085] leading-7 mb-6">{blogPreviewDesc}</p>
+				<p className="text-[#667085] leading-7 mb-6 truncate">
+					{blogPreviewDesc}
+				</p>
 				<div className="">
 					<button
 						type="button"
