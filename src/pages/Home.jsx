@@ -14,23 +14,20 @@ import InterswitchLogo from "../assets/icons/InterswitchLogo.svg";
 import StacoLogo from "../assets/icons/StacoLogo.svg";
 import LeadwayAssuranceLogo from "../assets/icons/LeadwayAssuranceLogo.svg";
 import HeirsLifeLogo from "../assets/icons/HeirsLifeLogo.svg";
-import Ideas from "../assets/icons/Ideas.svg";
-import Health from "../assets/icons/Health.svg";
-import Education from "../assets/icons/Education.svg";
-import Security from "../assets/icons/Security.svg";
-import Motor from "../assets/icons/Motor.svg";
+import LaunchNav from "../assets/icons/LaunchNav.svg";
+import HealthNav from "../assets/icons/HealthNav.svg";
+import EducationNav from "../assets/icons/EducationNav.svg";
+import SecurityNav from "../assets/icons/SecurityNav.svg";
+import MotorNav from "../assets/icons/MotorNav.svg";
 import Dice from "../assets/icons/Dice.svg";
 import IntegrateIcon from "../assets/icons/IntegrateIcon.svg";
 import UmbrellaIcon from "../assets/icons/UmbrellaIcon.svg";
-import DownloadIcon from "../assets/icons/DownloadIcon.svg";
-import GraduationIcon from "../assets/icons/GraduationIcon.svg";
-import CodeBlock from "../assets/icons/CodeBlock.svg";
+import CodeSection from "../assets/images/CodeSection.png";
 import OmbreBG from "../assets/images/OmbreBG.svg";
 import DashboardIllustration from "../assets/images/DashboardIllustration.png";
 
 import TestimonialCard from "../components/TestimonialCard";
 import TestimonialSwiper from "../components/TestimonialSwiper";
-import CodeSection from "../components/CodeSection";
 
 function Home() {
 	const testimonialContents = [
@@ -343,7 +340,7 @@ function Home() {
 				</div>
 				<div className="grid md:grid-cols-3 grid-cols-1 gap-4 md:gap-6 lg:gap-8 mb-12">
 					<div className="md:col-start-1 md:col-end-3 bg-[#FFF5E6] rounded-xl p-6">
-						<img src={Ideas} alt="icons" className="mb-6" />
+						<img src={LaunchNav} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Launch
 						</h4>
@@ -363,7 +360,7 @@ function Home() {
 						</button>
 					</div>
 					<div className="md:col-start-3 md:col-end-4 bg-[#E6FFF3B2] rounded-xl p-6">
-						<img src={Education} alt="icons" className="mb-6" />
+						<img src={EducationNav} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Student Protection
 						</h4>
@@ -381,7 +378,7 @@ function Home() {
 						</button>
 					</div>
 					<div className="md:col-start-1 md:col-end-2 bg-[#E6F6FF] rounded-xl p-6">
-						<img src={Health} alt="icons" className="mb-6" />
+						<img src={HealthNav} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Health
 						</h4>
@@ -399,7 +396,7 @@ function Home() {
 						</button>
 					</div>
 					<div className="md:col-start-2 md:col-end-4 bg-[#FFF5E6] rounded-xl p-6">
-						<img src={Motor} alt="icons" className="mb-6" />
+						<img src={MotorNav} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Motor Reg/Insurance
 						</h4>
@@ -419,7 +416,7 @@ function Home() {
 						</button>
 					</div>
 					<div className="md:col-span-3 bg-[#E6FFF3B2] bg-opacity-70 rounded-xl p-6">
-						<img src={Security} alt="icons" className="mb-6" />
+						<img src={SecurityNav} alt="icons" className="mb-6" />
 						<h4 className="mb-2 text-[#101323] text-xl font-semibold">
 							Device Protection
 						</h4>
@@ -439,15 +436,6 @@ function Home() {
 						</button>
 					</div>
 				</div>
-				{/*<div className="flex items-center justify-center">
-					<button
-						type="button"
-						className="text-[#101323] bg-transparent border group border-[#D0D5DD] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-					>
-						<span>View all products</span>{" "}
-						<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
-					</button>
-	</div>*/}
 			</section>
 			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5">
 				<div className="text-center mb-6 md:mb-16">
@@ -575,7 +563,7 @@ function Home() {
 				</div>
 			</section>
 			<section
-				className="py-20 bg-[#101323] md:px-12 xl:px-5 px-5"
+				className="py-20 md:pb-0  bg-[#101323] md:px-12 xl:px-5 px-5"
 				id="developers"
 			>
 				<div className="max-w-screen-xl mx-auto">
@@ -593,55 +581,11 @@ function Home() {
 									<br className="hidden md:block" />
 									with all your languages
 								</h2>
-								<p className="text-[#667085] leading-7">
+								<p className="text-[#667085] leading-7 mb-8">
 									Implement any or all of Unyte’s products with just a few lines
 									of code in <br className="hidden md:block" />
 									any language!
 								</p>
-								<div className="my-6">
-									<img src={CodeBlock} alt="code icon" className="mb-5" />
-									<p className="text-base leading-7 text-[#ffffff] mb-2">
-										Standardized JSON / CSV.
-									</p>
-									<p className="text-base leading-7 text-[#667085]">
-										You may easily incorporate our data into your application
-										because it is <br className="hidden md:block" />
-										offered in CSV and JSON forms.
-									</p>
-								</div>
-								<div className="mb-6">
-									<img
-										src={DownloadIcon}
-										alt="download icon"
-										className="mb-5"
-									/>
-									<p className="text-base leading-7 text-[#ffffff] mb-2">
-										Client Libraries.
-									</p>
-									<p className="text-base leading-7 text-[#667085]">
-										You can easily access and use our data thanks to our client
-										libraries, <br className="hidden md:block" />
-										which frees up your time to focus on developing your
-										application rather <br className="hidden md:block" />
-										than worrying about technical issues.
-									</p>
-								</div>
-								<div className="mb-8">
-									<img
-										src={GraduationIcon}
-										alt="graduation hat icon"
-										className="mb-5"
-									/>
-									<p className="text-base leading-7 text-[#ffffff] mb-2">
-										Client Libraries.
-									</p>
-									<p className="text-base leading-7 text-[#667085]">
-										We offer tutorials and examples to assist you get up and
-										running quickly <br className="hidden md:block" />
-										because we are aware that learning a new API can be
-										difficult.
-									</p>
-								</div>
 								<div>
 									<button
 										type="button"
@@ -653,35 +597,9 @@ function Home() {
 								</div>
 							</div>
 							<div id="code tab" className="flex-1">
-								<CodeSection />
+								<img src={CodeSection} alt="code section" />
 							</div>
 						</div>
-						{/*<div className="flex flex-col md:flex-row items-center justify-between space-y-5 md:space-y-0 mt-12 md:mt-[4.75rem]">
-							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
-									<p>Reliance</p>
-								</div>
-							</div>
-							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">99.99%</p>
-									<p>Uptime</p>
-								</div>
-							</div>
-							<div className="h-[9.8125rem] w-full md:w-[19rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">65 Million</p>
-									<p>Messages/sec</p>
-								</div>
-							</div>
-							<div className="h-[9.8125rem] w-full md:w-[18rem] flex items-center justify-center bg-[#1D2939] rounded-2xl">
-								<div className="text-white text-center">
-									<p className="mb-4 font-bold text-[2.5rem]">1 Billion +</p>
-									<p>Rows of Data</p>
-								</div>
-							</div>
-	</div>*/}
 					</div>
 				</div>
 			</section>

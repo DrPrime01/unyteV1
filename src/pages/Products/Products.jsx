@@ -4,17 +4,12 @@ import { useParams } from "react-router-dom";
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../../assets/icons/WemaLogo.svg";
 import MintynLogo from "../../assets/icons/MintynLogo.svg";
-import DownloadIcon from "../../assets/icons/DownloadIcon.svg";
-import GraduationIcon from "../../assets/icons/GraduationIcon.svg";
 import WavyArrow from "../../assets/icons/WavyArrow.svg";
 import Dice from "../../assets/icons/Dice.svg";
-import CodeBlock from "../../assets/icons/CodeBlock.svg";
+import CodeSection from "../../assets/images/CodeSection.png";
 import OmbreBG from "../../assets/images/OmbreBG.svg";
 
-//import TestimonialCard from "../../components/TestimonialCard";
 import CoverageAccordion from "../../components/CoverageAccordion";
-//import TestimonialSwiper from "../../components/TestimonialSwiper";
-import CodeSection from "../../components/CodeSection";
 import Coverage from "./components/Coverage.jsx";
 
 import { products } from "../../Data/products";
@@ -85,7 +80,7 @@ function Products() {
 				</div>
 			</section>
 			<section
-				className="py-20 bg-[#101323] md:px-12 xl:px-5 px-5"
+				className="py-20 md:pb-0 bg-[#101323] md:px-12 xl:px-5 px-5"
 				id="developers"
 			>
 				<div className="max-w-screen-xl mx-auto">
@@ -103,59 +98,15 @@ function Products() {
 									<br className="hidden md:block" />
 									with all your languages
 								</h2>
-								<p className="text-[#667085] leading-7">
+								<p className="text-[#667085] leading-7 mb-8">
 									Implement any or all of Unyte’s products with just a few lines
 									of code in <br className="hidden md:block" />
 									any language!
 								</p>
-								<div className="my-6">
-									<img src={CodeBlock} alt="code icon" className="mb-5" />
-									<p className="text-base leading-7 text-[#ffffff] mb-2">
-										Standardized JSON / CSV.
-									</p>
-									<p className="text-base leading-7 text-[#667085]">
-										You may easily incorporate our data into your application
-										because it is <br className="hidden md:block" />
-										offered in CSV and JSON forms.
-									</p>
-								</div>
-								<div className="mb-6">
-									<img
-										src={DownloadIcon}
-										alt="download icon"
-										className="mb-5"
-									/>
-									<p className="text-base leading-7 text-[#ffffff] mb-2">
-										Client Libraries.
-									</p>
-									<p className="text-base leading-7 text-[#667085]">
-										You can easily access and use our data thanks to our client
-										libraries, <br className="hidden md:block" />
-										which frees up your time to focus on developing your
-										application rather <br className="hidden md:block" />
-										than worrying about technical issues.
-									</p>
-								</div>
-								<div className="mb-8">
-									<img
-										src={GraduationIcon}
-										alt="graduation hat icon"
-										className="mb-5"
-									/>
-									<p className="text-base leading-7 text-[#ffffff] mb-2">
-										Client Libraries.
-									</p>
-									<p className="text-base leading-7 text-[#667085]">
-										We offer tutorials and examples to assist you get up and
-										running quickly <br className="hidden md:block" />
-										because we are aware that learning a new API can be
-										difficult.
-									</p>
-								</div>
 								<div>
 									<button
 										type="button"
-										className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl group text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+										className="text-white bg-[#5CC758] group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 									>
 										<span>Read our docs</span>{" "}
 										<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
@@ -163,13 +114,13 @@ function Products() {
 								</div>
 							</div>
 							<div id="code tab" className="flex-1">
-								<CodeSection />
+								<img src={CodeSection} alt="code section" />
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section
+			{/*<section
 				className="py-16 md:py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col items-center"
 				id="benefits"
 			>
@@ -238,7 +189,7 @@ function Products() {
 						Get started for free
 					</button>
 				</div>
-			</section>
+	</section> */}
 			<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-y-12 md:space-y-0"
 				id="coverage"
@@ -293,7 +244,7 @@ function Products() {
 									Prioritize the Well-being of your business and users with{" "}
 									<span className="text-[#5CC758]">Unyte Health Insurance</span>
 								</h4>
-								<p className="mb-[8.3125rem] md:mb-[21.5rem] text-[#101323]">
+								<p className="mb-[8.3125rem] md:mb-[18.5rem] text-[#101323]">
 									Comprehensive health insurance solutions designed to protect
 									and enhance your physical and financial well-being.
 								</p>

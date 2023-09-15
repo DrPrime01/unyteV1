@@ -40,6 +40,11 @@ export const products = {
 		header: "Travel with Confidence",
 		desc: "Unyte Travel Cover provides travel insurance solutions for businesses in the travel and hospitality sectors. It enables seamless integration of travel insurance offerings, protecting travelers from various risks such as trip cancellations, medical emergencies, and lost luggage",
 	},
+	cardProtection: {
+		name: "Travel Cover",
+		header: "Travel with Confidence",
+		desc: "Unyte Travel Cover provides travel insurance solutions for businesses in the travel and hospitality sectors. It enables seamless integration of travel insurance offerings, protecting travelers from various risks such as trip cancellations, medical emergencies, and lost luggage",
+	},
 };
 
 export const productLinks = [
@@ -74,5 +79,9 @@ export const productLinks = [
 	{
 		path: "/products/travelCover",
 		label: "Travel Cover",
+	},
+	{
+		path: "/products/cardProtection",
+		label: "Card Protection",
 	},
 ];

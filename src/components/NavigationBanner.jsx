@@ -15,7 +15,7 @@ function NavigationBanner({ bannerType, links }) {
 				<p className="text-sm text-[#101323] font-semibold mr-[3.75rem] md:mr-[11.25rem] whitespace-nowrap">
 					{bannerType}
 				</p>
-				<div id="nav-links" className="flex space-x-3 items-center">
+				<div id="nav-links" className="flex space-x-2 items-center">
 					{links.map((link) => {
 						return (
 							<NavLink

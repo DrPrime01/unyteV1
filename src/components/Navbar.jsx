@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import UnyteLogo from "../assets/icons/UnyteLogo.svg";
 import LaunchNav from "../assets/icons/LaunchNav.svg";
@@ -10,6 +10,7 @@ import SecurityNav from "../assets/icons/SecurityNav.svg";
 import MotorNav from "../assets/icons/MotorNav.svg";
 import Credit from "../assets/icons/Credit.svg";
 import Travel from "../assets/icons/Travel.svg";
+import CardProtection from "../assets/icons/CardProtection.svg";
 import BanksIcon from "../assets/icons/BanksIcon.svg";
 import ContactUsIcon from "../assets/icons/ContactUsIcon.svg";
 import EcommerceIcon from "../assets/icons/EcommerceIcon.svg";
@@ -26,6 +27,7 @@ function Navbar() {
 	const [mobileDropdown, setMobileDropdown] = useState(false);
 
 	const location = useLocation();
+	const navigate = useNavigate();
 
 	const handleDropdown1 = () => {
 		setDropdown2(false);
@@ -95,6 +97,7 @@ function Navbar() {
 						<div className="md:flex gap-x-4 items-center justify-between hidden">
 							<button
 								type="button"
+								onClick={() => navigate("company/contact")}
 								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0"
 							>
 								Get started
@@ -224,6 +227,14 @@ function Navbar() {
 												Student Protection
 											</NavLink>
 										</li>
+										<li>
+											<NavLink
+												to="products/cardProtection"
+												className="block px-4 py-2 hover:bg-gray-100"
+											>
+												Card Protection
+											</NavLink>
+										</li>
 									</ul>
 								</div>
 								<div
@@ -348,6 +359,27 @@ function Navbar() {
 													<img src={Travel} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Travel Cover
+													</p>
+													<p className="text-sm text-[#667085]">
+														Ensure worry-free travels with our comprehensive
+														insurance plans.
+													</p>
+												</div>
+											</NavLink>
+										</li>
+										<li>
+											<NavLink
+												to="products/cardProtection"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img
+														src={CardProtection}
+														alt="icon"
+														className="mb-4"
+													/>
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Card Protection
 													</p>
 													<p className="text-sm text-[#667085]">
 														Ensure worry-free travels with our comprehensive
