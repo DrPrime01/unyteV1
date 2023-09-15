@@ -1,4 +1,5 @@
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
+import { GiCheckMark } from "react-icons/gi";
 import { useParams } from "react-router-dom";
 
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
@@ -9,7 +10,6 @@ import Dice from "../../assets/icons/Dice.svg";
 import CodeSection from "../../assets/images/CodeSection.png";
 import OmbreBG from "../../assets/images/OmbreBG.svg";
 
-import CoverageAccordion from "../../components/CoverageAccordion";
 import Coverage from "./components/Coverage.jsx";
 
 import { products } from "../../Data/products";
@@ -209,7 +209,30 @@ function Products() {
 						medical requirements. Including:
 					</p>
 					<div id="coverage-accordion">
-						<CoverageAccordion />
+						<div className="flex items-center font-medium text-[#101323] py-4">
+							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+								<GiCheckMark className="text-[#5CC758] text-sm" />
+							</div>
+							<span>Medical Expenses</span>
+						</div>
+						<div className="flex items-center font-medium text-[#101323] py-4">
+							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+								<GiCheckMark className="text-[#5CC758] text-sm" />
+							</div>
+							<span>Hospital Stays</span>
+						</div>
+						<div className="flex items-center font-medium text-[#101323] py-4">
+							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+								<GiCheckMark className="text-[#5CC758] text-sm" />
+							</div>
+							<span>Specialist Consultations</span>
+						</div>
+						<div className="flex items-center font-medium text-[#101323] py-4">
+							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+								<GiCheckMark className="text-[#5CC758] text-sm" />
+							</div>
+							<span>Preventive Care</span>
+						</div>
 					</div>
 				</div>
 				<div className="flex-1">
