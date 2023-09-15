@@ -1,6 +1,6 @@
-import { BsArrowRight, BsArrowUpRight } from "react-icons/bs";
-import { RxDividerVertical } from "react-icons/rx";
-import { GiCheckMark } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
+// import { RxDividerVertical } from "react-icons/rx";
+// import { GiCheckMark } from "react-icons/gi";
 import { useParams } from "react-router-dom";
 
 import { industries } from "../../Data/industries";
@@ -186,7 +186,7 @@ function Industries() {
 					})}
 				</div>
 			</section>
-			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col">
+			{/*<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col">
 				<div className="mb-12">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 						case studies
@@ -290,7 +290,7 @@ function Industries() {
 						</div>
 					</div>
 				</div>
-			</section>
+				</section>*/}
 			<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="testimonials"

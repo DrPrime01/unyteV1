@@ -837,8 +837,8 @@ function Navbar() {
 														About Unyte
 													</p>
 													<p className="text-sm text-[#667085]">
-														Integrate insurance seamlessly and unlock new
-														revenue streams.
+														Uncover the reasons behind our transformative
+														insurance integration solutions.
 													</p>
 												</div>
 											</NavLink>
@@ -858,8 +858,8 @@ function Navbar() {
 														Contact Us
 													</p>
 													<p className="text-sm text-[#667085]">
-														Embrace comprehensive health coverage for
-														individuals and families.
+														Reach out to us for inquiries, collaboration, and
+														personalized assistance.
 													</p>
 												</div>
 											</NavLink>
@@ -875,8 +875,8 @@ function Navbar() {
 														Learn
 													</p>
 													<p className="text-sm text-[#667085]">
-														Shield your electronic devices from unexpected
-														mishaps.
+														Dive into our educational resources to expand your
+														insurance knowledge.
 													</p>
 												</div>
 											</NavLink>

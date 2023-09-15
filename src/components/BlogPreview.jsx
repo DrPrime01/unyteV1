@@ -38,7 +38,7 @@ function BlogPreview({
 						type="button"
 						className="text-[#101323] group bg-transparent focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm pl-0 px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 					>
-						<span>Learn more</span>{" "}
+						<span>Read more</span>{" "}
 						<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 					</button>
 				</div>
