@@ -1,22 +1,43 @@
-import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 import { useParams } from "react-router-dom";
 
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../../assets/icons/WemaLogo.svg";
 import MintynLogo from "../../assets/icons/MintynLogo.svg";
-import WavyArrow from "../../assets/icons/WavyArrow.svg";
-import Dice from "../../assets/icons/Dice.svg";
-import CodeSection from "../../assets/images/CodeSection.png";
-import OmbreBG from "../../assets/images/OmbreBG.svg";
+import Sterling from "../../assets/icons/Sterling.svg";
+import NPF from "../../assets/icons/NPF.svg";
 
 import Coverage from "./components/Coverage.jsx";
+import TestimonialCard from "../../components/TestimonialCard";
+import TestimonialSwiper from "../../components/TestimonialSwiper";
 
-import { products } from "../../Data/products";
+import {
+	products,
+	testimonialContents,
+	testimonialTravel,
+	testimonialCardProtection,
+} from "../../Data/products";
 
 function Products() {
 	const { productType } = useParams();
 	const product = products[productType];
+	const testimony =
+		productType === "travelCover"
+			? testimonialTravel
+			: productType === "cardProtection"
+			? testimonialCardProtection
+			: testimonialContents;
+	const testimonials = testimony.map((testimonial) => {
+		return (
+			<TestimonialCard
+				key={testimonial.id}
+				testimonialText={testimonial.text}
+				testimonialName={testimonial.name}
+				testimonialPosition={testimonial.position}
+			/>
+		);
+	});
 	return (
 		<>
 			<section
@@ -51,35 +72,61 @@ function Products() {
 				</div>
 				<div className="flex-1"></div>
 			</section>
-			<section
-				id="sponsors"
-				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
-			>
-				<div id="sponsors-text" className="text-center mb-10">
-					<h3 className="text-xl font-semibold text-[#101323] mb-8">
-						Businesses building and embedding with us
-					</h3>
-					<p className="text-[#667085] leading-7">
-						Be a part of the top businesses engaging and connecting with their
-						customers using Unyte.
-					</p>
-				</div>
-				<div
-					id="sponsors-companies"
-					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
+			{!["studentProtection", "logisticsGit"].includes(productType) && (
+				<section
+					id="sponsors"
+					className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				>
-					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
-						<img src={PolarisLogo} alt="company logo" />
+					<div id="sponsors-text" className="text-center mb-10">
+						<h3 className="text-xl font-semibold text-[#101323] mb-8">
+							Businesses building and embedding with us
+						</h3>
+						<p className="text-[#667085] leading-7">
+							Be a part of the top businesses engaging and connecting with their
+							customers using Unyte.
+						</p>
 					</div>
-					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
-						<img src={WemaLogo} alt="company logo" />
+					<div
+						id="sponsors-companies"
+						className={`flex flex-col md:flex-row items-center ${
+							productType === "cardProtection"
+								? "justify-center"
+								: "justify-between"
+						} px-5 md:px-[5.125rem]`}
+					>
+						{productType !== "cardProtection" && (
+							<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+								<img src={Sterling} alt="company logo" />
+							</div>
+						)}
+						<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+							<img src={PolarisLogo} alt="company logo" />
+						</div>
+						{productType !== "cardProtection" && (
+							<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+								<img src={WemaLogo} alt="company logo" />
+							</div>
+						)}
+						{![
+							"launch",
+							"motorRegInsurance",
+							"deviceProtection",
+							"travelCover",
+							"cardProtection",
+						].includes(productType) && (
+							<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+								<img src={NPF} alt="company logo" />
+							</div>
+						)}
+						{productType !== "cardProtection" && (
+							<div className="h-[10.625rem] rounded-lg flex items-center justify-center">
+								<img src={MintynLogo} alt="company logo" />
+							</div>
+						)}
 					</div>
-					<div className="bg-[#F9FAFB] w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
-						<img src={MintynLogo} alt="company logo" />
-					</div>
-				</div>
-			</section>
-			<section
+				</section>
+			)}
+			{/*<section
 				className="py-20 md:pb-0 bg-[#101323] md:px-12 xl:px-5 px-5"
 				id="developers"
 			>
@@ -119,7 +166,7 @@ function Products() {
 						</div>
 					</div>
 				</div>
-			</section>
+	</section>*/}
 			{/*<section
 				className="py-16 md:py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col items-center"
 				id="benefits"
@@ -190,56 +237,58 @@ function Products() {
 					</button>
 				</div>
 	</section> */}
-			<section
-				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-y-12 md:space-y-0"
-				id="coverage"
-			>
-				<div className="flex-1 md:mr-[4.375rem] mr-0">
-					<p className="text-[#0CD704] font-medium text-base md:text-xl mb-4">
-						coverage
-					</p>
-					<p className="text-[#101323] text-2xl md:text-[2.438rem] mb-4 font-medium">
-						Extensive Health Coverage
-					</p>
-					<p className="text-[#667085] text-2xl md:text-[2.438rem] mb-4 font-medium">
-						for Your Users.
-					</p>
-					<p className="text-[#667085] mb-6">
-						Unyte Health offers a wide range of coverage options to address your
-						medical requirements. Including:
-					</p>
-					<div id="coverage-accordion">
-						<div className="flex items-center font-medium text-[#101323] py-4">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
+			{productType === "health" && (
+				<section
+					className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-y-12 md:space-y-0"
+					id="coverage"
+				>
+					<div className="flex-1 md:mr-[4.375rem] mr-0">
+						<p className="text-[#0CD704] font-medium text-base md:text-xl mb-4">
+							coverage
+						</p>
+						<p className="text-[#101323] text-2xl md:text-[2.438rem] mb-4 font-medium">
+							Extensive Health Coverage
+						</p>
+						<p className="text-[#667085] text-2xl md:text-[2.438rem] mb-4 font-medium">
+							for Your Users.
+						</p>
+						<p className="text-[#667085] mb-6">
+							Unyte Health offers a wide range of coverage options to address
+							your medical requirements. Including:
+						</p>
+						<div id="coverage-accordion">
+							<div className="flex items-center font-medium text-[#101323] py-4">
+								<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+									<GiCheckMark className="text-[#5CC758] text-sm" />
+								</div>
+								<span>Medical Expenses</span>
 							</div>
-							<span>Medical Expenses</span>
-						</div>
-						<div className="flex items-center font-medium text-[#101323] py-4">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
+							<div className="flex items-center font-medium text-[#101323] py-4">
+								<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+									<GiCheckMark className="text-[#5CC758] text-sm" />
+								</div>
+								<span>Hospital Stays</span>
 							</div>
-							<span>Hospital Stays</span>
-						</div>
-						<div className="flex items-center font-medium text-[#101323] py-4">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
+							<div className="flex items-center font-medium text-[#101323] py-4">
+								<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+									<GiCheckMark className="text-[#5CC758] text-sm" />
+								</div>
+								<span>Specialist Consultations</span>
 							</div>
-							<span>Specialist Consultations</span>
-						</div>
-						<div className="flex items-center font-medium text-[#101323] py-4">
-							<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
-								<GiCheckMark className="text-[#5CC758] text-sm" />
+							<div className="flex items-center font-medium text-[#101323] py-4">
+								<div className="flex items-center justify-center bg-[#E6FFF3B2] bg-opacity-70 rounded-full p-1 mr-4">
+									<GiCheckMark className="text-[#5CC758] text-sm" />
+								</div>
+								<span>Preventive Care</span>
 							</div>
-							<span>Preventive Care</span>
 						</div>
 					</div>
-				</div>
-				<div className="flex-1">
-					<Coverage />
-				</div>
-			</section>
-			<section
+					<div className="flex-1">
+						<Coverage />
+					</div>
+				</section>
+			)}
+			{/*<section
 				className="py-20 md:px-12 xl:px-5 px-5 bg-cover bg-center bg-no-repeat"
 				style={{ backgroundImage: `url(${OmbreBG})` }}
 			>
@@ -323,8 +372,8 @@ function Products() {
 						</div>
 					</div>
 				</div>
-			</section>
-			{/*
+			</section>*/}
+
 			<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="testimonials"
@@ -349,7 +398,6 @@ function Products() {
 					</div>
 				</div>
 			</section>
-	*/}
 		</>
 	);
 }

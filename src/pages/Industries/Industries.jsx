@@ -3,44 +3,33 @@ import { BsArrowRight } from "react-icons/bs";
 // import { GiCheckMark } from "react-icons/gi";
 import { useParams } from "react-router-dom";
 
-import { industries } from "../../Data/industries";
+import {
+	industries,
+	testimonialContents,
+	testimonialFintech,
+	testimonialEducation,
+} from "../../Data/industries";
 
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../../assets/icons/WemaLogo.svg";
 import MintynLogo from "../../assets/icons/MintynLogo.svg";
 //import Laptop from "../../assets/images/Laptop.jpg";
+import Sterling from "../../assets/icons/Sterling.svg";
+import NPF from "../../assets/icons/NPF.svg";
 
 import TestimonialCard from "../../components/TestimonialCard";
 import TestimonialSwiper from "../../components/TestimonialSwiper";
 
 function Industries() {
-	const testimonialContents = [
-		{
-			id: "1",
-			text: "Unyte revolutionized our approach to insurance, enabling us to seamlessly offer a diverse range of coverage options. Our customer satisfaction and revenue have skyrocketed.",
-			name: "Mike Kalu",
-			position: "Head Insuretech Heirs",
-		},
-		{
-			id: "2",
-			text: "Unyte's solutions simplified complex insurance integration, enabling us to provide efficient and comprehensive coverage to our clients. A game-changer in the industry.",
-			name: "CP Tunji Disu",
-			position: "PSO NPF",
-		},
-		{
-			id: "3",
-			text: "Partnering with Unyte was a turning point for us. Their innovative technology empowered our insurance services, leading to a significant increase in customer trust and loyalty.",
-			name: "Alfred Egbai",
-			position: "Group Head Emerging Partnerships AXA",
-		},
-		{
-			id: "4",
-			text: "Unyte's collaboration empowered us to diversify our insurance offerings, enhancing our value proposition and attracting a wider audience. A true success story.",
-			name: "Isaac Osuntade (ZICO)",
-			position: "Director protocol and logistics Babcock University",
-		},
-	];
-	const testimonials = testimonialContents.map((testimonial) => {
+	const { industryType } = useParams();
+	const industry = industries[industryType];
+	const testimony =
+		industryType === "fintech" || industryType === "banks"
+			? testimonialFintech
+			: industryType === "education"
+			? testimonialEducation
+			: testimonialContents;
+	const testimonials = testimony.map((testimonial) => {
 		return (
 			<TestimonialCard
 				key={testimonial.id}
@@ -50,8 +39,6 @@ function Industries() {
 			/>
 		);
 	});
-	const { industryType } = useParams();
-	const industry = industries[industryType];
 	return (
 		<>
 			<section
@@ -103,13 +90,19 @@ function Industries() {
 					id="sponsors-companies"
 					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
 				>
-					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={Sterling} alt="company logo" />
+					</div>
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={PolarisLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] mb-6 w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={WemaLogo} alt="company logo" />
 					</div>
-					<div className="bg-[#F9FAFB] w-[19.325rem] h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+						<img src={NPF} alt="company logo" />
+					</div>
+					<div className="h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={MintynLogo} alt="company logo" />
 					</div>
 				</div>
@@ -156,7 +149,7 @@ function Industries() {
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
 						benefits
 					</h3>
-					<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
+					{/*<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
 						Enhancing Financial Well-being
 					</h2>
 					<p className="text-[#667085] text-base leading-7 mb-10">
@@ -164,7 +157,7 @@ function Industries() {
 						partnership brings, empowering you to{" "}
 						<br className="hidden md:block" />
 						achieve financial success.
-					</p>
+</p>*/}
 				</div>
 				<div className="flex flex-col md:flex-row items-center justify-between space-y-[3.5rem] md:space-y-0 space-x-0 md:space-x-6">
 					{industry.benefits.map((benefit) => {

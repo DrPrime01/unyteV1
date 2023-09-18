@@ -11,6 +11,7 @@ import MotorNav from "../assets/icons/MotorNav.svg";
 import Credit from "../assets/icons/Credit.svg";
 import Travel from "../assets/icons/Travel.svg";
 import CardProtection from "../assets/icons/CardProtection.svg";
+import LogisticsGit from "../assets/icons/LogisticsGit.svg";
 import BanksIcon from "../assets/icons/BanksIcon.svg";
 import ContactUsIcon from "../assets/icons/ContactUsIcon.svg";
 import EcommerceIcon from "../assets/icons/EcommerceIcon.svg";
@@ -104,10 +105,10 @@ function Navbar() {
 							</button>
 							<a
 								to="#"
-								className="text-[#101323] font-medium flex items-center group gap-x-2"
+								className="text-[#101323] font-medium flex items-center cursor-pointer gap-x-2"
 							>
 								<span>Login</span>
-								<AiOutlineArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-150" />
+								<AiOutlineArrowRight />
 							</a>
 						</div>
 						<button
@@ -225,6 +226,14 @@ function Navbar() {
 												className="block px-4 py-2 hover:bg-gray-100"
 											>
 												Student Protection
+											</NavLink>
+										</li>
+										<li>
+											<NavLink
+												to="products/cardProtection"
+												className="block px-4 py-2 hover:bg-gray-100"
+											>
+												Logistics/GIT
 											</NavLink>
 										</li>
 										<li>
@@ -369,6 +378,23 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
+												to="products/logistics"
+												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
+											>
+												<div className="">
+													<img src={LogisticsGit} alt="icon" className="mb-4" />
+													<p className="mb-2 text-sm text-[#101323] font-semibold">
+														Logistics/GIT
+													</p>
+													<p className="text-sm text-[#667085]">
+														Ensure worry-free travels with our comprehensive
+														insurance plans.
+													</p>
+												</div>
+											</NavLink>
+										</li>
+										<li>
+											<NavLink
 												to="products/cardProtection"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
@@ -491,8 +517,8 @@ function Navbar() {
 														Get Started
 													</p>
 													<p className="text-sm text-[#667085]">
-														Integrate insurance seamlessly and unlock new
-														revenue streams.
+														Begin your integration journey with Unyte&apos;s
+														user-friendly setup.
 													</p>
 												</div>
 											</NavLink>
@@ -508,8 +534,8 @@ function Navbar() {
 														API Reference
 													</p>
 													<p className="text-sm text-[#667085]">
-														Embrace comprehensive health coverage for
-														individuals and families.
+														Begin your integration journey with Unyte&apos;s
+														user-friendly setup.
 													</p>
 												</div>
 											</NavLink>
@@ -525,8 +551,8 @@ function Navbar() {
 														API Status
 													</p>
 													<p className="text-sm text-[#667085]">
-														Shield your electronic devices from unexpected
-														mishaps.
+														Check real-time status updates for our robust API
+														services.
 													</p>
 												</div>
 											</NavLink>
@@ -542,8 +568,8 @@ function Navbar() {
 														Libraries
 													</p>
 													<p className="text-sm text-[#667085]">
-														Safeguard financial commitments with credit life
-														insurance.
+														Discover code libraries to expedite your integration
+														process.
 													</p>
 												</div>
 											</NavLink>
@@ -559,8 +585,8 @@ function Navbar() {
 														Developer Docs
 													</p>
 													<p className="text-sm text-[#667085]">
-														Prioritize the safety and well-being of educational
-														institutions and students.
+														Access in-depth documentation to enhance your
+														integration experience.
 													</p>
 												</div>
 											</NavLink>
@@ -666,8 +692,8 @@ function Navbar() {
 														Fintech
 													</p>
 													<p className="text-sm text-[#667085]">
-														Integrate insurance seamlessly and unlock new
-														revenue streams.
+														Tailored insurance solutions to amplify your fintech
+														offerings.
 													</p>
 												</div>
 											</NavLink>
@@ -683,15 +709,15 @@ function Navbar() {
 														Banks
 													</p>
 													<p className="text-sm text-[#667085]">
-														Embrace comprehensive health coverage for
-														individuals and families.
+														Elevate your banking services with our integrated
+														insurance solutions.
 													</p>
 												</div>
 											</NavLink>
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="industries/logistics"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -704,8 +730,8 @@ function Navbar() {
 														Logistic Companies
 													</p>
 													<p className="text-sm text-[#667085]">
-														Shield your electronic devices from unexpected
-														mishaps.
+														Ensure secure logistics operations through insurance
+														integration.
 													</p>
 												</div>
 											</NavLink>
@@ -725,8 +751,8 @@ function Navbar() {
 														Ecommerce
 													</p>
 													<p className="text-sm text-[#667085]">
-														Safeguard financial commitments with credit life
-														insurance.
+														Boost customer confidence in e-commerce
+														transactions.
 													</p>
 												</div>
 											</NavLink>
@@ -746,8 +772,8 @@ function Navbar() {
 														Education
 													</p>
 													<p className="text-sm text-[#667085]">
-														Prioritize the safety and well-being of educational
-														institutions and students.
+														Safeguard educational institutions and students with
+														specialized insurance solutions.
 													</p>
 												</div>
 											</NavLink>

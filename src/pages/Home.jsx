@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 import UnyteHero from "../assets/images/UnyteHero.png";
 import AxaMansardLogo from "../assets/icons/AxaMansardLogo.svg";
@@ -19,7 +20,8 @@ import HealthNav from "../assets/icons/HealthNav.svg";
 import EducationNav from "../assets/icons/EducationNav.svg";
 import SecurityNav from "../assets/icons/SecurityNav.svg";
 import MotorNav from "../assets/icons/MotorNav.svg";
-import Dice from "../assets/icons/Dice.svg";
+import LaunchGrow from "../assets/icons/LaunchGrow.svg";
+import CustomizeIcon from "../assets/icons/CustomizeIcon.svg";
 import IntegrateIcon from "../assets/icons/IntegrateIcon.svg";
 import UmbrellaIcon from "../assets/icons/UmbrellaIcon.svg";
 import CodeSection from "../assets/images/CodeSection.png";
@@ -436,6 +438,15 @@ function Home() {
 						</button>
 					</div>
 				</div>
+				<div className="flex items-center justify-center">
+					<Link
+						to="products/launch"
+						className="text-[#101323] border bg-white group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+					>
+						<span>View all products</span>{" "}
+						<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
+					</Link>
+				</div>
 			</section>
 			<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5">
 				<div className="text-center mb-6 md:mb-16">
@@ -497,48 +508,57 @@ function Home() {
 							</div>
 						</div>
 						<div className="block space-y-6 md:h-[33rem] overflow-y-auto md:pr-5 py-8">
-							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
+							<div className="p-6 bg-white rounded-3xl shadow-lg">
 								<img src={UmbrellaIcon} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
 								</h4>
 								<p className="text-[#667085] leading-7">
-									Select the insurance coverage that suits your needs from our{" "}
+									Start your Unyte journey with an initial demo. We tailor{" "}
 									<br className="hidden md:block" />
-									range of comprehensive options.
+									insurance solutions to your unique needs, ensuring they align{" "}
+									<br className="hidden md:block" />
+									seamlessly with your business objectives.
 								</p>
 							</div>
-							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
+							<div className="p-6 bg-white rounded-3xl shadow-lg">
+								<img src={CustomizeIcon} alt="dice" />
+								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
+									Customize Your Offerings
+								</h4>
+								<p className="text-[#667085] leading-7">
+									Unyte provides extensive customization options. Choose{" "}
+									<br className="hidden md:block" /> from diverse insurance
+									divisions like health, student{" "}
+									<br className="hidden md:block" /> protection, motor
+									insurance, Unyte Launch, ensuring a{" "}
+									<br className="hidden md:block" /> perfect fit.
+								</p>
+							</div>
+							<div className="p-6 bg-white rounded-3xl shadow-lg">
 								<img src={IntegrateIcon} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
-									Choose Your Coverage
+									Support & Integration
 								</h4>
 								<p className="text-[#667085] leading-7">
-									Select the insurance coverage that suits your needs from our{" "}
+									Expert team offers comprehensive, real-time support for{" "}
 									<br className="hidden md:block" />
-									range of comprehensive options.
+									seamless API integration. Tailored to your needs, we
+									prioritize <br className="hidden md:block" />
+									responsiveness and simplicity for efficiency.
 								</p>
 							</div>
-							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
-								<img src={Dice} alt="dice" />
+							<div className="p-6 bg-white rounded-3xl shadow-lg">
+								<img src={LaunchGrow} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
-									Choose Your Coverage
+									Launch & Grow
 								</h4>
 								<p className="text-[#667085] leading-7">
-									Select the insurance coverage that suits your needs from our{" "}
+									Post-integration, embark on a journey of growth. Expand{" "}
 									<br className="hidden md:block" />
-									range of comprehensive options.
-								</p>
-							</div>
-							<div className="p-6 bg-white rounded-3xl lg:h-80 shadow-lg">
-								<img src={Dice} alt="dice" />
-								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
-									Choose Your Coverage
-								</h4>
-								<p className="text-[#667085] leading-7">
-									Select the insurance coverage that suits your needs from our{" "}
+									services, customize offerings, and receive ongoing support{" "}
 									<br className="hidden md:block" />
-									range of comprehensive options.
+									for thriving insurance solutions.
 								</p>
 							</div>
 						</div>

@@ -151,3 +151,54 @@ export const industryLinks = [
 		label: "Education",
 	},
 ];
+
+export const testimonialContents = [
+	{
+		id: "1",
+		text: "Unyte revolutionized our approach to insurance, enabling us to seamlessly offer a diverse range of coverage options. Our customer satisfaction and revenue have skyrocketed.",
+		name: "Mike Kalu",
+		position: "Head Insuretech Heirs",
+	},
+	{
+		id: "2",
+		text: "Unyte's solutions simplified complex insurance integration, enabling us to provide efficient and comprehensive coverage to our clients. A game-changer in the industry.",
+		name: "CP Tunji Disu",
+		position: "PSO NPF",
+	},
+	{
+		id: "3",
+		text: "Partnering with Unyte was a turning point for us. Their innovative technology empowered our insurance services, leading to a significant increase in customer trust and loyalty.",
+		name: "Alfred Egbai",
+		position: "Group Head Emerging Partnerships AXA",
+	},
+];
+
+export const testimonialFintech = [
+	{
+		id: "1",
+		text: "Partnering with Unyte Africa has been a game-changer for our bank. Their innovative insurance products have not only diversified our services but also enhanced customer loyalty. We're now able to provide comprehensive insurance solutions that truly meet our customer's needs, and this has strengthened our position in the market",
+		name: "Bamigbe Arowosegbe",
+		position: "Head Digital solutions Wema Bank",
+	},
+	{
+		id: "2",
+		text: "Unyte Africa's insurance products have added a new dimension to our banking services. Their tailored solutions have helped us deepen customer relationships by addressing their unique insurance requirements. Our collaboration with Unyte Africa has not only increased revenue streams but also positioned us as a trusted partner for comprehensive financial protection.",
+		name: "Akinlabi, G Adegbola",
+		position: "Group Head Commercial, Digital Banking Polaris Bank",
+	},
+	{
+		id: "3",
+		text: "Adding Unyte Africa's insurance products to our offerings has been a strategic move that has greatly benefited our bank and our customers. It's not just about insurance; it's about security, trust, and financial well-being. Unyte Africa's expertise in this domain has strengthened our brand and made us a preferred choice for those seeking comprehensive financial protection.",
+		name: "Nnazilim Egbuonu",
+		position: "Co-founder of Mintyn Digital Bank",
+	},
+];
+
+export const testimonialEducation = [
+	{
+		id: "1",
+		text: "Unyte's collaboration empowered us to diversify our insurance offerings, enhancing our value proposition and attracting a wider audience. A true success story.",
+		name: "Isaac Osuntade (ZICO)",
+		position: "Director protocol and logistics Babcock University",
+	},
+];

@@ -46,22 +46,24 @@ function TestimonialSwiper({ slides, slidesPerView }) {
 					return <SwiperSlide key={index}>{slide}</SwiperSlide>;
 				})}
 			</Swiper>
-			<div className="flex justify-center items-center gap-x-4 mt-16 mr-20">
-				<button
-					disabled={disablePrev}
-					className="flex items-center justify-center rounded-full p-2 bg-[#F4F4F4] text-2xl"
-					onClick={handlePrev}
-				>
-					<FaArrowLeft className="text-sm" />
-				</button>
-				<button
-					disabled={disableNext}
-					className="flex items-center justify-center rounded-full p-2 bg-[#F4F4F4] text-2xl"
-					onClick={handleNext}
-				>
-					<FaArrowRight className="text-sm" />
-				</button>
-			</div>
+			{slides?.length > 3 && (
+				<div className="flex justify-center items-center gap-x-4 mt-16 mx-20">
+					<button
+						disabled={disablePrev}
+						className="flex items-center justify-center rounded-full p-2 bg-[#F4F4F4] text-2xl"
+						onClick={handlePrev}
+					>
+						<FaArrowLeft className="text-sm" />
+					</button>
+					<button
+						disabled={disableNext}
+						className="flex items-center justify-center rounded-full p-2 bg-[#F4F4F4] text-2xl"
+						onClick={handleNext}
+					>
+						<FaArrowRight className="text-sm" />
+					</button>
+				</div>
+			)}
 		</>
 	);
 }

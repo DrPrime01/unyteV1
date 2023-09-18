@@ -41,9 +41,9 @@ export const products = {
 		desc: "Unyte Travel Cover provides travel insurance solutions for businesses in the travel and hospitality sectors. It enables seamless integration of travel insurance offerings, protecting travelers from various risks such as trip cancellations, medical emergencies, and lost luggage",
 	},
 	cardProtection: {
-		name: "Travel Cover",
-		header: "Travel with Confidence",
-		desc: "Unyte Travel Cover provides travel insurance solutions for businesses in the travel and hospitality sectors. It enables seamless integration of travel insurance offerings, protecting travelers from various risks such as trip cancellations, medical emergencies, and lost luggage",
+		name: "Card Protection",
+		header: "Empowering Banks and customers",
+		desc: "Experience the mutual benefits of our debit card protection solutions, providing banks with enhanced security and customers with unmatched peace of mind.",
 	},
 };
 
@@ -83,5 +83,56 @@ export const productLinks = [
 	{
 		path: "/products/cardProtection",
 		label: "Card Protection",
+	},
+];
+
+export const testimonialContents = [
+	{
+		id: "1",
+		text: "Unyte revolutionized our approach to insurance, enabling us to seamlessly offer a diverse range of coverage options. Our customer satisfaction and revenue have skyrocketed.",
+		name: "Mike Kalu",
+		position: "Head Insuretech Heirs",
+	},
+	{
+		id: "2",
+		text: "Unyte's solutions simplified complex insurance integration, enabling us to provide efficient and comprehensive coverage to our clients. A game-changer in the industry.",
+		name: "CP Tunji Disu",
+		position: "PSO NPF",
+	},
+	{
+		id: "3",
+		text: "Partnering with Unyte was a turning point for us. Their innovative technology empowered our insurance services, leading to a significant increase in customer trust and loyalty.",
+		name: "Alfred Egbai",
+		position: "Group Head Emerging Partnerships AXA",
+	},
+];
+
+export const testimonialTravel = [
+	{
+		id: "1",
+		text: "Embedding Unyte Africa's travel insurance into our business has been a game-changer. It's not just about offering protection; it's about delivering peace of mind to our customers. This strategic partnership has set us apart in the market and significantly boosted customer loyalty",
+		name: "Akinlabi, G Adegbola",
+		position: "Group Head Commercial, Digital Banking Polaris Bank",
+	},
+	{
+		id: "2",
+		text: "Our collaboration with Unyte Africa to integrate travel insurance has truly transformed our bank's offerings. It's not just a product; it's a commitment to our customers' well-being. This move has elevated our brand and solidified our position as a customer-centric financial institution.",
+		name: "Nnazilim Egbuonu",
+		position: "Co-founder of Mintyn Digital Bank",
+	},
+	{
+		id: "3",
+		text: "Unyte Africa's travel insurance integration has been a game-changer for us. It's more than just a revenue booster; it's about building trust and strengthening relationships with our customers. This partnership has added immense value to our business and enhanced our customers' experience",
+		name: "Bamigbe Arowosegbe",
+		position: "Head Digital solutions Wema Bank",
+	},
+];
+
+export const testimonialCardProtection = [
+	{
+		id: "1",
+		text: "Unyte Africa's debit card protection has not only boosted our security but also deepened customer trust. Partnering with them was a game-changer for our bank. I highly recommend Unyte Africa to fellow banks looking to enhance customer relationships and trust",
+		name: "Akinlabi, G Adegbola",
+		position: "Group Head Commercial, Digital Banking Polaris Bank",
 	},
 ];
