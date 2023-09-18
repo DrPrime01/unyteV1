@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
@@ -100,6 +100,45 @@ function Home() {
 	const [currentLargestCardContent, setCurrentLargestCardContent] = useState(
 		cardContents[2]
 	);
+
+	const scrollRef = useRef(null);
+	useEffect(() => {
+		const scrollContainer = scrollRef.current;
+
+		if (!scrollContainer) return;
+
+		let scrollAmount = 0;
+		let rafId; // ID for the requestAnimationFrame
+
+		function step() {
+			scrollContainer.scrollLeft += 1; // Increased to a whole number for better precision
+			scrollAmount += 1;
+
+			if (scrollAmount >= scrollContainer.scrollWidth / 2) {
+				scrollContainer.scrollLeft = 0;
+				scrollAmount = 0;
+			}
+			rafId = requestAnimationFrame(step);
+		}
+
+		function handleMouseOver() {
+			cancelAnimationFrame(rafId); // Pause the animation
+		}
+
+		function handleMouseOut() {
+			rafId = requestAnimationFrame(step); // Resume the animation
+		}
+
+		rafId = requestAnimationFrame(step);
+		scrollContainer.addEventListener("mouseover", handleMouseOver);
+		scrollContainer.addEventListener("mouseout", handleMouseOut);
+
+		return () => {
+			cancelAnimationFrame(rafId); // Important: cancel the animation on unmount
+			scrollContainer.removeEventListener("mouseover", handleMouseOver);
+			scrollContainer.removeEventListener("mouseout", handleMouseOut);
+		};
+	}, [scrollRef.current]);
 
 	const [cards, setCards] = useState([
 		{
@@ -624,18 +663,71 @@ function Home() {
 				</div>
 			</section>
 			<section
-				className="pt-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 hidden sm:block"
+				className="pt-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 hidden sm:block overflow-hidden"
 				id="companies"
 			>
-				<div className="flex items-center justify-between">
-					<img src={AxaMansardLogo} alt="axa mansard logo" />
-					<img src={HeirsLifeLogo} alt="heirslife logo" />
-					<img src={LeadwayAssuranceLogo} alt="leadway assurance logo" />
-					<img src={StacoLogo} alt="staco logo" />
-					<img src={MintynLogo} alt="Mintyn logo" />
-					<img src={InterswitchLogo} alt="interswitch logo" />
+				<div
+					ref={scrollRef}
+					className="flex items-center justify-between space-x-12 overflow-x-auto auto-scroll no-scrollbar"
+				>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={AxaMansardLogo}
+						alt="axa mansard logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={HeirsLifeLogo}
+						alt="heirslife logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={LeadwayAssuranceLogo}
+						alt="leadway assurance logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={StacoLogo}
+						alt="staco logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={MintynLogo}
+						alt="Mintyn logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={InterswitchLogo}
+						alt="interswitch logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={HeirsLifeLogo}
+						alt="heirslife logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={LeadwayAssuranceLogo}
+						alt="leadway assurance logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={StacoLogo}
+						alt="staco logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={MintynLogo}
+						alt="Mintyn logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={InterswitchLogo}
+						alt="interswitch logo"
+					/>
 				</div>
 			</section>
+
 			<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="partnerships"
