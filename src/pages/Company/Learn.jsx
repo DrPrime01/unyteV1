@@ -74,14 +74,14 @@ function Learn() {
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-5">
 					{previewBlog.map((preview) => {
 						return (
-							<Link to="blog" key={preview.authorName}>
+							<Link to={`blog/${preview?.id}`} key={preview?.id}>
 								<BlogPreview
-									BlogPreviewBg={preview.blogPreviewBg}
-									blogPreviewHeader={preview.blogPreviewHeader}
-									blogPreviewDesc={preview.blogPreviewDesc}
-									AvatarImg={preview.avatarImg}
-									authorName={preview.authorName}
-									dateCreated={moment(preview.dateCreated).fromNow()}
+									BlogPreviewBg={preview?.blogPreviewBg}
+									blogPreviewHeader={preview?.blogPreviewHeader}
+									blogPreviewDesc={preview?.blogPreviewDesc}
+									AvatarImg={preview?.avatarImg}
+									authorName={preview?.authorName}
+									dateCreated={moment(preview?.dateCreated).fromNow()}
 								/>
 							</Link>
 						);

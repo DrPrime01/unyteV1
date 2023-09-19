@@ -9,6 +9,9 @@ import AxaMansardLogo from "../assets/icons/AxaMansardLogo.svg";
 import PolarisLogo from "../assets/icons/PolarisLogo.svg";
 import Sterling from "../assets/icons/Sterling.svg";
 import NPF from "../assets/icons/NPF.svg";
+import NIC from "../assets/icons/NIC.svg";
+import NIIC from "../assets/icons/NIIC.svg";
+import UniversalInsurance from "../assets/icons/UniversalInsurance.svg";
 import WemaLogo from "../assets/icons/WemaLogo.svg";
 import MintynLogo from "../assets/icons/MintynLogo.svg";
 import InterswitchLogo from "../assets/icons/InterswitchLogo.svg";
@@ -702,28 +705,18 @@ function Home() {
 					/>
 					<img
 						className="filter grayscale hover:grayscale-0 transition-all duration-300"
-						src={HeirsLifeLogo}
+						src={UniversalInsurance}
 						alt="heirslife logo"
 					/>
 					<img
 						className="filter grayscale hover:grayscale-0 transition-all duration-300"
-						src={LeadwayAssuranceLogo}
+						src={NIC}
 						alt="leadway assurance logo"
 					/>
 					<img
 						className="filter grayscale hover:grayscale-0 transition-all duration-300"
-						src={StacoLogo}
+						src={NIIC}
 						alt="staco logo"
-					/>
-					<img
-						className="filter grayscale hover:grayscale-0 transition-all duration-300"
-						src={MintynLogo}
-						alt="Mintyn logo"
-					/>
-					<img
-						className="filter grayscale hover:grayscale-0 transition-all duration-300"
-						src={InterswitchLogo}
-						alt="interswitch logo"
 					/>
 				</div>
 			</section>

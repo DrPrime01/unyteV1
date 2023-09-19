@@ -14,6 +14,7 @@ import CardProtection from "../assets/icons/CardProtection.svg";
 import LogisticsGit from "../assets/icons/LogisticsGit.svg";
 import BanksIcon from "../assets/icons/BanksIcon.svg";
 import ContactUsIcon from "../assets/icons/ContactUsIcon.svg";
+import LearnIcon from "../assets/icons/LearnIcon.svg";
 import EcommerceIcon from "../assets/icons/EcommerceIcon.svg";
 import EducationIcon from "../assets/icons/EducationIcon.svg";
 import FintechIcon from "../assets/icons/FintechIcon.svg";
@@ -896,7 +897,7 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={SecurityNav} alt="icon" className="mb-4" />
+													<img src={LearnIcon} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Learn
 													</p>

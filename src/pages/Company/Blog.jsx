@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { Chip, Avatar } from "@mui/material";
-import moment from "moment";
 
-import AvatarImg from "../../assets/images/AvatarImg.png";
-import BlogPicture from "../../assets/images/BlogPicture.png";
+import { blogContent } from "../../Data/blogs";
 
 function Blog() {
+	const { id } = useParams();
+	const blog = blogContent.find((b) => b.id === id);
 	return (
 		<>
 			<section
@@ -28,7 +28,7 @@ function Blog() {
 							}}
 						/>
 						<p className="mt-8 font-bold text-3xl md:text-5xl text-[#101323] mb-4 md:leading-14">
-							Insurance Simplified: Unyte&apos;s Revolutionary Approach
+							{blog.title}
 						</p>
 						<div className="flex flex-wrap items-center gap-2.5 mb-12">
 							<Chip
@@ -69,11 +69,11 @@ function Blog() {
 							/>
 						</div>
 						<div className="flex items-center gap-x-4 mb-16 md:mb-0">
-							<Avatar alt="author" src={AvatarImg} />
+							<Avatar alt="author" src={blog?.authorImage} />
 							<div className="">
 								<div>
-									<p className="font-semibold mb-1">Fortunate Anozie</p>
-									<p className="text-sm">{moment(new Date()).fromNow()}</p>
+									<p className="font-semibold mb-1">{blog?.authorName}</p>
+									<p className="text-sm">{blog?.date}</p>
 								</div>
 							</div>
 						</div>
@@ -122,36 +122,24 @@ function Blog() {
 				</div>
 				<div id="content" className="flex-1 md:ml-[7.8125rem]">
 					<p className="pt-2.5 pb-6 font-medium italic text-[#101323] leading-10 text-justify">
-						In a world where complexities often surround insurance, Unyte
-						emerges as a game-changer, revolutionizing the landscape and making
-						insurance simpler than ever before. With an innovative blend of
-						technology, collaborative partnerships, and customer-centric focus,
-						Unyte has transformed the insurance experience, empowering
-						businesses and individuals alike.
+						{blog?.sampleNote}
 					</p>
 					<div className="my-16">
 						<p className="mb-4 font-semibold text-[#101323]">Introduction</p>
 						<p className="text-[#667085] md:text-xl text-justify leading-10">
-							In a world where complexities often surround insurance, Unyte
-							emerges as a game-changer, revolutionizing the landscape and
-							making insurance simpler than ever before. With an innovative
-							blend of technology, collaborative partnerships, and
-							customer-centric focus, Unyte has transformed the insurance
-							experience, empowering businesses and individuals alike.
+							{blog?.blogPart1}
 						</p>
 					</div>
 					<div className="border border-y-0 border-r-0 border-[#5CC758] px-8 pb-6 pt-2.5 mb-16">
 						<p className="font-semibold text-xl md:text-3xl italic text-[#101323] text-justify mb-16">
-							“Our goal is to bridge the gap between traditional insurance
-							providers and the digital ecosystem, providing an unmatched
-							insurance experience.
+							“{blog?.sideNote}
 						</p>
 						<div className="flex items-center gap-x-4 md:mb-0">
-							<Avatar alt="author" src={AvatarImg} />
+							<Avatar alt="author" src={blog?.authorImage} />
 							<div className="">
 								<div>
 									<p className="font-semibold mb-1 text-[#101323]">
-										Fortunate Anozie
+										{blog?.authorName}
 									</p>
 									<p className="text-sm text-[#667085]">
 										CEO/ Co-founder of Unyte.
@@ -162,7 +150,7 @@ function Blog() {
 					</div>
 					<div className="mb-16">
 						<img
-							src={BlogPicture}
+							src={blog?.blogCover}
 							alt="a woman writing on a board"
 							className="mb-4"
 						/>
@@ -170,76 +158,32 @@ function Blog() {
 					</div>
 					<div className="mb-16">
 						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							Through Unyte&apos;s robust API solutions, businesses can now
-							easily integrate insurance offerings into their platforms,
-							expanding their services and enhancing customer satisfaction. This
-							strategic approach has opened up new horizons for partnerships and
-							synergies across industries, paving the way for Fintechs, schools,
-							logistics, and others to leverage the power of insurance to
-							safeguard their operations and customers.
+							{blog?.blogPart2}
 						</p>
 						<p className="text-[#667085] md:text-xl text-justify leading-10">
-							When asked about the impact of Unyte&apos;s partnership, Jane Doe,
-							CEO of a leading Fintech firm, exclaims, &quot;Unyte has
-							revolutionized our business! We can now provide our customers with
-							seamless access to insurance options, boosting their confidence
-							and loyalty. It&apos;s a win-win for both our company and
-							clients.&quot;
+							{blog?.blogPart3}
 						</p>
 					</div>
 					<div className="mb-16 pt-2.5 pb-6 border border-x-0 border-t-0">
 						<p className="text-[#0CD704] italic md:text-xl text-justify leading-10">
-							Unyte&apos;s array of insurance products from renowned providers
-							such as AXA, Leadway, Staco, and Tangerine ensures that customers
-							have a diverse range of options to choose from. Whether it&apos;s
-							health, motor, travel, or device protection, Unyte&apos;s platform
-							offers a one-stop solution for all insurance needs.
+							{blog?.sideNote2}
 						</p>
 					</div>
 					<div>
 						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							&quot;We wanted to make insurance simple, yet comprehensive,&quot;
-							says Adewunmi Aladenusi, Head of Product at Unyte. &quot;Our team
-							has worked tirelessly to design APIs tailored for various sectors,
-							ensuring that each industry can find the perfect fit for their
-							requirements.&quot;
+							{blog?.blogPart4}
 						</p>
 						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							In the past, insurance adoption in Nigeria stood at a staggering
-							low of 0.5%. Many factors contributed to this, including lack of
-							understanding and limited access. Unyte&apos;s innovative approach
-							has changed the game, propelling insurance adoption to new
-							heights. &quot;We&apos;ve witnessed a significant increase in
-							insurance adoption since partnering with Unyte,&quot; shares
-							Samuel Adams, CEO of a logistics company. &quot;Their seamless
-							integration and easy onboarding have been crucial to our
-							success.&quot;
+							{blog?.blogPart5}
 						</p>
 						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							Unyte&apos;s commitment to customer satisfaction is evident in
-							their continuous efforts to enhance their services based on
-							valuable feedback. &quot;We value our customers&apos; input and
-							strive to continually improve,&quot; states Treasure Okure,
-							Customer Support Manager at Unyte. &quot;Their feedback drives us
-							to develop better solutions and provide an exceptional user
-							experience.&quot;
+							{blog?.blogPart6}
 						</p>
 						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							In conclusion, Unyte has shattered the traditional barriers
-							surrounding insurance, paving the way for a new era of simplicity
-							and accessibility. By providing innovative solutions, seamless
-							integration, and a diverse range of insurance products, Unyte has
-							transformed the insurance landscape for the better. &quot;Our
-							journey has just begun,&quot; affirms Anozie Daniel. &quot;We are
-							committed to making insurance simpler for everyone, empowering
-							businesses and individuals to embrace the security and peace of
-							mind it brings.&quot;
+							{blog?.blogPart6}
 						</p>
 						<p className="text-[#667085] md:text-xl text-justify leading-10">
-							With Unyte&apos;s forward-thinking approach, the future of
-							insurance has never looked brighter. Unlocking the true potential
-							of insurance has become a reality, thanks to Unyte&apos;s
-							unwavering dedication to simplifying insurance for all.
+							{blog?.blogPart7}
 						</p>
 					</div>
 				</div>
