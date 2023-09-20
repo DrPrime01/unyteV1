@@ -2,7 +2,7 @@ import { RiSearchLine } from "react-icons/ri";
 import moment from "moment";
 import { Link } from "react-router-dom";
 
-import Video from "../../components/Video";
+//import Video from "../../components/Video";
 import BlogPreview from "../../components/BlogPreview";
 import { previewBlog } from "../../Data/blogs";
 
@@ -30,7 +30,7 @@ function Learn() {
 				</div>
 				<div className="flex-1"></div>
 			</section>
-			<section
+			{/*<section
 				id="learn"
 				className="mb-12 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col justify-between"
 			>
@@ -50,7 +50,7 @@ function Learn() {
 						</p>
 					</div>
 				</div>
-			</section>
+	</section>*/}
 			<section
 				id="learn"
 				className="mb-12 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto flex flex-col justify-between"
