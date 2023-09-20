@@ -12,14 +12,12 @@ import Credit from "../assets/icons/Credit.svg";
 import Travel from "../assets/icons/Travel.svg";
 import CardProtection from "../assets/icons/CardProtection.svg";
 import LogisticsGit from "../assets/icons/LogisticsGit.svg";
-import BanksIcon from "../assets/icons/BanksIcon.svg";
+import BankNavIcon from "../assets/icons/BankNavIcon.svg";
 import ContactUsIcon from "../assets/icons/ContactUsIcon.svg";
 import LearnIcon from "../assets/icons/LearnIcon.svg";
-import EcommerceIcon from "../assets/icons/EcommerceIcon.svg";
-import EducationIcon from "../assets/icons/EducationIcon.svg";
-import FintechIcon from "../assets/icons/FintechIcon.svg";
+import EcommerceNavIcon from "../assets/icons/EcommerceNavIcon.svg";
+import FintechNavIcon from "../assets/icons/FintechNavIcon.svg";
 import WhyUnyteIcon from "../assets/icons/WhyUnyteIcon.svg";
-import LogisticsIcon from "../assets/icons/LogisticsIcon.svg";
 
 function Navbar() {
 	const [dropdown1, setDropdown1] = useState(false);
@@ -688,7 +686,11 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={FintechIcon} alt="icon" className="mb-4" />
+													<img
+														src={FintechNavIcon}
+														alt="icon"
+														className="mb-4"
+													/>
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Fintech
 													</p>
@@ -705,7 +707,7 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img src={BanksIcon} alt="icon" className="mb-4" />
+													<img src={BankNavIcon} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Banks
 													</p>
@@ -722,11 +724,7 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img
-														src={LogisticsIcon}
-														alt="icon"
-														className="mb-4"
-													/>
+													<img src={LogisticsGit} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Logistic Companies
 													</p>
@@ -744,7 +742,7 @@ function Navbar() {
 											>
 												<div className="">
 													<img
-														src={EcommerceIcon}
+														src={EcommerceNavIcon}
 														alt="icon"
 														className="mb-4"
 													/>
@@ -764,11 +762,7 @@ function Navbar() {
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
-													<img
-														src={EducationIcon}
-														alt="icon"
-														className="mb-4"
-													/>
+													<img src={EducationNav} alt="icon" className="mb-4" />
 													<p className="mb-2 text-sm text-[#101323] font-semibold">
 														Education
 													</p>
