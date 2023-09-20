@@ -2,6 +2,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import FortunateAnozie from "../../assets/images/FounderProfile/FortunateAnozie.jpg";
 import Funsho from "../../assets/images/FounderProfile/Funsho.jpg";
+import Morayo from "../../assets/images/FounderProfile/Morayo.jpg";
 import Nelson from "../../assets/images/FounderProfile/Nelson.JPG";
 import WahabDisu from "../../assets/images/FounderProfile/WahabDisu.png";
 import Oyegunle from "../../assets/images/FounderProfile/Oyegunle.JPG";
@@ -314,7 +315,13 @@ function About() {
 						<div
 							id="image"
 							className="bg-[#F9FAFB] rounded-2xl h-[500px] w-auto md:w-[25rem] mb-6"
-						></div>
+						>
+							<img
+								src={Morayo}
+								alt="Morayo"
+								className="w-full h-full rounded-2xl object-center object-cover"
+							/>
+						</div>
 						<div id="name" className="mb-6">
 							<p className="text-xl font-semibold text-[#101323] mb-2">
 								Morayo Okurinboye

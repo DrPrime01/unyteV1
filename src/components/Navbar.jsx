@@ -23,7 +23,7 @@ import LogisticsIcon from "../assets/icons/LogisticsIcon.svg";
 
 function Navbar() {
 	const [dropdown1, setDropdown1] = useState(false);
-	const [dropdown2, setDropdown2] = useState(false);
+	//const [dropdown2, setDropdown2] = useState(false);
 	const [dropdown3, setDropdown3] = useState(false);
 	const [dropdown4, setDropdown4] = useState(false);
 	const [mobileDropdown, setMobileDropdown] = useState(false);
@@ -32,33 +32,33 @@ function Navbar() {
 	const navigate = useNavigate();
 
 	const handleDropdown1 = () => {
-		setDropdown2(false);
+		//setDropdown2(false);
 		setDropdown3(false);
 		setDropdown4(false);
 		setDropdown1(!dropdown1);
 	};
-	const handleDropdown2 = () => {
-		setDropdown1(false);
-		setDropdown3(false);
-		setDropdown4(false);
-		setDropdown2(!dropdown2);
-	};
+	// const handleDropdown2 = () => {
+	// 	setDropdown1(false);
+	// 	setDropdown3(false);
+	// 	setDropdown4(false);
+	// 	setDropdown2(!dropdown2);
+	// };
 	const handleDropdown3 = () => {
 		setDropdown1(false);
-		setDropdown2(false);
+		//setDropdown2(false);
 		setDropdown4(false);
 		setDropdown3(!dropdown3);
 	};
 	const handleDropdown4 = () => {
 		setDropdown1(false);
-		setDropdown2(false);
+		//setDropdown2(false);
 		setDropdown3(false);
 		setDropdown4(!dropdown4);
 	};
 
 	useEffect(() => {
 		setDropdown1(false);
-		setDropdown2(false);
+		//setDropdown2(false);
 		setDropdown3(false);
 		setDropdown4(false);
 		setMobileDropdown(false);
@@ -70,7 +70,7 @@ function Navbar() {
 		const handleClickOutside = (e) => {
 			if (navbarRef.current && !navbarRef.current.contains(e.target)) {
 				setDropdown1(false);
-				setDropdown2(false);
+				//setDropdown2(false);
 				setDropdown3(false);
 				setDropdown4(false);
 			}
@@ -418,7 +418,7 @@ function Navbar() {
 									</ul>
 								</div>
 							</li>
-							<li className="md:relative">
+							{/*<li className="md:relative">
 								<button
 									id="dropdownNavbarLink"
 									data-dropdown-toggle="dropdownNavbar"
@@ -442,7 +442,7 @@ function Navbar() {
 										/>
 									</svg>
 								</button>
-								{/* Dropdown Nav for mobile */}
+								
 								<div
 									id="dropdownNavbarMobile"
 									className={`z-10 ${
@@ -495,7 +495,7 @@ function Navbar() {
 										</li>
 									</ul>
 								</div>
-								{/* Dropdown Nav for tablet and desktops */}
+								
 								<div
 									id="dropdownNavbar"
 									className={`z-10 ${
@@ -594,7 +594,7 @@ function Navbar() {
 										</li>
 									</ul>
 								</div>
-							</li>
+								</li>*/}
 							<li className="md:relative">
 								<button
 									id="dropdownNavbarLink"
