@@ -8,13 +8,13 @@ import UnyteHero from "../assets/images/UnyteHero.png";
 import AxaMansardLogo from "../assets/icons/AxaMansardLogo.svg";
 import PolarisLogo from "../assets/icons/PolarisLogo.svg";
 import Sterling from "../assets/icons/Sterling.svg";
-import NPF from "../assets/icons/NPF.svg";
+//import NPF from "../assets/icons/NPF.svg";
 import NIC from "../assets/icons/NIC.svg";
 import NIIC from "../assets/icons/NIIC.svg";
 import UniversalInsurance from "../assets/icons/UniversalInsurance.svg";
 import WemaLogo from "../assets/icons/WemaLogo.svg";
 import MintynLogo from "../assets/icons/MintynLogo.svg";
-import InterswitchLogo from "../assets/icons/InterswitchLogo.svg";
+//import InterswitchLogo from "../assets/icons/InterswitchLogo.svg";
 import StacoLogo from "../assets/icons/StacoLogo.svg";
 import LeadwayAssuranceLogo from "../assets/icons/LeadwayAssuranceLogo.svg";
 import HeirsLifeLogo from "../assets/icons/HeirsLifeLogo.svg";
@@ -249,9 +249,9 @@ function Home() {
 					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={WemaLogo} alt="company logo" />
 					</div>
-					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+					{/*<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={NPF} alt="company logo" />
-					</div>
+	</div>*/}
 					<div className="h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={MintynLogo} alt="company logo" />
 					</div>
@@ -695,13 +695,38 @@ function Home() {
 					/>
 					<img
 						className="filter grayscale hover:grayscale-0 transition-all duration-300"
-						src={MintynLogo}
-						alt="Mintyn logo"
+						src={UniversalInsurance}
+						alt="heirslife logo"
 					/>
 					<img
 						className="filter grayscale hover:grayscale-0 transition-all duration-300"
-						src={InterswitchLogo}
-						alt="interswitch logo"
+						src={NIC}
+						alt="leadway assurance logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={NIIC}
+						alt="staco logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={AxaMansardLogo}
+						alt="axa mansard logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={HeirsLifeLogo}
+						alt="heirslife logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={LeadwayAssuranceLogo}
+						alt="leadway assurance logo"
+					/>
+					<img
+						className="filter grayscale hover:grayscale-0 transition-all duration-300"
+						src={StacoLogo}
+						alt="staco logo"
 					/>
 					<img
 						className="filter grayscale hover:grayscale-0 transition-all duration-300"

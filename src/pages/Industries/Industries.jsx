@@ -5,9 +5,9 @@ import { useParams } from "react-router-dom";
 
 import {
 	industries,
-	testimonialContents,
-	testimonialFintech,
-	testimonialEducation,
+	//testimonialContents,
+	//testimonialFintech,
+	//testimonialEducation,
 } from "../../Data/industries";
 
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
@@ -15,30 +15,30 @@ import WemaLogo from "../../assets/icons/WemaLogo.svg";
 import MintynLogo from "../../assets/icons/MintynLogo.svg";
 //import Laptop from "../../assets/images/Laptop.jpg";
 import Sterling from "../../assets/icons/Sterling.svg";
-import NPF from "../../assets/icons/NPF.svg";
+//import NPF from "../../assets/icons/NPF.svg";
 
-import TestimonialCard from "../../components/TestimonialCard";
-import TestimonialSwiper from "../../components/TestimonialSwiper";
+//import TestimonialCard from "../../components/TestimonialCard";
+//import TestimonialSwiper from "../../components/TestimonialSwiper";
 
 function Industries() {
 	const { industryType } = useParams();
 	const industry = industries[industryType];
-	const testimony =
-		industryType === "fintech" || industryType === "banks"
-			? testimonialFintech
-			: industryType === "education"
-			? testimonialEducation
-			: testimonialContents;
-	const testimonials = testimony.map((testimonial) => {
-		return (
-			<TestimonialCard
-				key={testimonial.id}
-				testimonialText={testimonial.text}
-				testimonialName={testimonial.name}
-				testimonialPosition={testimonial.position}
-			/>
-		);
-	});
+	// const testimony =
+	// 	industryType === "fintech" || industryType === "banks"
+	// 		? testimonialFintech
+	// 		: industryType === "education"
+	// 		? testimonialEducation
+	// 		: testimonialContents;
+	// const testimonials = testimony.map((testimonial) => {
+	// 	return (
+	// 		<TestimonialCard
+	// 			key={testimonial.id}
+	// 			testimonialText={testimonial.text}
+	// 			testimonialName={testimonial.name}
+	// 			testimonialPosition={testimonial.position}
+	// 		/>
+	// 	);
+	// });
 	return (
 		<>
 			<section
@@ -73,40 +73,42 @@ function Industries() {
 				</div>
 				<div className="flex-1"></div>
 			</section>
-			<section
-				id="sponsors"
-				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
-			>
-				<div id="sponsors-text" className="text-center mb-10">
-					<h3 className="text-xl font-semibold text-[#101323] mb-8">
-						Businesses building and embedding with us
-					</h3>
-					<p className="text-[#667085] leading-7">
-						Be a part of the top businesses engaging and connecting with their
-						customers using Unyte.
-					</p>
-				</div>
-				<div
-					id="sponsors-companies"
-					className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
+			{!["logistics", "ecommerce", "education"].includes(industryType) && (
+				<section
+					id="sponsors"
+					className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				>
-					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
-						<img src={Sterling} alt="company logo" />
+					<div id="sponsors-text" className="text-center mb-10">
+						<h3 className="text-xl font-semibold text-[#101323] mb-8">
+							Businesses building and embedding with us
+						</h3>
+						<p className="text-[#667085] leading-7">
+							Be a part of the top businesses engaging and connecting with their
+							customers using Unyte.
+						</p>
 					</div>
-					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
-						<img src={PolarisLogo} alt="company logo" />
-					</div>
-					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
-						<img src={WemaLogo} alt="company logo" />
-					</div>
-					<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+					<div
+						id="sponsors-companies"
+						className="flex flex-col md:flex-row items-center justify-between px-5 md:px-[5.125rem]"
+					>
+						<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+							<img src={Sterling} alt="company logo" />
+						</div>
+						<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+							<img src={PolarisLogo} alt="company logo" />
+						</div>
+						<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
+							<img src={WemaLogo} alt="company logo" />
+						</div>
+						{/*<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 						<img src={NPF} alt="company logo" />
+	</div>*/}
+						<div className="h-[10.625rem] rounded-lg flex items-center justify-center">
+							<img src={MintynLogo} alt="company logo" />
+						</div>
 					</div>
-					<div className="h-[10.625rem] rounded-lg flex items-center justify-center">
-						<img src={MintynLogo} alt="company logo" />
-					</div>
-				</div>
-			</section>
+				</section>
+			)}
 			{/*<section className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 flex flex-col md:flex-row space-x-12 md:space-x-0">
 				<div className="mb-8 md:mb-0 w-auto xl:w-[31.5625rem]">
 					<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
@@ -284,7 +286,7 @@ function Industries() {
 					</div>
 				</div>
 				</section>*/}
-			<section
+			{/*<section
 				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
 				id="testimonials"
 			>
@@ -307,7 +309,7 @@ function Industries() {
 						<TestimonialSwiper slides={testimonials} slidesPerView={1} />
 					</div>
 				</div>
-			</section>
+			</section>*/}
 		</>
 	);
 }

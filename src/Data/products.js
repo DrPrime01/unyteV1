@@ -136,3 +136,18 @@ export const testimonialCardProtection = [
 		position: "Group Head Commercial, Digital Banking Polaris Bank",
 	},
 ];
+
+export const testimonialNoNpf = [
+	{
+		id: "1",
+		text: "Unyte revolutionized our approach to insurance, enabling us to seamlessly offer a diverse range of coverage options. Our customer satisfaction and revenue have skyrocketed.",
+		name: "Mike Kalu",
+		position: "Head Insuretech Heirs",
+	},
+	{
+		id: "3",
+		text: "Partnering with Unyte was a turning point for us. Their innovative technology empowered our insurance services, leading to a significant increase in customer trust and loyalty.",
+		name: "Alfred Egbai",
+		position: "Group Head Emerging Partnerships AXA",
+	},
+];

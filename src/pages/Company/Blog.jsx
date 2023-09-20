@@ -156,36 +156,59 @@ function Blog() {
 						/>
 						<p className="text-[#101323]">Source: Image from stocks </p>
 					</div>
-					<div className="mb-16">
-						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							{blog?.blogPart2}
-						</p>
-						<p className="text-[#667085] md:text-xl text-justify leading-10">
-							{blog?.blogPart3}
-						</p>
-					</div>
+					{!["5", "7", "9"].includes(id) && (
+						<div className="mb-16">
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
+								{blog?.blogPart2}
+							</p>
+							<p className="text-[#667085] md:text-xl text-justify leading-10">
+								{blog?.blogPart3}
+							</p>
+						</div>
+					)}
 					<div className="mb-16 pt-2.5 pb-6 border border-x-0 border-t-0">
 						<p className="text-[#0CD704] italic md:text-xl text-justify leading-10">
 							{blog?.sideNote2}
 						</p>
 					</div>
-					<div>
-						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							{blog?.blogPart4}
-						</p>
-						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							{blog?.blogPart5}
-						</p>
-						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							{blog?.blogPart6}
-						</p>
-						<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
-							{blog?.blogPart6}
-						</p>
-						<p className="text-[#667085] md:text-xl text-justify leading-10">
-							{blog?.blogPart7}
-						</p>
-					</div>
+					{!["5", "7", "9"].includes(id) && (
+						<div className="mb-16">
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
+								{blog?.blogPart4}
+							</p>
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
+								{blog?.blogPart5}
+							</p>
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
+								{blog?.blogPart6}
+							</p>
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
+								{blog?.blogPart7}
+							</p>
+						</div>
+					)}
+					{["5", "7", "9"].includes(id) && (
+						<div>
+							<p className="text-black text-2xl md:text-4xl text-justify leading-10 mb-8 font-semibold">
+								{blog?.introHeader}
+							</p>
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-6">
+								{blog?.intro}
+							</p>
+							<ol className="list-decimal font-semibold md:text-2xl ml-6">
+								{blog?.text?.map((content, index) => (
+									<li key={index} className="mb-8 pl-6">
+										<p className="text-black md:text-2xl font-semibold text-justify leading-10 mb-4">
+											{content?.header}
+										</p>
+										<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2 font-normal">
+											{content?.body}
+										</p>
+									</li>
+								))}
+							</ol>
+						</div>
+					)}
 				</div>
 			</section>
 		</>

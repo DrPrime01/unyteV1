@@ -6,7 +6,7 @@ import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../../assets/icons/WemaLogo.svg";
 import MintynLogo from "../../assets/icons/MintynLogo.svg";
 import Sterling from "../../assets/icons/Sterling.svg";
-import NPF from "../../assets/icons/NPF.svg";
+//import NPF from "../../assets/icons/NPF.svg";
 
 import Coverage from "./components/Coverage.jsx";
 import TestimonialCard from "../../components/TestimonialCard";
@@ -17,7 +17,9 @@ import {
 	testimonialContents,
 	testimonialTravel,
 	testimonialCardProtection,
+	testimonialNoNpf,
 } from "../../Data/products";
+import { testimonialEducation } from "./../../Data/industries";
 
 function Products() {
 	const { productType } = useParams();
@@ -27,6 +29,10 @@ function Products() {
 			? testimonialTravel
 			: productType === "cardProtection"
 			? testimonialCardProtection
+			: ["deviceProtection", "motorRegInsurance"].includes(productType)
+			? testimonialNoNpf
+			: productType === "studentProtection"
+			? testimonialEducation
 			: testimonialContents;
 	const testimonials = testimony.map((testimonial) => {
 		return (
@@ -72,7 +78,9 @@ function Products() {
 				</div>
 				<div className="flex-1"></div>
 			</section>
-			{!["studentProtection", "logisticsGit"].includes(productType) && (
+			{!["studentProtection", "logisticsGit", "creditLife"].includes(
+				productType
+			) && (
 				<section
 					id="sponsors"
 					className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
@@ -94,7 +102,7 @@ function Products() {
 								: "justify-between"
 						} px-5 md:px-[5.125rem]`}
 					>
-						{productType !== "cardProtection" && (
+						{!["cardProtection", "deviceProtection"].includes(productType) && (
 							<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 								<img src={Sterling} alt="company logo" />
 							</div>
@@ -107,7 +115,7 @@ function Products() {
 								<img src={WemaLogo} alt="company logo" />
 							</div>
 						)}
-						{![
+						{/*	{![
 							"launch",
 							"motorRegInsurance",
 							"deviceProtection",
@@ -117,7 +125,7 @@ function Products() {
 							<div className="mb-6 h-[10.625rem] rounded-lg flex items-center justify-center">
 								<img src={NPF} alt="company logo" />
 							</div>
-						)}
+						)}*/}
 						{productType !== "cardProtection" && (
 							<div className="h-[10.625rem] rounded-lg flex items-center justify-center">
 								<img src={MintynLogo} alt="company logo" />
@@ -374,30 +382,32 @@ function Products() {
 				</div>
 			</section>*/}
 
-			<section
-				className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
-				id="testimonials"
-			>
-				<div className="flex flex-col lg:space-y-16 md:space-y-12 space-y-10">
-					<div id="developers-text">
-						<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
-							testimonials
-						</h3>
-						<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
-							Loved by business builders
-						</h2>
-						<h2 className="text-[#667085] md:text-3xl text-2xl lg:text-4xl font-medium mb-4">
-							See what others are saying
-						</h2>
+			{productType !== "creditLife" && (
+				<section
+					className="py-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5"
+					id="testimonials"
+				>
+					<div className="flex flex-col lg:space-y-16 md:space-y-12 space-y-10">
+						<div id="developers-text">
+							<h3 className="text-xl font-medium text-[#0CD704] mb-4 uppercase">
+								testimonials
+							</h3>
+							<h2 className="md:text-3xl text-2xl lg:text-4xl font-medium text-[#101323] mb-4">
+								Loved by business builders
+							</h2>
+							<h2 className="text-[#667085] md:text-3xl text-2xl lg:text-4xl font-medium mb-4">
+								See what others are saying
+							</h2>
+						</div>
+						<div id="testimonial-desktop" className="hidden md:block">
+							<TestimonialSwiper slides={testimonials} slidesPerView={3} />
+						</div>
+						<div id="testimonial-mobile" className="block md:hidden">
+							<TestimonialSwiper slides={testimonials} slidesPerView={1} />
+						</div>
 					</div>
-					<div id="testimonial-desktop" className="hidden md:block">
-						<TestimonialSwiper slides={testimonials} slidesPerView={3} />
-					</div>
-					<div id="testimonial-mobile" className="block md:hidden">
-						<TestimonialSwiper slides={testimonials} slidesPerView={1} />
-					</div>
-				</div>
-			</section>
+				</section>
+			)}
 		</>
 	);
 }

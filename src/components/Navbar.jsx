@@ -739,7 +739,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="industries/ecommerce"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">
@@ -760,7 +760,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="#"
+												to="industries/education"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">

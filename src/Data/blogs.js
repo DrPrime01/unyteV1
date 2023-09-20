@@ -130,6 +130,17 @@ export const previewBlog = [
 		dateCreated: new Date(),
 		link: "",
 	},
+	{
+		id: "11",
+		blogPreviewBg: BlogPicture,
+		blogPreviewHeader: "Insurance Simplified: Unyte's Revolutionary Approach",
+		blogPreviewDesc:
+			"In a world where complexities often surround insurance, Unyte emerges as a game-changer, revolutionizing the landscape and making insurance simpler than ever before. With an innovative blend of technology, collaborative partnerships, and customer-centric focus, Unyte has transformed the insurance experience, empowering businesses and individuals alike.",
+		avatarImg: AvatarImg,
+		authorName: "Treasure Okure",
+		dateCreated: new Date(),
+		link: "",
+	},
 ];
 
 export const blogContent = [
@@ -146,7 +157,8 @@ export const blogContent = [
 			"It is important to note that the value of the car is not static, and it can change over time due to factors such as depreciation, market fluctuations, and other external factors. ",
 		blogPart1:
 			"Car insurance policies provide financial protection in the event of accidents, theft, or other damages to your vehicle. When purchasing car insurance, one of the critical factors that determine your premium is the value of your car. But who determines the value of your car? In this article, we will explore the process of car valuation in insurance policies and who is responsible for it.",
-		sideNote2: "",
+		sideNote2:
+			"Car insurance policies provide financial protection in the event of accidents, theft, or other damages to your vehicle.",
 		blogPart2:
 			"At the start of the policy, the insured is required to indicate the value of the vehicle. However, it is advisable to use the current market value of the car to avoid any discrepancies in the event of a claim. The market value of your car is the current worth of your vehicle in the current market, and it takes into account factors such as the car's model, age, mileage, and overall condition.",
 		blogPart3:
@@ -167,10 +179,12 @@ export const blogContent = [
 		title: "Betterment in Insurance Policies: What You Need to Know",
 		sampleNote:
 			"If you've ever been involved in a car accident and had to file an insurance claim, you may have come across the term 'betterment.' Betterment refers to a scenario where repairs to a damaged vehicle actually improve the performance or condition of the car beyond its pre-accident state. In such cases, you as the insured may be required to contribute to the cost of the repairs.",
-		sideNote: "",
+		sideNote:
+			"It's important to understand that betterment clauses are common in insurance policies, especially for car insurance.",
 		blogPart1:
 			"If you've ever been involved in a car accident and had to file an insurance claim, you may have come across the term 'betterment.' Betterment refers to a scenario where repairs to a damaged vehicle actually improve the performance or condition of the car beyond its pre-accident state. In such cases, you as the insured may be required to contribute to the cost of the repairs.",
-		sideNote2: "",
+		sideNote2:
+			"Insurance company is only obligated to repair what was damaged in the accident. Any additional repairs or replacements that go beyond the scope of the accident will come at an additional cost to you.",
 		blogPart2:
 			"Let's say you were in a fender bender that resulted in damage to the right-side passenger door of your car. According to your insurance policy, the insurer is obligated to repair the damaged door and paint the right-side door only. However, if you request that the entire car be painted, you will be required to contribute to the cost of painting.",
 		blogPart3:
@@ -183,7 +197,7 @@ export const blogContent = [
 			"If you found this article helpful, you might also be interested in reading our comprehensive guide on car insurance coverage, which delves deeper into the different types of coverage available and what they entail.",
 	},
 	{
-		id: "3",
+		id: "6",
 		authorImage: AvatarImg,
 		authorName: "Treasure Okure",
 		date: "PUBLISHED ON JULY 31, 2022",
@@ -191,10 +205,12 @@ export const blogContent = [
 		title: "Insurance has never been Simpler",
 		sampleNote:
 			"Insurance is very simple. It is something we pay for to make sure that we don't end up in massive amounts of debt if our house burns down or our car crashes. Insurance puts the responsibility of taking care of such debts on other people, usually insurance providers like the companies that partner with Unyte. All that you're responsible for as a user (or the insured) is a token that is paid monthly.",
-		sideNote: "",
+		sideNote:
+			"Insurance puts the responsibility of taking care of such debts on other people, usually insurance providers like the companies that partner with Unyte.",
 		blogPart1:
 			"Insurance is very simple. It is something we pay for to make sure that we don't end up in massive amounts of debt if our house burns down or our car crashes. Insurance puts the responsibility of taking care of such debts on other people, usually insurance providers like the companies that partner with Unyte. All that you're responsible for as a user (or the insured) is a token that is paid monthly.",
-		sideNote2: "",
+		sideNote2:
+			"And if you're wondering whether to get insurance or not, remember that you don't know what would happen tomorrow. Your Baba is not that powerful, and drivers in Lagos are mad. Don't wait for tomorrow to cover up for damages that could have been avoided today.",
 		blogPart2:
 			"You're probably thinking, but if I am paying 5000 naira every month, and by the sixth month my car crashes, that would be 30,000 naira. How will the insurance company fix damages, or buy a new car for me that is well worth above that?",
 		blogPart3:
@@ -207,7 +223,7 @@ export const blogContent = [
 			"And if you're wondering whether to get insurance or not, remember that you don't know what would happen tomorrow. Your Baba is not that powerful, and drivers in Lagos are mad. Don't wait for tomorrow to cover up for damages that could have been avoided today. Check out our range of insurance policies and find one that best suits you.",
 	},
 	{
-		id: "4",
+		id: "11",
 		authorImage: AvatarImg,
 		authorName: "Treasure Okure",
 		date: "PUBLISHED ON AUGUST 12, 2023",
@@ -231,8 +247,9 @@ export const blogContent = [
 		blogPart7: `In conclusion, Unyte has shattered the traditional barriers surrounding insurance, paving the way for a new era of simplicity and accessibility. By providing innovative solutions, seamless integration, and a diverse range of insurance products, Unyte has transformed the insurance landscape for the better. "Our journey has just begun," affirms Anozie Daniel. "We are committed to making insurance simpler for everyone, empowering businesses and individuals to embrace the security and peace of mind it brings."`,
 		blogPart8: `With Unyte's forward-thinking approach, the future of insurance has never looked brighter. Unlocking the true potential of insurance has become a reality, thanks to Unyte's unwavering dedication to simplifying insurance for all.`,
 	},
+
 	{
-		id: "5",
+		id: "3",
 		authorImage: "",
 		authorName: "",
 		date: "",
@@ -248,40 +265,7 @@ export const blogContent = [
 		blogPart5: "",
 		blogPart6: "",
 	},
-	{
-		id: "6",
-		authorImage: "",
-		authorName: "",
-		date: "",
-		blogCover: "",
-		title: "",
-		sampleNote: "",
-		sideNote: "",
-		blogPart1: "",
-		sideNote2: "",
-		blogPart2: "",
-		blogPart3: "",
-		blogPart4: "",
-		blogPart5: "",
-		blogPart6: "",
-	},
-	{
-		id: "7",
-		authorImage: "",
-		authorName: "",
-		date: "",
-		blogCover: "",
-		title: "",
-		sampleNote: "",
-		sideNote: "",
-		blogPart1: "",
-		sideNote2: "",
-		blogPart2: "",
-		blogPart3: "",
-		blogPart4: "",
-		blogPart5: "",
-		blogPart6: "",
-	},
+
 	{
 		id: "8",
 		authorImage: "",
@@ -300,7 +284,157 @@ export const blogContent = [
 		blogPart6: "",
 	},
 	{
+		id: "5",
+		authorImage: AvatarImg,
+		authorName: "Treasure Okure",
+		date: "PUBLISHED ON JULY 31, 2022",
+		blogCover: CrashedCarsPBG,
+		title: "You have been involved in a car accident, what do you do?",
+		sampleNote:
+			"For many car owners, being involved in an accident is an event that we do not anticipate for.",
+		sideNote:
+			"Be sure to take pictures of everything that happened at the scene. This is to avoid telltales later. Take pictures of your vehicle and that of the other person, the damage that has occurred and include the plate numbers.",
+		blogPart1:
+			"For many car owners, being involved in an accident is an event that we do not anticipate for.",
+		sideNote2:
+			"Ensure to file away documents proceeding from the accident as it will prove useful in a future date.",
+		intro:
+			"The mere thought of thinking about it is enough to cause apprehension, but car accidents happen very frequently, especially in urbanized areas like Lagos. More than 11,800 road traffic casualties were reported in Nigeria during the fourth quarter of 2021, by Statista.com. Of these, 10% of those involved died. To reduce the number of casualties that might occur from accidents, it is important to take note of the following:",
+		introHeader: "",
+		text: [
+			{
+				header: "Do not leave the accident site",
+				body: "Don't feel tempted to leave the site of an accident, especially if you're the perpetrator. For one, it's unethical. Secondly, chances are you might unsuccessful and get into more trouble with law enforcement authorities. Thirdly, you might be badly injured and end up injuring yourself",
+			},
+			{
+				header: "Assess health damages and that of others",
+				body: "Make sure that everybody in the vehicle is fine. If bodily damages have occurred, call for medical help.",
+			},
+			{
+				header: "Avoid altercations at all cost",
+				body: "When accidents occur, tempers may flare,which might end up aggravating the issue, and could potentially induce fatalities. If the person you have been involved in is temperamental, try to calm them till the entire situation has been assessed properly.",
+			},
+			{
+				header: "Take Pictures",
+				body: "Be sure to take pictures of everything that happened at the scene. This is to avoid telltales later. Take pictures of your vehicle and that of the other person, the damage that has occurred and include the plate numbers. This will prove useful when speaking with the insurance company, or the police and other involved bodies later.",
+			},
+			{
+				header: "Report the accident to your insurance provider",
+				body: "Ensure that you let your insurance provider know what happened so that they can rapidly come to assist you. Sometimes insurance providers cover the cost of towing vehicles, too. This is a very important step in the process.",
+			},
+			{
+				header: "Seek medical attention",
+				body: "If anyone has been wounded, seek medical attention immediately. Sometimes people appear fine until they leave the accident scene and discover that they've had concussions or cases of internal bleeding. Call an ambulance if necessary.",
+			},
+			{
+				header: "Document",
+				body: "Ensure to file away documents proceeding from the accident as it will prove useful in a future date.",
+			},
+		],
+	},
+	{
+		id: "7",
+		authorImage: EmmanuelAkujobiWriter,
+		authorName: "Emmanuel Akujobi",
+		date: "PUBLISHED ON JUNE 18, 2022",
+		blogCover: NightDrivingPBG,
+		title: "Night Trips - Advice and Tips to Drive Safe in The Dark",
+		sampleNote:
+			"According to statista.com, more than 11,800 road traffic accidents were reported in Nigeria during the final quarter of 2021, considerable numbers occurred at the night. And most car robberies were also traced to night operations.",
+		sideNote:
+			"The word “Speed kills” is no longer a new message. Accidents which can be avoided occur easily when speeding. It's important to be more careful when speeding at night.",
+		blogPart1:
+			"According to statista.com, more than 11,800 road traffic accidents were reported in Nigeria during the final quarter of 2021, considerable numbers occurred at the night. And most car robberies were also traced to night operations.",
+		sideNote2:
+			"“You have to be street wise this is Nigeria”. Avoid drunk driving, use a taxi or public vehicle if you are very tired.",
+		intro: "",
+		introHeader: "Tips and Advice to Help You Drive Safe in The Dark.",
+		text: [
+			{
+				header: "Ensure your front and rear lights are in order",
+				body: "It is an offence to drive at night without working front and rear lights, this is not about complying but for your safety. If you stay out late due to work, pleasure or other reasons try ensuring your lights are in good condition and check them regularly. Some streetlights might not be functional, this is Nigeria you can't rely on the streetlights.",
+			},
+			{
+				header: "Don't stare directly at the light of other Cars",
+				body: "It is important to look at the left-hand side and maintain your lane to keep track. Don't look into the light of other vehicles as it might blur your vision. If the glare is much, try slowing down but don't stop unexpectedly.",
+			},
+			{
+				header: "Don't drive tired at night",
+				body: `Driving at night requires you to be alert. Security and safety consciousness is important for late-night movements. “You have to be street wise this is Nigeria”. Avoid drunk driving, use a taxi or public vehicle if you are very tired.`,
+			},
+			{
+				header: "Be on the look for cyclists, people crossing and children",
+				body: "Children, cyclists and people crossing are usually at greater risk during this period. Take precautions when driving around streets, churches, schools etc.",
+			},
+			{
+				header: "Avoid speeding",
+				body: "The word “Speed kills” is no longer a new message. Accidents which can be avoided occur easily when speeding. It's important to be more careful when speeding at night.",
+			},
+		],
+	},
+	{
 		id: "9",
+		authorImage: EmmanuelAkujobiWriter,
+		authorName: "Emmanuel Akujobi",
+		date: "PUBLISHED ON JUNE 18, 2022",
+		blogCover: FlatTypePBG,
+		title:
+			"Top 10 tools and accessories that must be in your vehicle at all times. Number 1 might shock you.",
+		sampleNote:
+			"Having a car in Nigeria isn't all rosy. Nature of roads, vehicle and driving style might cause a sudden breakdown or unexpected issues on the vehicle. In addition, police, VIO and other officers at checkpoints are ready to pounce on you for noncompliance. So, what are the top 10 must-haves in your motor vehicle to avoid setbacks?",
+		sideNote:
+			"To avoid embarrassment, fines and other penalties from law enforcement agents and officers ensure you have photocopies of your legal documents and an active insurance policy in force, the minimum required policy is a third-party policy.",
+		blogPart1:
+			"Having a car in Nigeria isn't all rosy. Nature of roads, vehicle and driving style might cause a sudden breakdown or unexpected issues on the vehicle. In addition, police, VIO and other officers at checkpoints are ready to pounce on you for noncompliance. So, what are the top 10 must-haves in your motor vehicle to avoid setbacks?",
+		sideNote2:
+			"It is very important to prepare for the unforeseen. Taking precautions by having a first aid kit is important.",
+		intro: "",
+		introHeader: "Top 10 tools and accessories to have in your car",
+		text: [
+			{
+				header: "Insurance and other legal documents",
+				body: "Shocked? Well yes, Insurance and your legal documents appear in the first position because it's not only essential but also mandatory by law. You think you have seen it all. Have you been stopped by an officer and asked to provide your WAEC result? To avoid embarrassment, fines and other penalties from law enforcement agents and officers ensure you have photocopies of your legal documents and an active insurance policy in force, the minimum required policy is a third-party policy. See prices of motor insurance policy on Unyte and buy within minutes. Is there any essential tool or accessory we missed? Feel free to drop it in the comment section. Check out and compare motor insurance policies on our website and make informed decisions when buying a motor insurance cover.",
+			},
+			{
+				header: "Umbrella",
+				body: "Trusting Nigeria's weather is like planting corn and expecting watermelon. Have you gone out on a bright morning only to come back drenched? Keeping an umbrella will help you avoid such an unpleasant situation.",
+			},
+			{
+				header: "USB Charger",
+				body: "If you reside in Nigeria, you will understand the importance of this. Avoid an empty battery because you are out for a long time.",
+			},
+			{
+				header: "Mints & Freshner",
+				body: "Stay fresh and smell good, it makes your journey more comfortable.",
+			},
+			{
+				header: "Extra Money (Change)",
+				body: "Having extra cash while driving is key, especially in this country. In a situation of car breakdown, there might be a need for settlement to temporarily park your car, or to get assistance. Also, you might want to be generous to officers on the road, it goes a long way, this is Nigeria.",
+			},
+			{
+				header: "Warning Triangle",
+				body: "This will alert approaching vehicles and other road users that you have stopped. Ensure you have 2 so that you can place them at the front and rear of your car. Very important in the event of vehicle breakdown, quick repairs or emergency stop.",
+			},
+			{
+				header: "First Aid Kit",
+				body: "It is very important to prepare for the unforeseen. Taking precautions by having a first aid kit is important.",
+			},
+			{
+				header: "Empty Fuel Container",
+				body: "Have you ever tried pushing your car into the petrol station? You should know how stressful and unpleasant it is, also comes with extra cost. With an empty Fuel container, you will easily stroll to the fuel station and buy to refill your tank.",
+			},
+			{
+				header: "Tyre Jack",
+				body: "Having a spare tyre without a jack means you came to play. You must have your tyre jack when events warrant changing your tyre.",
+			},
+			{
+				header: "Spare Tyre",
+				body: "You think you have seen it all, some roads will shame you. It's important to have a spare tyre in good condition, at any point in time to avoid stories that touch.",
+			},
+		],
+	},
+	{
+		id: "10",
 		authorImage: "",
 		authorName: "",
 		date: "",
@@ -317,7 +451,7 @@ export const blogContent = [
 		blogPart6: "",
 	},
 	{
-		id: "10",
+		id: "4",
 		authorImage: "",
 		authorName: "",
 		date: "",
