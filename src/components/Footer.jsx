@@ -62,26 +62,26 @@ function Footer() {
 		},
 	];
 	const legalList = [
-		{
-			page: "Developer policy",
-			link: "#",
-		},
+		// {
+		// 	page: "Developer policy",
+		// 	link: "#",
+		// },
 		{
 			page: "Privacy policy",
 			link: "policies/privacypolicy",
 		},
-		{
-			page: "Cookie policy",
-			link: "#",
-		},
-		{
-			page: "End user agreement",
-			link: "#",
-		},
-		{
-			page: "End user privacy policy",
-			link: "#",
-		},
+		// {
+		// 	page: "Cookie policy",
+		// 	link: "#",
+		// },
+		// {
+		// 	page: "End user agreement",
+		// 	link: "#",
+		// },
+		// {
+		// 	page: "End user privacy policy",
+		// 	link: "#",
+		// },
 	];
 	// const developersList = [
 	// 	{
