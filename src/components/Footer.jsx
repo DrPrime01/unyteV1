@@ -83,32 +83,32 @@ function Footer() {
 			link: "#",
 		},
 	];
-	const developersList = [
-		{
-			page: "Get started",
-			link: "#",
-		},
-		{
-			page: "API Status",
-			link: "#",
-		},
-		{
-			page: "API Reference",
-			link: "#",
-		},
-		{
-			page: "Developer docs",
-			link: "developers/documentation",
-		},
-		{
-			page: "Libraries",
-			link: "#",
-		},
-		{
-			page: "Developer community",
-			link: "#",
-		},
-	];
+	// const developersList = [
+	// 	{
+	// 		page: "Get started",
+	// 		link: "#",
+	// 	},
+	// 	{
+	// 		page: "API Status",
+	// 		link: "#",
+	// 	},
+	// 	{
+	// 		page: "API Reference",
+	// 		link: "#",
+	// 	},
+	// 	{
+	// 		page: "Developer docs",
+	// 		link: "developers/documentation",
+	// 	},
+	// 	{
+	// 		page: "Libraries",
+	// 		link: "#",
+	// 	},
+	// 	{
+	// 		page: "Developer community",
+	// 		link: "#",
+	// 	},
+	// ];
 	const products = productsList.map((product) => {
 		return (
 			<li key={product.page} className="mb-4">
@@ -130,13 +130,13 @@ function Footer() {
 			</li>
 		);
 	});
-	const developers = developersList.map((developer) => {
-		return (
-			<li key={developer.page} className="mb-4">
-				<NavLink to={developer.link}>{developer.page}</NavLink>
-			</li>
-		);
-	});
+	// const developers = developersList.map((developer) => {
+	// 	return (
+	// 		<li key={developer.page} className="mb-4">
+	// 			<NavLink to={developer.link}>{developer.page}</NavLink>
+	// 		</li>
+	// 	);
+	// });
 
 	return (
 		<footer className="bg-white">
@@ -174,12 +174,12 @@ function Footer() {
 							</h2>
 							<ul className="text-gray-500 text-sm">{legals}</ul>
 						</div>
-						<div>
+						{/*<div>
 							<h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
 								Developers
 							</h2>
 							<ul className="text-gray-500 text-sm">{developers}</ul>
-						</div>
+	</div>*/}
 					</div>
 				</div>
 				<hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
