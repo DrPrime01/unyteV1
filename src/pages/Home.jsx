@@ -42,20 +42,20 @@ function Home() {
 			name: "Mike Kalu",
 			position: "Head Insuretech Heirs",
 		},
+		// {
+		// 	id: "2",
+		// 	text: "Unyte's solutions simplified complex insurance integration, enabling us to provide efficient and comprehensive coverage to our clients. A game-changer in the industry.",
+		// 	name: "CP Tunji Disu",
+		// 	position: "PSO NPF",
+		// },
 		{
 			id: "2",
-			text: "Unyte's solutions simplified complex insurance integration, enabling us to provide efficient and comprehensive coverage to our clients. A game-changer in the industry.",
-			name: "CP Tunji Disu",
-			position: "PSO NPF",
-		},
-		{
-			id: "3",
 			text: "Partnering with Unyte was a turning point for us. Their innovative technology empowered our insurance services, leading to a significant increase in customer trust and loyalty.",
 			name: "Alfred Egbai",
 			position: "Group Head Emerging Partnerships AXA",
 		},
 		{
-			id: "4",
+			id: "3",
 			text: "Unyte's collaboration empowered us to diversify our insurance offerings, enhancing our value proposition and attracting a wider audience. A true success story.",
 			name: "Isaac Osuntade (ZICO)",
 			position: "Director protocol and logistics Babcock University",
