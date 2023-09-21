@@ -1,6 +1,6 @@
-import { FaArrowRight } from "react-icons/fa";
+//import { FaArrowRight } from "react-icons/fa";
 
-import FaqComponent from "../../components/FaqComponent";
+//import FaqComponent from "../../components/FaqComponent";
 
 function Contact() {
 	return (
@@ -18,7 +18,7 @@ function Contact() {
 						Check out the FAQs below or reach out directly if you have any
 						questions.
 					</p>
-					<div className="hidden md:block mt-8">
+					{/*<div className="hidden md:block mt-8">
 						<button
 							type="button"
 							className="text-[#101323] bg-[#F9FAFB] focus:ring-4 group focus:outline-none font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 flex items-center space-x-2"
@@ -26,7 +26,7 @@ function Contact() {
 							<span>Explore integrations</span>{" "}
 							<FaArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 						</button>
-					</div>
+	</div>*/}
 				</div>
 				<div className="w-auto xl:w-[37.625rem]">
 					<div className="shadow-xl p-6 rounded-3xl">
@@ -80,12 +80,9 @@ function Contact() {
 									<div>
 										<select className="block rounded-lg border-e-0 rounded-e-none bg-[#F9FAFB] border border-[#EAECF0] text-[#667085] py-3 pl-4">
 											<option disabled selected>
-												+1
+												+234
 											</option>
-											<option value="+234">+234</option>
-											<option value="+234">+234</option>
-											<option value="+234">+234</option>
-											<option value="+234">+234</option>
+											{/*<option value="+234">+234</option>*/}
 										</select>
 									</div>
 									<div className="flex-1">
@@ -100,14 +97,15 @@ function Contact() {
 								</div>
 							</div>
 							<div className="mb-6">
-								<label htmlFor="question" className="text-[#101323] block mb-2">
+								<label htmlFor="product" className="text-[#101323] block mb-2">
 									What are you building?
 								</label>
-								<select className="block w-full rounded-lg bg-[#F9FAFB] border border-[#EAECF0] text-[#667085] py-3 pl-4">
-									<option disabled selected>
-										you@company.com
-									</option>
-								</select>
+								<input
+									className="block w-full rounded-lg bg-[#F9FAFB] border border-[#EAECF0] text-[#667085] py-3 pl-4 placeholder:text-sm"
+									type="text"
+									name="product"
+									placeholder="your@company.com"
+								/>
 							</div>
 							<div className="">
 								<label htmlFor="message" className="text-[#101323] block mb-2">
@@ -139,7 +137,7 @@ function Contact() {
 					</div>
 				</div>
 			</section>
-			<FaqComponent />
+			{/*<FaqComponent />*/}
 		</>
 	);
 }

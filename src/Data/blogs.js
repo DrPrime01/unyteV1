@@ -1,12 +1,15 @@
 //import BlogPreviewBg from "../assets/images/BlogPreviewBg.jpg";
 import AvatarImg from "../assets/images/AvatarImg.png";
 import AbcPBG from "../assets/images/AbcPBG.png";
+import AbcCover from "../assets/images/AbcCover.png";
 import BettermentInsurancePBG from "../assets/images/BettermentInsurancePBG.png";
 import BlogPicture from "../assets/images/BlogPicture.png";
 import CarValuationPBG from "../assets/images/CarValuationPBG.png";
 import FlatTypePBG from "../assets/images/FlatTypePBG.jpg";
+import FlatTyreCover from "../assets/images/FlatTyreCover.jpg";
 import ExcessBuyPBG from "../assets/images/ExcessBuyPBG.png";
 import HappyFamilyPBG from "../assets/images/HappyFamilyPBG.png";
+import HappyFamilyCover from "../assets/images/HappyFamilyCover.png";
 import CrashedCarsPBG from "../assets/images/CrashedCarsPBG.jfif";
 import NightDrivingPBG from "../assets/images/NightDrivingPBG.jfif";
 import SleepingGuyPBG from "../assets/images/SleepingGuyPBG.jfif";
@@ -201,7 +204,7 @@ export const blogContent = [
 		authorImage: AvatarImg,
 		authorName: "Treasure Okure",
 		date: "PUBLISHED ON JULY 31, 2022",
-		blogCover: AbcPBG,
+		blogCover: AbcCover,
 		title: "Insurance has never been Simpler",
 		sampleNote:
 			"Insurance is very simple. It is something we pay for to make sure that we don't end up in massive amounts of debt if our house burns down or our car crashes. Insurance puts the responsibility of taking care of such debts on other people, usually insurance providers like the companies that partner with Unyte. All that you're responsible for as a user (or the insured) is a token that is paid monthly.",
@@ -250,38 +253,115 @@ export const blogContent = [
 
 	{
 		id: "3",
-		authorImage: "",
-		authorName: "",
-		date: "",
-		blogCover: "",
-		title: "",
-		sampleNote: "",
-		sideNote: "",
-		blogPart1: "",
-		sideNote2: "",
-		blogPart2: "",
-		blogPart3: "",
-		blogPart4: "",
-		blogPart5: "",
-		blogPart6: "",
+		authorImage: OlusegunOlayinkaWriter,
+		authorName: "Olusegun Olayinka",
+		date: "PUBLISHED ON MARCH 10, 2023",
+		blogCover: MechanicPBG,
+		title: "Does My Insurance Plan Cover Mechanical Faults?",
+		sampleNote:
+			"If you're a car owner, you're likely aware that accidents and theft can happen at any time, and they can be expensive to repair or replace. That's why many people choose to invest in car insurance - it provides financial protection against unexpected costs that can arise from these types of events. However, there's one question that many car owners have: does my insurance plan cover mechanical faults?",
+		sideNote:
+			"By reviewing your policy documents carefully, maintaining your vehicle, and taking steps to protect your finances, you can help ensure that you're prepared for the unexpected on the road.",
+		blogPart1:
+			"If you're a car owner, you're likely aware that accidents and theft can happen at any time, and they can be expensive to repair or replace. That's why many people choose to invest in car insurance - it provides financial protection against unexpected costs that can arise from these types of events. However, there's one question that many car owners have: does my insurance plan cover mechanical faults?",
+		sideNote2:
+			"It's important to understand the limitations of your car insurance coverage, as it can help you make informed decisions about how to protect your vehicle and your finances.",
+		header1: "Does My Insurance Plan Cover Mechanical Faults?",
+		blogPart4:
+			"The short answer is no, it does not. Your insurance plan is designed to cover repairs or replacements that are necessary as a result of accidents, theft, or other covered events as outlined in your policy documents. This means that if your car experiences a mechanical failure or breakdown that's not related to an accident or theft, you'll likely be responsible for the cost of repairs yourself.",
+		blogPart5:
+			"It's important to understand the limitations of your car insurance coverage, as it can help you make informed decisions about how to protect your vehicle and your finances. Here are a few things to keep in mind:",
+		header2: "What Your Insurance Plan Does Cover",
+		sentence1:
+			"When you purchase a car insurance policy, you'll typically have the option to choose from a range of coverage types. These may include:",
+		sentence1List: [
+			"Liability coverage: This type of coverage is typically required by law, and it helps pay for damages or injuries you cause to other people or their property in an accident.",
+			"Collision coverage: This covers the cost of repairing or replacing your vehicle if it's damaged in an accident.",
+			"Comprehensive coverage: This covers non-collision events that can damage or destroy your vehicle, such as theft, vandalism, or natural disasters.",
+		],
+		sentence1End:
+			"It's important to review your policy documents carefully to understand exactly what types of events are covered under each type of coverage, as well as any limitations or exclusions that may apply.",
+		header3: "What Your Insurance Plan Does NOT Cover",
+		sentence2:
+			"As we mentioned earlier, your car insurance plan typically does not cover mechanical faults or breakdowns that are not related to an accident or theft. Here are a few other types of events that may not be covered:",
+		sentence2List: [
+			"Maintenance and wear-and-tear: Routine maintenance, such as oil changes or brake replacements, is not typically covered by car insurance. Similarly, normal wear-and-tear on your vehicle is not covered.",
+			"Intentional damage: If you intentionally damage your own vehicle (for example, by smashing your windows or keying your paint), your insurance plan is unlikely to cover the cost of repairs.",
+			"Illegal activities: If you're using your vehicle for illegal activities (such as transporting illegal drugs), any damage or losses that occur as a result will likely not be covered by your insurance plan.",
+		],
+		header4: "What You Can Do to Protect Your Vehicle",
+		sentence3:
+			"While your car insurance plan may not cover mechanical faults or breakdowns, there are still steps you can take to protect your vehicle and your finances. Here are a few ideas:",
+		sentence3List: [
+			"Invest in a warranty: Depending on the age and condition of your vehicle, you may be able to purchase an extended warranty that covers the cost of mechanical repairs.",
+			"Maintain your vehicle: Keeping your car in good condition can help prevent mechanical failures and breakdowns. Be sure to follow your vehicle's recommended maintenance schedule and address any issues promptly.",
+			"Consider roadside assistance: If you do experience a breakdown while you're on the road, having a roadside assistance plan can help cover the cost of towing or other emergency services.",
+			"Save for unexpected expenses: If you're concerned about the cost of mechanical repairs, consider setting aside money in an emergency fund to cover unexpected expenses.",
+		],
+		sentence3End:
+			"By understanding the limitations of your car insurance coverage and taking steps to protect your vehicle and your finances, you can help ensure that you're prepared for whatever comes your way on the road.",
+		conclusionHeader: "In Conclusion",
+		conclusion:
+			"So, does your insurance plan cover mechanical faults? Unfortunately, the answer is no. Your car insurance plan is designed to cover damages and losses that result from accidents, theft, and other covered events - not routine maintenance or mechanical failures. However, by reviewing your policy documents carefully, maintaining your vehicle, and taking steps to protect your finances, you can help ensure that you're prepared for the unexpected on the road.",
+	},
+	{
+		id: "4",
+		authorImage: OlusegunOlayinkaWriter,
+		authorName: "Olusegun Olayinka",
+		date: "PUBLISHED ON MARCH 3, 2023",
+		blogCover: ExcessBuyPBG,
+		title: "What is Excess Buy Back?",
+		sampleNote:
+			"In the world of insurance, many terms and policies can be confusing, and excess buyback is one of them. This coverage can be particularly useful for individuals who want to reduce their financial liability in the event of an accident or claim.",
+		sideNote2:
+			"It's worth noting that Excess Buy Back is generally only available for vehicles with a value of N2.5m or higher.",
+		blogPart1:
+			"In the world of insurance, many terms and policies can be confusing, and excess buyback is one of them. This coverage can be particularly useful for individuals who want to reduce their financial liability in the event of an accident or claim.",
+		sideNote:
+			"In simple terms, Buy back is an additional payment you make at the beginning of your policy term to cover the cost of any excess charges that might arise later on.",
+		header1: "Excess Buy Back: Understanding This Insurance Coverage",
+		blogPart2: `To begin with, it's important to understand what the term "Excess" means in insurance. Essentially, it refers to the amount or percentage of any claim that you, as the policyholder, are responsible for paying out of your pocket. This is typically a relatively small amount compared to the overall cost of the claim, and it serves as a way for you to take on some level of accountability for protecting your assets.`,
+		blogPart3: `When you file a claim, the insurer will assess both the fixed amount and percentage-based options for your excess, and you'll be required to pay whichever amount is higher. However, there is a way to avoid excess charges altogether: by purchasing an "Excess Buy Back" option when you first take out your policy.`,
+		blogPart4:
+			"So what exactly is Excess Buy Back? In simple terms, it's an additional payment you make at the beginning of your policy term to cover the cost of any excess charges that might arise later on. The amount you'll need to pay for this buyback option typically falls somewhere between 0.5% to 1% of the total value of your vehicle (though it's always a good idea to check your policy document to confirm the exact terms of your coverage).",
+		blogPart5:
+			"It's worth noting that Excess Buy Back is generally only available for vehicles with a value of N2.5m or higher. However, if you're someone who wants to avoid the possibility of having to pay out-of-pocket for excess charges in the event of a claim, it can be a worthwhile investment to consider.",
+		header2: "Benefits of Excess Buy Back for Policyholders",
+		sentence1:
+			"Not quite convinced of the benefits that come with Excess Buy Back as a policyholder? Here are a few key advantages to consider:",
+		sentence1List: [
+			"Lower out-of-pocket costs: By purchasing Excess Buy Back, you can eliminate the risk of having to pay any excess charges out of your pocket in the event of a claim. This can provide significant peace of mind and help you avoid unexpected financial burdens.",
+			"Increased coverage: With Excess Buy Back in place, you may be able to secure more comprehensive coverage for your vehicle, since you won't need to worry about the cost of any excess charges impacting your benefits.",
+			"Customizable policy terms: Depending on your insurer, you may be able to adjust the amount you pay for Excess Buy Back to fit your budget and coverage needs. This can help you maximize your policy benefits while keeping costs manageable.",
+		],
+		conclusionHeader: "Bottom Line",
+		conclusion:
+			"Overall, Excess Buy Back can be a smart investment for policyholders who want to protect their assets and avoid unexpected financial challenges in the event of a claim. To learn more about this option and whether it's right for you, be sure to consult with us and review your policy documents carefully.",
 	},
 
 	{
 		id: "8",
-		authorImage: "",
-		authorName: "",
-		date: "",
-		blogCover: "",
-		title: "",
-		sampleNote: "",
-		sideNote: "",
-		blogPart1: "",
-		sideNote2: "",
-		blogPart2: "",
-		blogPart3: "",
-		blogPart4: "",
-		blogPart5: "",
-		blogPart6: "",
+		authorImage: EmmanuelAkujobiWriter,
+		authorName: "Emmanuel Akujobi",
+		date: "PUBLISHED ON JUNE 20, 2022",
+		blogCover: SleepingGuyPBG,
+		title: "Feeling sleepy on the steering? - Tips to stay alert",
+		sampleNote:
+			"Falling asleep when driving is very dangerous not only to the driver but also extends to the passengers and other road users. Drivers find it easy to stay out of alcohol and other substance to avoid this from occurring. However, little attention is given to stress and tiredness which can make you sleepy and weak on steering.",
+		sideNote: "Ensure you have adequate rest before embarking on a journey.",
+		blogPart1:
+			"Falling asleep when driving is very dangerous not only to the driver but also extends to the passengers and other road users. Drivers find it easy to stay out of alcohol and other substance to avoid this from occurring. However, little attention is given to stress and tiredness which can make you sleepy and weak on steering.",
+		sideNote2:
+			"If you discover you are sleepy find a safe place, park and rest.",
+		header1: "Tips to remain alert",
+		sentence1List: [
+			"Ensure you have adequate rest before embarking on a journey.",
+			"Ensure you add at least a 10mins break for every 2 hours journey.",
+			"If you discover you are sleepy find a safe place, park and rest.",
+			"Take a cup of coffee or have soft drinks containing caffeine before driving. Don't take alomo bitters.",
+			"Observe your sleeping nature, if you discover alteration in your sleeping pattern in recent times or have a sleeping disorder, use a taxi.",
+			"Ensure you have a motor insurance policy in force, and protection against damages as the night journey is riskier.",
+		],
 	},
 	{
 		id: "5",
@@ -377,7 +457,7 @@ export const blogContent = [
 		authorImage: EmmanuelAkujobiWriter,
 		authorName: "Emmanuel Akujobi",
 		date: "PUBLISHED ON JUNE 18, 2022",
-		blogCover: FlatTypePBG,
+		blogCover: FlatTyreCover,
 		title:
 			"Top 10 tools and accessories that must be in your vehicle at all times. Number 1 might shock you.",
 		sampleNote:
@@ -435,36 +515,31 @@ export const blogContent = [
 	},
 	{
 		id: "10",
-		authorImage: "",
-		authorName: "",
-		date: "",
-		blogCover: "",
-		title: "",
-		sampleNote: "",
-		sideNote: "",
-		blogPart1: "",
-		sideNote2: "",
-		blogPart2: "",
-		blogPart3: "",
-		blogPart4: "",
-		blogPart5: "",
-		blogPart6: "",
-	},
-	{
-		id: "4",
-		authorImage: "",
-		authorName: "",
-		date: "",
-		blogCover: "",
-		title: "",
-		sampleNote: "",
-		sideNote: "",
-		blogPart1: "",
-		sideNote2: "",
-		blogPart2: "",
-		blogPart3: "",
-		blogPart4: "",
-		blogPart5: "",
-		blogPart6: "",
+		authorImage: EmmanuelAkujobiWriter,
+		authorName: "Emmanuel Akujobi",
+		date: "PUBLISHED ON JUNE 24, 2022",
+		blogCover: HappyFamilyCover,
+		title:
+			"Is Third-Party Motor Insurance Cheaper Than Comprehensive Policy? The Answer Might Shock Car Owners.",
+		sampleNote:
+			"If you are a third-party user, you might need a change of plan. Don't come after me, let us analyze this together. The Answer to the question above lies in understanding and comparing the two policies.",
+		sideNote:
+			"A third-party Insurance policy is the minimum insurance policy required for all drivers. It covers the cost of damage or injury to another person but does not protect you against the cost of injury or damage to your car. A third-Party cover usually comes with a flat premium rate of 5000 naira for 4-wheeled motor vehicles in Nigeria.",
+		blogPart1:
+			"If you are a third-party user, you might need a change of plan. Don't come after me, let us analyze this together. The Answer to the question above lies in understanding and comparing the two policies.",
+		sideNote2:
+			"A comprehensive policy is a higher level of protection which covers the cost of injury damage to you, your vehicle and other drivers.",
+		blogPart2:
+			"A comprehensive policy is a higher level of protection which covers the cost of injury damage to you, your vehicle and other drivers. Fully comprehensive car insurance also protects you against vandalism, theft, flood, or trees falling on it. Premium on comprehensive motor insurance policies is calculated as a percentage of the vehicle value, ranging from 1.5% to 5% depending on the level of risk.",
+		blogPart3:
+			"Having known the difference in the policies, let us compare them based on the scenario below:",
+		blogPart4:
+			"Party A and B both own a motor vehicle that is worth a million naira each. Party A has a third-party policy with a premium of 5,000. While Party B Own a comprehensive Insurance policy with a premium of 25,000. There was an accident which resulted in total loss of vehicle, and injury to a third party and the car owner.",
+		blogPart5:
+			"Party A: Will bear the 1-million-naira cost of getting a new car plus healthcare bills while the insurer will only bear third-party liabilities.",
+		blogPart6:
+			"Party B: Only bears the premium of 25,000 paid at the inception of the insurance contract. The insurer then takes full responsibility for all liabilities arising from the accident according to the terms of the policy.",
+		blogPart7:
+			"It is now clear that a third-party policy will cost the insured more when incidents occur. Most car owners demand motor insurance just to meet legal requirements not knowing the ideal benefits and cost of different types of policies available. Check out motor insurance policies and compare prices with benefits on Unyte.",
 	},
 ];

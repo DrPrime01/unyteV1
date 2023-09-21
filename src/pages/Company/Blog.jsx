@@ -141,8 +141,8 @@ function Blog() {
 									<p className="font-semibold mb-1 text-[#101323]">
 										{blog?.authorName}
 									</p>
-									<p className="text-sm text-[#667085]">
-										CEO/ Co-founder of Unyte.
+									<p className="text-sm text-[#667085] italic">
+										Verified writer
 									</p>
 								</div>
 							</div>
@@ -152,12 +152,17 @@ function Blog() {
 						<img
 							src={blog?.blogCover}
 							alt="a woman writing on a board"
-							className="mb-4"
+							className="mb-4 rounded-2xl"
 						/>
 						<p className="text-[#101323]">Source: Image from stocks </p>
 					</div>
 					{!["5", "7", "9"].includes(id) && (
 						<div className="mb-16">
+							{id === "4" && (
+								<h2 className="text-2xl md:text-3xl font-semibold mb-8">
+									{blog?.header1}
+								</h2>
+							)}
 							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
 								{blog?.blogPart2}
 							</p>
@@ -173,6 +178,27 @@ function Blog() {
 					</div>
 					{!["5", "7", "9"].includes(id) && (
 						<div className="mb-16">
+							{["3", "8"].includes(id) && (
+								<>
+									<h2 className="text-2xl md:text-3xl font-semibold mb-8">
+										{blog?.header1}
+									</h2>
+									{id === "8" && (
+										<ol className="list-decimal ml-6">
+											{blog?.sentence1List?.map((sentence, i) => {
+												return (
+													<li
+														key={i}
+														className="text-[#667085] md:text-xl text-justify leading-10 mb-4"
+													>
+														{sentence}
+													</li>
+												);
+											})}
+										</ol>
+									)}
+								</>
+							)}
 							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-2">
 								{blog?.blogPart4}
 							</p>
@@ -207,6 +233,81 @@ function Blog() {
 									</li>
 								))}
 							</ol>
+						</div>
+					)}
+					{["3", "4"].includes(id) && (
+						<div>
+							<h2 className="text-2xl md:text-3xl font-semibold mb-8">
+								{blog?.header2}
+							</h2>
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-6">
+								{blog?.sentence1}
+							</p>
+							<ul className="list-disc ml-6 mb-6">
+								{blog?.sentence1List?.map((sentence, i) => {
+									return (
+										<li
+											key={i}
+											className="text-[#667085] md:text-xl text-justify leading-10 mb-4"
+										>
+											{sentence}
+										</li>
+									);
+								})}
+							</ul>
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-8">
+								{blog?.sentence1End}
+							</p>
+							{id === "3" && (
+								<>
+									<h2 className="text-2xl md:text-3xl font-semibold mb-8">
+										{blog?.header3}
+									</h2>
+									<p className="text-[#667085] md:text-xl text-justify leading-10 mb-6">
+										{blog?.sentence2}
+									</p>
+									<ul className="list-disc ml-6 mb-8">
+										{blog?.sentence2List?.map((sentence, i) => {
+											return (
+												<li
+													key={i}
+													className="text-[#667085] md:text-xl text-justify leading-10 mb-4"
+												>
+													{sentence}
+												</li>
+											);
+										})}
+									</ul>
+									<h2 className="text-2xl md:text-3xl font-semibold mb-8">
+										{blog?.header4}
+									</h2>
+									<p className="text-[#667085] md:text-xl text-justify leading-10 mb-6">
+										{blog?.sentence3}
+									</p>
+
+									<ul className="list-disc ml-6 mb-6">
+										{blog?.sentence3List?.map((sentence, i) => {
+											return (
+												<li
+													key={i}
+													className="text-[#667085] md:text-xl text-justify leading-10 mb-4"
+												>
+													{sentence}
+												</li>
+											);
+										})}
+									</ul>
+									<p className="text-[#667085] md:text-xl text-justify leading-10 mb-8">
+										{blog?.sentence3End}
+									</p>
+								</>
+							)}
+							<h2 className="text-2xl md:text-3xl font-semibold mb-8">
+								{blog?.conclusionHeader}
+							</h2>
+							<p className="text-[#667085] md:text-xl text-justify leading-10 mb-6">
+								{blog?.conclusion}
+							</p>
 						</div>
 					)}
 				</div>

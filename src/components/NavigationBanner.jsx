@@ -23,7 +23,7 @@ function NavigationBanner({ bannerType, links }) {
 								to={link.path}
 								className={`text-[#667085] ${
 									activePath === link.path ? "bg-[#5CC758] text-white" : ""
-								} text-sm hover:bg-gray-400 rounded-[4px] p-2 hover:text-white whitespace-nowrap`}
+								} text-sm rounded-[4px] p-2 whitespace-nowrap`}
 							>
 								{link.label}
 							</NavLink>

@@ -20,14 +20,15 @@ function TestimonialSwiper({ slides, slidesPerView }) {
 
 	const handlePrev = () => {
 		swiperRef.current?.slidePrev();
-		setDisablePrev(true);
-		setDisableNext(false);
 	};
 
 	const handleNext = () => {
 		swiperRef.current?.slideNext();
-		setDisableNext(true);
-		setDisablePrev(false);
+	};
+
+	const onSlideChange = (swiper) => {
+		setDisablePrev(swiper.isBeginning);
+		setDisableNext(swiper.isEnd);
 	};
 
 	return (
@@ -39,6 +40,7 @@ function TestimonialSwiper({ slides, slidesPerView }) {
 				onBeforeInit={(swiper) => {
 					swiperRef.current = swiper;
 				}}
+				onSlideChange={onSlideChange} // Add this line
 				modules={[Pagination]}
 				className="mySwiper"
 			>
@@ -46,7 +48,7 @@ function TestimonialSwiper({ slides, slidesPerView }) {
 					return <SwiperSlide key={index}>{slide}</SwiperSlide>;
 				})}
 			</Swiper>
-			{slides?.length > 3 && (
+			{slides?.length > slidesPerView && (
 				<div className="flex justify-center items-center gap-x-4 mt-16 mx-20">
 					<button
 						disabled={disablePrev}

@@ -1,4 +1,5 @@
 import { BsArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 import UnyteLogoBig from "../assets/icons/UnyteLogoBig.svg";
 import CTA from "../assets/images/CTA.svg";
@@ -24,12 +25,12 @@ function CtaComponent() {
 					businesses
 				</p>
 				<div className="flex md:flex-row flex-col space-y-2.5 md:space-y-0 items-center gap-x-2.5 w-full md:w-auto">
-					<button
-						type="button"
+					<Link
+						to="company/contact"
 						className="text-white bg-[#5CC758] text-base focus:ring-4 w-full md:w-auto focus:outline-none font-medium rounded-3xl md:text-sm px-4 py-3 text-center mr-3 md:mr-0"
 					>
 						Get started
-					</button>
+					</Link>
 					<a
 						href="#"
 						className="text-[#667085] group text-[0.75rem] text-base md:text-sm w-full md:w-auto font-medium flex items-center md:justify-start justify-center gap-x-2 px-4 py-3"

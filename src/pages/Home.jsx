@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
+//import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -185,7 +185,7 @@ function Home() {
 				className="flex flex-col md:space-y-24 space-y-20 mt-48 md:mt-40 mb-6 md:px-12 xl:px-5 px-5 max-w-screen-xl mx-auto"
 			>
 				<div id="hero-texts" className="text-center">
-					<div className="gap-x-4 flex items-center justify-center mb-6">
+					{/*<div className="gap-x-4 flex items-center justify-center mb-6">
 						<span className="text-[#5CC758] text-[0.75rem] bg-[#B1FDAD] bg-opacity-30 border border-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-3 py-1.5 text-center mr-3 md:mr-0">
 							What&apos;s new?
 						</span>
@@ -196,7 +196,7 @@ function Home() {
 							<span>July release notes</span>
 							<AiOutlineArrowRight className="transform transition-transform origin-bottom  group-hover:scale-x-125" />
 						</a>
-					</div>
+	</div>*/}
 					<h2 className="md:text-3xl lg:text-4xl text-2xl font-medium text-[#101323] mb-4">
 						Reliable Insurance Infrastructure
 					</h2>
@@ -211,12 +211,12 @@ function Home() {
 						<br className="hidden md:block" /> revenue.
 					</p>
 					<div className="flex items-center justify-center mt-6">
-						<button
-							type="button"
+						<Link
+							to="company/contact"
 							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0"
 						>
 							Get started
-						</button>
+						</Link>
 					</div>
 				</div>
 				<div className="" id="unyte-hero">
@@ -359,14 +359,14 @@ function Home() {
 						</p>
 					</div>
 				</div>
-				<div>
-					<button
-						type="button"
+				<div className="flex items-center">
+					<Link
+						to="products/launch"
 						className="text-white group bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-6 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
 					>
 						<span>Learn more</span>{" "}
 						<BsArrowUpRight className="transform transition-transform origin-bottom  group-hover:scale-125" />
-					</button>
+					</Link>
 				</div>
 			</section>
 			<section
@@ -395,13 +395,15 @@ function Home() {
 							<br className="hidden lg:block" />
 							facilitating the launch of new insurance products.
 						</p>
-						<button
-							type="button"
-							className="text-[#101323] bg-white group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-						>
-							<span>Learn more</span>{" "}
-							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
-						</button>
+						<div className="flex items-center">
+							<Link
+								to="products/launch"
+								className="text-[#101323] bg-white group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							>
+								<span>Learn more</span>{" "}
+								<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
+							</Link>
+						</div>
 					</div>
 					<div className="md:col-start-3 md:col-end-4 bg-[#E6FFF3B2] rounded-xl p-6">
 						<img src={EducationNav} alt="icons" className="mb-6" />
@@ -413,13 +415,15 @@ function Home() {
 							students, providing coverage for health emergencies, accidents,
 							and unforeseen circumstances.
 						</p>
-						<button
-							type="button"
-							className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-						>
-							<span>Learn more</span>{" "}
-							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
-						</button>
+						<div className="flex items-center">
+							<Link
+								to="products/studentProtection"
+								className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							>
+								<span>Learn more</span>{" "}
+								<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
+							</Link>
+						</div>
 					</div>
 					<div className="md:col-start-1 md:col-end-2 bg-[#E6F6FF] rounded-xl p-6">
 						<img src={HealthNav} alt="icons" className="mb-6" />
@@ -431,13 +435,15 @@ function Home() {
 							easy integration into platforms for individuals and families
 							seeking health coverage.
 						</p>
-						<button
-							type="button"
-							className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-						>
-							<span>Learn more</span>{" "}
-							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
-						</button>
+						<div className="flex items-center">
+							<Link
+								to="products/health"
+								className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							>
+								<span>Learn more</span>{" "}
+								<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
+							</Link>
+						</div>
 					</div>
 					<div className="md:col-start-2 md:col-end-4 bg-[#FFF5E6] rounded-xl p-6">
 						<img src={MotorNav} alt="icons" className="mb-6" />
@@ -451,13 +457,15 @@ function Home() {
 							<br className="hidden lg:block" />
 							customers.
 						</p>
-						<button
-							type="button"
-							className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-						>
-							<span>Learn more</span>{" "}
-							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
-						</button>
+						<div className="flex items-center">
+							<Link
+								to="products/motorRegInsurance"
+								className="text-[#101323] group bg-white focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							>
+								<span>Learn more</span>{" "}
+								<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
+							</Link>
+						</div>
 					</div>
 					<div className="md:col-span-3 bg-[#E6FFF3B2] bg-opacity-70 rounded-xl p-6">
 						<img src={SecurityNav} alt="icons" className="mb-6" />
@@ -471,13 +479,15 @@ function Home() {
 							<br className="hidden lg:block" />
 							security.
 						</p>
-						<button
-							type="button"
-							className="text-[#101323] bg-white group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
-						>
-							<span>Learn more</span>{" "}
-							<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
-						</button>
+						<div className="flex items-center">
+							<Link
+								to="products/deviceProtection"
+								className="text-[#101323] bg-white group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 flex items-center gap-x-2"
+							>
+								<span>Learn more</span>{" "}
+								<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
+							</Link>
+						</div>
 					</div>
 				</div>
 				<div className="flex items-center justify-center">
@@ -499,17 +509,17 @@ function Home() {
 						Insurance Across Sectors in Africa
 					</h2>
 				</div>
-				<div className="md:flex items-center justify-center hidden">
+				<div className="md:flex items-center justify-center">
 					<img src={DashboardIllustration} alt="dashboard" />
 				</div>
-				<div className="flex md:hidden items-center justify-center rounded-2xl h-[36.1875rem] md:h-[28rem] bg-[#F2F4F7]">
+				{/*<div className="flex md:hidden items-center justify-center rounded-2xl h-[36.1875rem] md:h-[28rem] bg-[#F2F4F7]">
 					<p className="text-[#667085] opacity-60 px-5 md:px-0 text-center">
 						Unyte serves as a middle man providing insurance products to a
 						variety of <br className="hidden md:block" />
 						industries and sectors. An illustration that potrays this would be
 						great here.
 					</p>
-				</div>
+</div>*/}
 			</section>
 			<section
 				className="py-20 md:px-12 xl:px-5 px-5 bg-cover bg-center bg-no-repeat"
@@ -534,12 +544,12 @@ function Home() {
 								works:
 							</p>
 							<div className="md:flex items-center gap-x-2.5 hidden">
-								<button
-									type="button"
+								<Link
+									to="company/contact"
 									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
 								>
 									Get started
-								</button>
+								</Link>
 								<a
 									href="#"
 									className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2 group"
@@ -550,7 +560,7 @@ function Home() {
 							</div>
 						</div>
 						<div className="block space-y-6 md:h-[33rem] overflow-y-auto md:pr-5 py-8">
-							<div className="p-6 bg-white rounded-3xl shadow-lg">
+							<div className="p-6 bg-white rounded-3xl shadow-lg shadow-top">
 								<img src={UmbrellaIcon} alt="dice" />
 								<h4 className="mb-2 mt-16 text-[#033401] text-xl font-semibold">
 									Choose Your Coverage
@@ -605,12 +615,12 @@ function Home() {
 							</div>
 						</div>
 						<div className="space-y-2.5 md:hidden w-full">
-							<button
-								type="button"
+							<Link
+								to="company/contact"
 								className="text-white w-full bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 							>
 								Get started
-							</button>
+							</Link>
 							<div className="text-center">
 								<a
 									href="#"
@@ -648,7 +658,7 @@ function Home() {
 									of code in <br className="hidden md:block" />
 									any language!
 								</p>
-								<div>
+								{/*<div>
 									<button
 										type="button"
 										className="text-white bg-[#5CC758] group focus:ring-4 focus:outline-none font-medium rounded-3xl text-sm px-8 py-3 text-center mr-3 md:mr-0 flex items-center gap-x-2"
@@ -656,7 +666,7 @@ function Home() {
 										<span>Read our docs</span>{" "}
 										<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
 									</button>
-								</div>
+</div>*/}
 							</div>
 							<div id="code tab" className="flex-1">
 								<img src={CodeSection} alt="code section" />
@@ -666,7 +676,7 @@ function Home() {
 				</div>
 			</section>
 			<section
-				className="pt-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 hidden sm:block overflow-hidden"
+				className="pt-20 max-w-screen-xl mx-auto md:px-12 xl:px-5 px-5 overflow-hidden"
 				id="companies"
 			>
 				<div

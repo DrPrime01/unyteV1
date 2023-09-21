@@ -1,6 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import PolarisLogo from "../../assets/icons/PolarisLogo.svg";
 import WemaLogo from "../../assets/icons/WemaLogo.svg";
@@ -61,12 +61,12 @@ function Products() {
 						{product.desc}
 					</p>
 					<div className="flex items-center gap-x-2.5">
-						<button
-							type="button"
+						<Link
+							to="company/contact"
 							className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 						>
 							Get started
-						</button>
+						</Link>
 						<a
 							href="#"
 							className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2 group"
