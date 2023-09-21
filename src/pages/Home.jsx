@@ -543,10 +543,10 @@ function Home() {
 								comprehensive coverage to your customers. Here&apos;s how it
 								works:
 							</p>
-							<div className="md:flex items-center gap-x-2.5 hidden">
+							<div className="flex items-center gap-x-2.5">
 								<Link
 									to="company/contact"
-									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-4 py-2 text-center mr-3 md:mr-0"
+									className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 								>
 									Get started
 								</Link>
@@ -555,7 +555,7 @@ function Home() {
 									className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2 group"
 								>
 									<span>Contact sales</span>
-									<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
+									<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
 								</a>
 							</div>
 						</div>
