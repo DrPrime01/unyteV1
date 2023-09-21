@@ -377,7 +377,7 @@ function Navbar() {
 										</li>
 										<li>
 											<NavLink
-												to="products/logistics"
+												to="products/logisticsGit"
 												className="block p-4 hover:bg-[#E6FFF3B2] rounded-2xl"
 											>
 												<div className="">

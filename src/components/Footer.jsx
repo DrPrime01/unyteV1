@@ -19,7 +19,7 @@ function Footer() {
 		},
 		{
 			page: "Logistics/GIT",
-			link: "#",
+			link: "products/logisticsGit",
 		},
 		{
 			page: "Credit Life",
