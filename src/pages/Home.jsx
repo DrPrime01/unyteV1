@@ -614,22 +614,20 @@ function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="space-y-2.5 md:hidden w-full">
+						<div className="flex items-center gap-x-2.5 md:hidden">
 							<Link
 								to="company/contact"
-								className="text-white w-full bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
+								className="text-white bg-[#5CC758] focus:ring-4 focus:outline-none font-medium rounded-3xl px-6 py-3 text-center mr-3 md:mr-0"
 							>
 								Get started
 							</Link>
-							<div className="text-center">
-								<a
-									href="#"
-									className="text-[#101323] group font-medium flex items-center justify-center gap-x-2 px-6 py-3 w-full"
-								>
-									<span>Contact sales</span>
-									<BsArrowUpRight className="transform transition-transform origin-bottom group-hover:scale-125" />
-								</a>
-							</div>
+							<a
+								href="#"
+								className="text-[#101323] font-medium flex items-center gap-x-2 px-4 py-2 group"
+							>
+								<span>Contact sales</span>
+								<BsArrowRight className="transform transition-transform origin-bottom group-hover:scale-x-125" />
+							</a>
 						</div>
 					</div>
 				</div>
